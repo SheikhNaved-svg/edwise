@@ -1,576 +1,678 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Global</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="font-custom scroll-smooth">
 
-  <!--navbar-->
-  <div class="w-full flex justify-center bg-[#226CF5] sticky top-0 z-20">
-  <nav class=" w-full 2xl:w-[1600px] bg-[#226CF5] py-3 px-5 xl:px-10 2xl:px-40  flex items-center justify-between gap-5 font-custom  ">
-    <div class="font-bold text-white text-4xl">NK Global</div>
-    <ul class="text-white  gap-3 font-semibold text-[14px] hidden lg:flex">
-        <li class="flex gap-2  items-start hover:text-[#FF7361]">Study Destinations <img class="w-3 " src="./assets/images/downarrow.svg" alt='image' /></li>
-        <li class="flex items-start gap-2 hover:text-[#FF7361]">Services <img class="w-3" src="./assets/images/downarrow.svg" alt='image' /></li>
-        <li class="hover:text-[#FF7361]">Upcoming Events</li>
-        <li class="hover:text-[#FF7361]">Contact Us</li>
-        <li class="flex gap-2 items-start hover:text-[#FF7361]">Company <img class="w-3" src="./assets/images/downarrow.svg" alt='image' /></li>
-        
-    </ul>
+    <!--navbar-->
+    <div class="w-full navbar  flex flex-col items-center  bg-[#226CF5]  sticky top-0 z-20">
+        <nav
+            class=" w-full 2xl:w-[1600px] group py-4 px-5  xl:px-10 2xl:px-40  flex items-center justify-between gap-5 font-custom  ">
+            <a href="./index.html" > <h1 class="font-bold  text-white text-4xl">NK Global</h1></a>
+           
+            <ul class="text-white cursor-pointer navlist   gap-3 font-semibold text-[14px] hidden lg:flex">
+                <li class="flex study gap-2    items-start hover:text-[#FF7361]">Study Destinations <img class="w-3 "
+                        src="./assets/images/downarrow.svg" alt='image' />
+                        
+                    </li>
+                <li class="flex items-start gap-2 hover:text-[#FF7361]">Services <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361]">Upcoming Events</li>
+                <li class="hover:text-[#FF7361]">Contact Us</li>
+                <li class="flex gap-2 items-start hover:text-[#FF7361]">Company <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
 
-
-    <div class="lg:flex gap-2 hidden ">
-    <div class="border border-white h-[50px] px-2  rounded-xl text-white hidden lg:flex lg:flex-col justify-center items-center hover:bg-gradient-to-r from-[#ff6a56] to-[#fdaf4d]">
-        <p class="text-[14px]">coursefinder.ai</p>
-        <p class="text-[10px]">(For Partners)</p>
-    </div>
-    <div class="hidden lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2  rounded-xl ">
-        <img src="./assets/images/camera.svg" alt="image" />
-        <h1 class="font-semibold text-[14px] text-[#FF7361]">Book Online Counselling</h1>
-    </div>
-    </div>
-
-    <!--menu-->
-    <img class="lg:hidden" src="./assets/images/menu.svg" alt="image" />
-
-  </nav>
-  </div>
-
-  <!--hero section-->
-  <div class="w-full flex justify-center  bg-[#226CF5] font-custom relative ">
-    
-    <section class="relative  w-full 2xl:w-[1600px] overflow-hidden text-white py-10 lg:pt-24 xl:py-32 px-6 md:px-20 flex flex-col  md:flex-row-reverse gap-14 md:gap-0 items-center justify-between">
-      <div class="w-full md:w-[50%] flex justify-center z-10">
-        <img src="./assets/images/girl1.png" alt="Student on bean bag" class="w-full">
-    </div>
-
-      <div class="w-full md:w-[50%] z-10 flex flex-col items-center md:items-start">
-          <h1 class="text-[32px] lg:text-[42px] font-semibold leading-tight text-center md:text-start">Dream, Discover & Conquer with <span class=" text-orange-400">NK Global</span> Your Study Abroad Partner</h1>
-          <p class="mt-4 text-lg text-center md:text-start">Ready to start your overseas education journey? Reach out to one of Edwise expert country counselors today?</p>
-          <button class="mt-6 bg-gradient-to-r from-orange-400 to-red-400 text-white px-6 py-3 rounded-lg font-semibold shadow-md w-[250px]">Start Your Journey</button>
-      </div>
-
-      <img class="absolute top-0 right-[-180px] z-0 hidden lg:block" src="./assets/images/sketch.svg" alt="image" />
-
-      
-  </section>
- </div>
-
- <!--our strenth-->
-
- <div class="font-custom flex items-center justify-center py-14 bg-white">
-  <div class="w-full 2xl:w-[1600px] mx-auto text-center px-4">
-      <h2 class="text-4xl lg:text-[41px] font-bold text-[#212529] mb-8">Our Core Strengths</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div class="text-center">
-              <p class="text-4xl font-bold text-[#FDAF4D]">850+</p>
-              <h3 class="text-lg font-semibold text-gray-900 mt-2">Global University Tie Ups</h3>
-              <p class="text-gray-600 text-sm mt-2">
-                  Our students aren’t just pursuing their higher education, but their dreams and ambitions in eminent universities across the globe.
-              </p>
-          </div>
-          <!-- Card 2 -->
-          <div class="text-center">
-              <p class="text-4xl font-bold text-[#FF6A56]">65+</p>
-              <h3 class="text-lg font-semibold text-gray-900 mt-2">Offices across the Globe</h3>
-              <p class="text-gray-600 text-sm mt-2">
-                  We’re growing, we’re expanding and we’re doing that fast! Join the fastest growing EdTech brand in South and South-East Asia.
-              </p>
-          </div>
-          <!-- Card 3 -->
-          <div class="text-center">
-              <p class="text-4xl font-bold text-[#226CF5]">26</p>
-              <h3 class="text-lg font-semibold text-gray-900 mt-2">Years of Industry Presence</h3>
-              <p class="text-gray-600 text-sm mt-2">
-                  With over two decades of industry expertise, we know what’s best for you and that makes us really good at what we do!
-              </p>
-          </div>
-      </div>
-  </div>
-</div>
-
-<!---->
-<div class="bg-[#FFDCD8] font-custom flex-col items-center justify-center py-10 ">
-  <h2 class="text-[30px] lg:text-[40px] font-semibold text-[#212529] text-center">KC Services & Offerings</h2>
-  <div class="w-full 2xl:w-[1600px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row-reverse items-center">
-      <!-- Right Image -->
-      <div class="md:w-1/2 flex justify-center m">
-        <img src="./assets/images/pic1.svg" alt="image" />
-    </div>
-    <!-- Left Content -->
-      
-      <div class="w-full md:w-1/2">
-          
-          <h3 class="text-[25px] font-semibold text-[#0E1B2C] mt-6">For Students</h3>
-          <p class="text-gray-600 mt-2">
-              With a keen ear for your choices and preferences, our counselling experience is so seamless that you will land in your dream university!
-          </p>
-          <h4 class="font-semibold text-[17px] text-gray-900 mt-6">Offerings</h4>
-          <ul class="mt-4 ">
-              <li class="flex items-center">
-                 <img src="./assets/images/start.svg"
-                  <span class=" text-gray-800">Virtual Coaching and Counselling</span>
-              </li>
-              <li class="flex items-center">
-                <img src="./assets/images/start.svg"
-                  <span class=" text-gray-800">Applications, Admissions & Visas</span>
-              </li>
-              <li class="flex items-center">
-                <img src="./assets/images/start.svg"
-                  <span class=" text-gray-800">High Value Scholarships and Study Loans</span>
-              </li>
-          </ul>
-          <a href="#" class="text-red-500 font-medium mt-6 inline-block">See More →</a>
-      </div>
-
-     
-  </div>
-</div>
-
-<!--Partners-->
-
-<div class="bg-[#FFE7C9]  flex items-center justify-center py-10">
-  <div class="w-full 2xl:w-[1600px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center">
-      <!-- Left Image -->
-      <div class="md:w-1/2 flex justify-center ">
-         <img src="./assets/images/pic2.svg" alt="image" />
-      </div>
-
-      <!-- Right Content -->
-      <div class="md:w-1/2 md:ml-10">
-          <h3 class="text-xl font-semibold text-gray-900">For Partners</h3>
-          <p class="text-gray-600 mt-2">
-              Work with our team and state-of-the-art technology and experience how they can be a game changer for your business.
-          </p>
-          <h4 class="font-semibold text-gray-900 mt-6">Offerings</h4>
-          <ul class="mt-4 space-y-3">
-              <li class="flex items-center">
-                 <img src="./assets/images/start.svg" alt="image" />
-                  <span class=" text-gray-800">Innovative technology customized for your business</span>
-              </li>
-              <li class="flex items-center">
-                <img src="./assets/images/start.svg" alt="image" />
-                  <span class=" text-gray-800">Webinars by University Delegates and KC Experts</span>
-              </li>
-              <li class="flex items-center">
-                <img src="./assets/images/start.svg" alt="image" />
-                  <span class=" text-gray-800">Unparalleled end-to-end support</span>
-              </li>
-          </ul>
-          <a href="#" class="text-red-500 font-medium mt-6 inline-block">See More →</a>
-      </div>
-  </div>
-</div>
-
-<!--for franchise-->
-
-<div class="bg-[#dbe5fb] flex items-center justify-center py-10">
-  <div class="w-full 2xl:w-[1600px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row-reverse items-center">
-      <!-- Right Image -->
-      <div class="md:w-1/2 flex justify-center ">
-        <img src="./assets/images/pic4.svg" alt="image" />
-    </div>
-    <!-- Left Content -->
-      <div class="md:w-1/2 md:mr-10 mt-10 md:mt-0">
-          <h3 class="text-xl font-semibold text-gray-900">For Franchisees</h3>
-          <p class="text-gray-600 mt-2">
-              Kickstart your business by joining the fastest growing and most trusted EdTech brand in the overseas education industry.
-          </p>
-          <h4 class="font-semibold text-gray-900 mt-6">Offerings</h4>
-          <ul class="mt-4 space-y-3">
-              <li class="flex items-center">
-                 <img src="./assets/images/start.svg" alt="image" />
-                  <span class=" text-gray-800">Business solutions tailor-made for your market</span>
-              </li>
-              <li class="flex items-center">
-                <img src="./assets/images/start.svg" alt="image" />
-                  <span class=" text-gray-800">Support for Operations, Events, and Marketing</span>
-              </li>
-              <li class="flex items-center">
-                <img src="./assets/images/start.svg" alt="image" />
-                  <span class=" text-gray-800">Access to KC's rich Knowledge Repository</span>
-              </li>
-          </ul>
-          <a href="#" class="text-red-500 font-medium mt-6 inline-block">See More →</a>
-      </div>
-
-     
-  </div>
-</div>
-
-<!--for universities-->
-<div class="bg-[#d1c8eb] flex items-center justify-center py-10">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center">
-      <!-- Left Image -->
-      <div class="md:w-1/2 flex justify-center">
-          <img src="./assets/images/pic3.svg" alt="image" />
-          
-      </div>
-
-      <!-- Right Content -->
-      <div class="md:w-1/2 md:ml-10">
-          <h3 class="text-xl font-semibold text-gray-900">For Universities</h3>
-          <p class="text-gray-600 mt-2">
-              Maximize your reach across geographies and exceed your student recruitment goals without compromising on quality.
-          </p>
-          <h4 class="font-semibold text-gray-900 mt-6">Offerings</h4>
-          <ul class="mt-4 space-y-3">
-              <li class="flex items-center">
-                  <img src="./assets/images/start.svg" alt="imaget" />
-                  <span class=" text-gray-800">Recruit students from diverse nationalities</span>
-              </li>
-              <li class="flex items-center">
-                <img src="./assets/images/start.svg" alt="imaget" />
-                  <span class=" text-gray-800">Access to KC’s extensive recruitment network</span>
-              </li>
-              <li class="flex items-center">
-                <img src="./assets/images/start.svg" alt="imaget" />
-                  <span class=" text-gray-800">Enhance brand visibility</span>
-              </li>
-          </ul>
-          <a href="#" class="text-red-500 font-medium mt-6 inline-block">See More →</a>
-      </div>
-  </div>
-</div>
-
-<!---->
-<div class="bg-white flex items-center justify-center  px-6 py-10">
-  <div class="w-full 2xl:w-[1600px] mx-auto flex flex-col md:flex-row items-center">
-      <!-- Left Side: Stacked Images -->
-      <div class=" w-full md:w-1/2 flex justify-center">
-         <img src="./assets/images/pic5.svg" alt="image" />
-      </div>
-
-      <!-- Right Side: Content -->
-      <div class="md:w-1/2 md:ml-20 text-center flex flex-col items-center md:items-start md:text-left mt-10 md:mt-0">
-          <h2 class="text-3xl font-bold text-gray-900">KC’s Multi Country Advantage</h2>
-          <p class="text-gray-600 mt-3 text-lg">The World is your Campus!</p>
-          <p class="text-gray-600 mt-2">
-              Aspire for more. Choose what suits you the best from 800+ global universities in 33 countries, world over.
-              The choices and opportunities our universities offer are endless!
-          </p>
-          <a href="#" class="text-red-500 font-medium mt-6  flex gap-2 items-center ">Explore Countries <img src="./assets/images/rightarrow.svg" alt="image" />  </a>
-      </div>
-  </div>
-</div>
-<!--webinar and event-->
-<div class="bg-blue-100 flex items-center justify-center py-10  px-6 lg:px-20">
-  <div class=" w-full 2xl:w-[1600px]">
-      <h2 class="text-[40px] font-bold text-gray-900 text-center mb-6">Webinars & Events</h2>
-      
-      <!-- Main Container -->
-      <div class="flex flex-col gap-5 md:flex-row w-full py-5">
-          <!-- Large Event Card -->
-          <div class=" w-full md:w-[50%] bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="./assets/images/pic7.svg" alt="Event Image" class="w-full">
-              <div class="p-4">
-                  <p class="text-blue-600 text-sm font-medium">Sat, 29th March 2025 · 2:00 pm - 6:00 pm IST</p>
-                  <h3 class="text-xl font-bold text-gray-900 mt-2">Attend Virtual Study Abroad Loan Fair</h3>
-                  <p class="text-gray-600 mt-1">Interact Online with 20+ Leading Banks & Financial Institutions</p>
-                  <a href="#" class="text-red-500 font-medium mt-4 inline-block">Register Now →</a>
-              </div>
-          </div>
-
-          <!-- Side Event Cards -->
-          <div class="w-full md:w-[50%]">
-              <div class="bg-white rounded-lg shadow-lg overflow-hidden flex gap-2 md:gap-3 lg:gap-7">
-                  <img src="./assets/images/pic8.svg" alt="Event" class="w-[45%] ">
-                  <div class="flex flex-col justify-center">
-                      <p class="text-blue-600 text-sm font-medium">Friday, 21st March 2025 · 8:00 pm - 9:30 pm</p>
-                      <h3 class="text-lg font-bold text-gray-900 mt-1">Test Preparation for IELTS</h3>
-                      <p class="text-gray-600 text-sm mt-1">Crack your IELTS in one go with 8+ Bands.</p>
-                      <a href="#" class="text-red-500 font-medium mt-2 inline-block">Register Now →</a>
-                  </div>
-              </div>
-
-              <div class="bg-white rounded-lg shadow-lg overflow-hidden mt-5 gap-2 md:gap-4 lg:gap-7 flex">
-                  <img src="./assets/images/pic9.svg" alt="Event" class="w-[45%]">
-                  <div class="flex flex-col justify-center">
-                      <p class="text-blue-600 text-sm font-medium">Tuesday, 25th March 2025 · 7:00 am - 8:30 am</p>
-                      <h3 class="text-lg font-bold text-gray-900 mt-1">Test Preparation for GRE</h3>
-                      <p class="text-gray-600 text-sm mt-1">Get ready to study at a Top-ranked University.</p>
-                      <a href="#" class="text-red-500 font-medium mt-2 inline-block">Register Now →</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- See More -->
-      <div class="text-center mt-6">
-          <a href="#" class="text-red-500 font-medium">See More →</a>
-      </div>
-  </div>
-</div>
-<!--next-->
-<div class="bg-gray-50 flex items-center justify-center min-h-screen px-6 py-10 lg:px-10 xl:px-20">
-    <div class="w-full 2xl:w-[1600px] mx-auto">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">KC’s Tech Advantage Sophisticated Online Platforms</h2>
-
-        <div class="flex flex-col md:flex-row-reverse gap-12 items-center ">
-            <!-- Left Section -->
-            <div>
-                <img src="./assets/images/pic10.svg" alt="Course Finder" class="rounded-lg ">
-            </div>
-            <div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">KC’s Tech Prowess <span class="text-blue-600">coursefinder.ai</span> – An Uber-Efficient Online Platform</h3>
-                <p class="text-gray-600 mb-4">Welcome to coursefinder.ai, an uber-efficient online platform for searching courses and managing applications!</p>
-                <ul class="space-y-2 text-gray-700">
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Search Near Perfect, ‘eligible’ courses</li>
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> ‘One’ application, ‘multiple’ courses & universities</li>
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Project commissions and process applications</li>
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Submit & manage unlimited applications</li>
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Enhance revenues through ancillary services</li>
-                </ul>
-                <a href="#" class="text-red-500 font-medium mt-4 inline-block">coursefinder.ai →</a>
-            </div>
-
-            <!-- Right Image -->
+            </ul>
+                 <div class="hidden cursor-pointer lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2  rounded-xl ">
+                    <img src="./assets/images/camera.svg" alt="image" />
+                    <h1 class="font-semibold text-[14px] text-[#FF7361]">Book Online Counselling</h1>
+                </div>
             
-        </div>
 
-        <!-- Bottom Section -->
-        <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
-            <!-- Left Image -->
-            <div>
-                <img src="./assets/images/pic11.svg" alt="EMI Calculator" class="rounded-lg ">
+            <!--menu-->
+            <div class="lg:hidden relative hamburger  w-5 h-5">
+            <img class="menu  " src="./assets/images/menu.svg" alt="image" />
+            <img class="absolute top-0 cross w-7 " src="./assets/images/crossicon.svg" alt="crossicon" />
             </div>
 
-            <!-- Right Section -->
-            <div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Fly High with Elan Loans</h3>
-                <p class="text-gray-600 mb-4">Availing an education loan to study in your dream university has never been easier!</p>
-                <ul class="space-y-2 text-gray-700">
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Study Loans through 20 leading banks</li>
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Financial structuring to suit your university</li>
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Hassle-free documentation</li>
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Pre-visa disbursal of loans</li>
-                    <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Forex & Travel Insurance</li>
+        </nav>
+        <!--sidbar-->
+        <div class="w-full  sidebar hidden lg:hidden border-t border-gray-300 bg-white h-[100vh]  flex-col items-center">
+            
+            <ul class="w-full font-bold cursor-pointer text-xl flex flex-col gap-5 py-14 px-6">
+                <li class="flex studies gap-2 ">
+                    <img src="./assets/images/study.svg" alt="study" class="mr-3" />
+                    Study Destinations 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' />
+                        
+                </li>
+                <li class="flex  gap-2 hover:text-[#FF7361]">
+                    <img src="./assets/images/services.svg" alt="services" class="mr-3" />
+                    Services 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361] flex gap-2 items-center">
+                    <img src="./assets/images/upcomingevents.svg" alt="event" class="mr-3 " />
+                    Upcoming Events
+                </li>
+                <li class="hover:text-[#FF7361] flex gap-2">
+                    <img src="./assets/images/contact.svg" alt="contact"  class="mr-3 "/>
+                    Contact Us</li>
+                <li class="flex gap-2  hover:text-[#FF7361]">
+                    <img src="./assets/images/company.svg" alt="company" class="mr-3" />
+                    Company <img class="w-3"
+                        src="./assets/images/blackarrow.svg" alt='image' /></li>
+
+            </ul>
+            
+            <div class="bg-gradient-to-r from-orange-400 to-red-400 text-white cursor-pointer flex gap-4  items-center justify-center  px-2 py-3 text-xl w-[370px] rounded-xl ">
+               
+                <h1 class="font-semibold text-[14px] text-white">Book  Online Counselling</h1>
+            </div>
+          
+
+
+        </div>
+
+        <!--end-->
+        <div class="demo w-full   justify-center px-40 py-7 font-bold border-t border-gray-400 cursor-pointer bg-white hidden absolute top-[100%] z-10">
+            
+            <div class="grid grid-cols-3 gap-5 justify-between w-full 2xl:w-[1500px] px-5 lg:px-10 xl:px-20">
+            <div ><a class=" flex items-center gap-2" href="./destinationusa.html" > <img src="./assets/images/usa.svg" alt="usa"  />USA</a></div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/ireland.svg" alt="usa"  />Ireland</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/europ.svg" alt="usa"  />Europ</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/canada.svg" alt="usa"  />Canada</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/austrailia.svg" alt="austrailia"  />Austrailia</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/asia.svg" alt="aia"  />Asia</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/unitedkingdom.svg" alt="uk"  />United Kingdom</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/newzealand.svg" alt="usa"  />New Zealand</div>
+            </div>
+        </div>
+    
+       
+        
+    </div>
+
+    <!--hero section-->
+    <div class="relative w-full flex flex-col   items-center mb-32 ">
+    <div class="w-full flex flex-col justify-center items-center  bg-[#226CF5] font-custom relative ">
+
+        <section
+            class="relative  w-full 2xl:w-[1600px] overflow-hidden text-white py-10 lg:pt-24 xl:py-32 px-6 md:px-20 flex flex-col  md:flex-row-reverse gap-14 md:gap-0 items-center justify-between">
+            <div class="w-full md:w-[50%] flex justify-center z-10">
+                <img src="./assets/images/girl1.png" alt="Student on bean bag" class="w-full">
+            </div>
+
+            <div class="w-full md:w-[50%] z-10 flex flex-col items-center md:items-start">
+                <h1 class="text-[32px] lg:text-[42px] font-semibold leading-tight text-center md:text-start">Dream,
+                    Discover & Conquer with <span class=" text-orange-400">NK Global</span> Your Study Abroad Partner
+                </h1>
+                <p class="mt-4 text-lg text-center md:text-start">Ready to start your overseas education journey? Reach
+                    out to one of Edwise expert country counselors today?</p>
+                <button
+                    class="mt-6 bg-gradient-to-r from-orange-400 to-red-400 text-white px-6 py-3 rounded-lg font-semibold shadow-md w-[250px]">Start
+                    Your Journey</button>
+            </div>
+
+            <img class="absolute top-0 right-[-180px] z-0 hidden lg:block" src="./assets/images/sketch.svg"
+                alt="image" />
+
+
+        </section>
+        
+    </div>
+    <div class="w-full h-[200px] rounded-bl-[90%] rounded-br-[90%] absolute top-[90%]  bg-[#226CF5]"></div>
+    </div>
+    <!--our strenth-->
+
+    <div class="font-custom flex items-center justify-center py-14 bg-white">
+        <div class="w-full 2xl:w-[1600px] mx-auto text-center px-4">
+            <h2 class="text-4xl lg:text-[41px] font-bold text-[#212529] mb-8">Our Core Strengths</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-[#FDAF4D]">850+</p>
+                    <h3 class="text-lg font-semibold text-gray-900 mt-2">Global University Tie Ups</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Our students aren’t just pursuing their higher education, but their dreams and ambitions in
+                        eminent universities across the globe.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-[#FF6A56]">65+</p>
+                    <h3 class="text-lg font-semibold text-gray-900 mt-2">Offices across the Globe</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        We’re growing, we’re expanding and we’re doing that fast! Join the fastest growing EdTech brand
+                        in South and South-East Asia.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-[#226CF5]">26</p>
+                    <h3 class="text-lg font-semibold text-gray-900 mt-2">Years of Industry Presence</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        With over two decades of industry expertise, we know what’s best for you and that makes us
+                        really good at what we do!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---->
+    <div class="bg-[#FFDCD8] font-custom flex-col items-center justify-center py-10 ">
+        <h2 class="text-[30px] lg:text-[40px] font-semibold text-[#212529] text-center">KC Services & Offerings</h2>
+        <div class="w-full 2xl:w-[1600px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row-reverse items-center">
+            <!-- Right Image -->
+            <div class="md:w-1/2 flex justify-center m">
+                <img src="./assets/images/pic1.svg" alt="image" />
+            </div>
+            <!-- Left Content -->
+
+            <div class="w-full md:w-1/2">
+
+                <h3 class="text-[25px] font-semibold text-[#0E1B2C] mt-6">For Students</h3>
+                <p class="text-gray-600 mt-2">
+                    With a keen ear for your choices and preferences, our counselling experience is so seamless that you
+                    will land in your dream university!
+                </p>
+                <h4 class="font-semibold text-[17px] text-gray-900 mt-6">Offerings</h4>
+                <ul class="mt-4 ">
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" <span class=" text-gray-800">Virtual Coaching and
+                        Counselling</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" <span class=" text-gray-800">Applications, Admissions &
+                        Visas</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" <span class=" text-gray-800">High Value Scholarships and
+                        Study Loans</span>
+                    </li>
                 </ul>
-                <a href="#" class="text-red-500 font-medium mt-4 inline-block">Elan Loans →</a>
+                <a href="#" class="text-red-500 font-medium mt-6 inline-block">See More →</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--Partners-->
+
+    <div class="bg-[#FFE7C9]  flex items-center justify-center py-10">
+        <div class="w-full 2xl:w-[1600px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center">
+            <!-- Left Image -->
+            <div class="md:w-1/2 flex justify-center ">
+                <img src="./assets/images/pic2.svg" alt="image" />
+            </div>
+
+            <!-- Right Content -->
+            <div class="md:w-1/2 md:ml-10">
+                <h3 class="text-xl font-semibold text-gray-900">For Partners</h3>
+                <p class="text-gray-600 mt-2">
+                    Work with our team and state-of-the-art technology and experience how they can be a game changer for
+                    your business.
+                </p>
+                <h4 class="font-semibold text-gray-900 mt-6">Offerings</h4>
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="image" />
+                        <span class=" text-gray-800">Innovative technology customized for your business</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="image" />
+                        <span class=" text-gray-800">Webinars by University Delegates and KC Experts</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="image" />
+                        <span class=" text-gray-800">Unparalleled end-to-end support</span>
+                    </li>
+                </ul>
+                <a href="#" class="text-red-500 font-medium mt-6 inline-block">See More →</a>
             </div>
         </div>
     </div>
-</div>
 
-<!--next-->
-<div class="bg-gray-50 flex items-center justify-center py-10  px-6 lg:px-10 xl:px-20  ">
-    <div class=" text-center w-full 2xl:w-[1600px]">
-        <h2 class="text-3xl font-bold text-gray-900 mb-2 mt-10">KC’s eminent university tie-ups</h2>
-        <p class="text-gray-600 mb-8">We represent 69 of World’s Top 300 Universities according to QS World Rankings 2025</p>
+    <!--for franchise-->
 
-        <!-- University Logos -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center mt-10">
-            <img src="./assets/images/logoone.svg" alt="NUS" class="h-16 mx-auto">
-            <img src="./assets/images/logotwo.svg" alt="Berkeley" class="h-16 mx-auto">
-            <img src="./assets/images/logothree.svg" alt="UNSW Sydney" class="h-16 mx-auto">
-            <img src="./assets/images/logofour.svg" alt="TUM Asia" class="h-16 mx-auto">
-            <img src="./assets/images/logofive.svg" alt="McGill" class="h-16 mx-auto">
-            <img src="./assets/images/logosix.svg" alt="Monash University" class="h-16 mx-auto">
-            <img src="./assets/images/logoseven.svg" alt="University of Queensland" class="h-16 mx-auto">
-            <img src="./assets/images/logoeight.svg" alt="University of Bristol" class="h-16 mx-auto">
+    <div class="bg-[#dbe5fb] flex items-center justify-center py-10">
+        <div class="w-full 2xl:w-[1600px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row-reverse items-center">
+            <!-- Right Image -->
+            <div class="md:w-1/2 flex justify-center ">
+                <img src="./assets/images/pic4.svg" alt="image" />
+            </div>
+            <!-- Left Content -->
+            <div class="md:w-1/2 md:mr-10 mt-10 md:mt-0">
+                <h3 class="text-xl font-semibold text-gray-900">For Franchisees</h3>
+                <p class="text-gray-600 mt-2">
+                    Kickstart your business by joining the fastest growing and most trusted EdTech brand in the overseas
+                    education industry.
+                </p>
+                <h4 class="font-semibold text-gray-900 mt-6">Offerings</h4>
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="image" />
+                        <span class=" text-gray-800">Business solutions tailor-made for your market</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="image" />
+                        <span class=" text-gray-800">Support for Operations, Events, and Marketing</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="image" />
+                        <span class=" text-gray-800">Access to KC's rich Knowledge Repository</span>
+                    </li>
+                </ul>
+                <a href="#" class="text-red-500 font-medium mt-6 inline-block">See More →</a>
+            </div>
+
+
         </div>
-
-        <a href="#" class="text-red-500 mb-10 font-medium mt-6 inline-block">More Universities →</a>
     </div>
-</div>
-<!--next-->
-<div class="bg-orange-50 flex items-center justify-center  px-6 py-10">
-    <div class="2xl:w-[1600px] w-full  text-center">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Latest KC Updates</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Hiring Card -->
-            <div class="bg-orange-400 p-6 rounded-lg text-left text-white relative flex flex-col justify-between">
-                <h3 class="text-2xl font-bold mb-3">We're Hiring!</h3>
-                <p class="text-lg">Join the fastest growing EdTech brand offering endless learning and growth opportunities and advance your career with us.</p>
-                <button class="mt-4 bg-white text-orange-600 px-4 py-2 rounded-md font-medium">Apply Now</button>
+    <!--for universities-->
+    <div class="bg-[#d1c8eb] flex items-center justify-center py-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center">
+            <!-- Left Image -->
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./assets/images/pic3.svg" alt="image" />
+
             </div>
 
-            <!-- News Card 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg text-left flex flex-col gap-2 items-center">
-                <img src="./assets/images/pic12.svg" alt="University of Sheffield" class="w-[180px]">
-                <h3 class="text-lg font-semibold text-center">University of Sheffield Announces Engineering Scholarship for...</h3>
-                <p class="text-gray-600 mt-2 text-center">University of Sheffield offers Engineering Excellence Scholarships worth up to £3,000 for International...</p>
-                <img src="./assets/images/threestar.svg" alt="star" />
-                <a href="#" class="text-red-500 font-medium mt-4 inline-block">Read More</a>
-            </div>
-
-            <!-- News Card 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg text-left flex flex-col gap-2 items-center">
-                <img src="./assets/images/pic13.svg" alt="UK Transnational Education" class="w-[180px]">
-                <h3 class="text-lg font-semibold text-center">UK Transnational Education Attracts Over 606,000 Students Worldwide in 202...</h3>
-                <p class="text-gray-600 mt-2 text-center">UK Transnational Education continues to see robust growth with 606,485 students from 228 countries...</p>
-                <img src="./assets/images/threestar.svg" alt="star" />
-                <a href="#" class="text-red-500 font-medium mt-4 inline-block">Read More</a>
+            <!-- Right Content -->
+            <div class="md:w-1/2 md:ml-10">
+                <h3 class="text-xl font-semibold text-gray-900">For Universities</h3>
+                <p class="text-gray-600 mt-2">
+                    Maximize your reach across geographies and exceed your student recruitment goals without
+                    compromising on quality.
+                </p>
+                <h4 class="font-semibold text-gray-900 mt-6">Offerings</h4>
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="imaget" />
+                        <span class=" text-gray-800">Recruit students from diverse nationalities</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="imaget" />
+                        <span class=" text-gray-800">Access to KC’s extensive recruitment network</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="./assets/images/start.svg" alt="imaget" />
+                        <span class=" text-gray-800">Enhance brand visibility</span>
+                    </li>
+                </ul>
+                <a href="#" class="text-red-500 font-medium mt-6 inline-block">See More →</a>
             </div>
         </div>
-
-        <a href="#" class="text-red-500 font-medium mt-6 inline-block">More News →</a>
     </div>
-</div>
 
-<!--next-->
-<div class=" flex items-center justify-center w-full px-6 lg:px-10 xl:px-20 py-10">
-    <div class="2xl:w-[1600px] w-full ">
-        <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Blogs</h2>
+    <!---->
+    <div class="bg-white flex items-center justify-center  px-6 py-10">
+        <div class="w-full 2xl:w-[1600px] mx-auto flex flex-col md:flex-row items-center">
+            <!-- Left Side: Stacked Images -->
+            <div class=" w-full md:w-1/2 flex justify-center">
+                <img src="./assets/images/pic5.svg" alt="image" />
+            </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Main Featured Blog -->
-            <div class=" rounded-lg shadow-lg">
-                <img src="./assets/images/pic14.svg" alt="Featured Blog" class="w-full ">
-                <div class=" flex flex-col  p-4">
-                    
+            <!-- Right Side: Content -->
+            <div
+                class="md:w-1/2 md:ml-20 text-center flex flex-col items-center md:items-start md:text-left mt-10 md:mt-0">
+                <h2 class="text-3xl font-bold text-gray-900">KC’s Multi Country Advantage</h2>
+                <p class="text-gray-600 mt-3 text-lg">The World is your Campus!</p>
+                <p class="text-gray-600 mt-2">
+                    Aspire for more. Choose what suits you the best from 800+ global universities in 33 countries, world
+                    over.
+                    The choices and opportunities our universities offer are endless!
+                </p>
+                <a href="#" class="text-red-500 font-medium mt-6  flex gap-2 items-center ">Explore Countries <img
+                        src="./assets/images/rightarrow.svg" alt="image" /> </a>
+            </div>
+        </div>
+    </div>
+    <!--webinar and event-->
+    <div class="bg-blue-100 flex items-center justify-center py-10  px-6 lg:px-20">
+        <div class=" w-full 2xl:w-[1600px]">
+            <h2 class="text-[40px] font-bold text-gray-900 text-center mb-6">Webinars & Events</h2>
+
+            <!-- Main Container -->
+            <div class="flex flex-col gap-5 md:flex-row w-full py-5">
+                <!-- Large Event Card -->
+                <div class=" w-full md:w-[50%] bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/images/pic7.svg" alt="Event Image" class="w-full">
+                    <div class="p-4">
+                        <p class="text-blue-600 text-sm font-medium">Sat, 29th March 2025 · 2:00 pm - 6:00 pm IST</p>
+                        <h3 class="text-xl font-bold text-gray-900 mt-2">Attend Virtual Study Abroad Loan Fair</h3>
+                        <p class="text-gray-600 mt-1">Interact Online with 20+ Leading Banks & Financial Institutions
+                        </p>
+                        <a href="#" class="text-red-500 font-medium mt-4 inline-block">Register Now →</a>
+                    </div>
+                </div>
+
+                <!-- Side Event Cards -->
+                <div class="w-full md:w-[50%]">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex gap-2 md:gap-3 lg:gap-7">
+                        <img src="./assets/images/pic8.svg" alt="Event" class="w-[45%] ">
+                        <div class="flex flex-col justify-center">
+                            <p class="text-blue-600 text-sm font-medium">Friday, 21st March 2025 · 8:00 pm - 9:30 pm</p>
+                            <h3 class="text-lg font-bold text-gray-900 mt-1">Test Preparation for IELTS</h3>
+                            <p class="text-gray-600 text-sm mt-1">Crack your IELTS in one go with 8+ Bands.</p>
+                            <a href="#" class="text-red-500 font-medium mt-2 inline-block">Register Now →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden mt-5 gap-2 md:gap-4 lg:gap-7 flex">
+                        <img src="./assets/images/pic9.svg" alt="Event" class="w-[45%]">
+                        <div class="flex flex-col justify-center">
+                            <p class="text-blue-600 text-sm font-medium">Tuesday, 25th March 2025 · 7:00 am - 8:30 am
+                            </p>
+                            <h3 class="text-lg font-bold text-gray-900 mt-1">Test Preparation for GRE</h3>
+                            <p class="text-gray-600 text-sm mt-1">Get ready to study at a Top-ranked University.</p>
+                            <a href="#" class="text-red-500 font-medium mt-2 inline-block">Register Now →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See More -->
+            <div class="text-center mt-6">
+                <a href="#" class="text-red-500 font-medium">See More →</a>
+            </div>
+        </div>
+    </div>
+    <!--next-->
+    <div class="bg-gray-50 flex items-center justify-center min-h-screen px-6 py-10 lg:px-10 xl:px-20">
+        <div class="w-full 2xl:w-[1600px] mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">KC’s Tech Advantage Sophisticated Online
+                Platforms</h2>
+
+            <div class="flex flex-col md:flex-row-reverse gap-12 items-center ">
+                <!-- Left Section -->
+                <div>
+                    <img src="./assets/images/pic10.svg" alt="Course Finder" class="rounded-lg ">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">KC’s Tech Prowess <span
+                            class="text-blue-600">coursefinder.ai</span> – An Uber-Efficient Online Platform</h3>
+                    <p class="text-gray-600 mb-4">Welcome to coursefinder.ai, an uber-efficient online platform for
+                        searching courses and managing applications!</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Search Near
+                            Perfect, ‘eligible’ courses</li>
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> ‘One’
+                            application, ‘multiple’ courses & universities</li>
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Project
+                            commissions and process applications</li>
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Submit &
+                            manage unlimited applications</li>
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Enhance
+                            revenues through ancillary services</li>
+                    </ul>
+                    <a href="#" class="text-red-500 font-medium mt-4 inline-block">coursefinder.ai →</a>
+                </div>
+
+                <!-- Right Image -->
+
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+                <!-- Left Image -->
+                <div>
+                    <img src="./assets/images/pic11.svg" alt="EMI Calculator" class="rounded-lg ">
+                </div>
+
+                <!-- Right Section -->
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Fly High with Elan Loans</h3>
+                    <p class="text-gray-600 mb-4">Availing an education loan to study in your dream university has never
+                        been easier!</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Study Loans
+                            through 20 leading banks</li>
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Financial
+                            structuring to suit your university</li>
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Hassle-free
+                            documentation</li>
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Pre-visa
+                            disbursal of loans</li>
+                        <li class="flex items-center"><img src="./assets/images/right.svg" alt="image" /> Forex & Travel
+                            Insurance</li>
+                    </ul>
+                    <a href="#" class="text-red-500 font-medium mt-4 inline-block">Elan Loans →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--next-->
+    <div class="bg-gray-50 flex items-center justify-center py-10  px-6 lg:px-10 xl:px-20  ">
+        <div class=" text-center w-full 2xl:w-[1600px]">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2 mt-10">KC’s eminent university tie-ups</h2>
+            <p class="text-gray-600 mb-8">We represent 69 of World’s Top 300 Universities according to QS World Rankings
+                2025</p>
+
+            <!-- University Logos -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center mt-10">
+                <img src="./assets/images/logoone.svg" alt="NUS" class="h-16 mx-auto">
+                <img src="./assets/images/logotwo.svg" alt="Berkeley" class="h-16 mx-auto">
+                <img src="./assets/images/logothree.svg" alt="UNSW Sydney" class="h-16 mx-auto">
+                <img src="./assets/images/logofour.svg" alt="TUM Asia" class="h-16 mx-auto">
+                <img src="./assets/images/logofive.svg" alt="McGill" class="h-16 mx-auto">
+                <img src="./assets/images/logosix.svg" alt="Monash University" class="h-16 mx-auto">
+                <img src="./assets/images/logoseven.svg" alt="University of Queensland" class="h-16 mx-auto">
+                <img src="./assets/images/logoeight.svg" alt="University of Bristol" class="h-16 mx-auto">
+            </div>
+
+            <a href="#" class="text-red-500 mb-10 font-medium mt-6 inline-block">More Universities →</a>
+        </div>
+    </div>
+    <!--next-->
+    <div class="bg-orange-50 flex items-center justify-center  px-6 py-10">
+        <div class="2xl:w-[1600px] w-full  text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Latest KC Updates</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Hiring Card -->
+                <div class="bg-orange-400 p-6 rounded-lg text-left text-white relative flex flex-col justify-between">
+                    <h3 class="text-2xl font-bold mb-3">We're Hiring!</h3>
+                    <p class="text-lg">Join the fastest growing EdTech brand offering endless learning and growth
+                        opportunities and advance your career with us.</p>
+                    <button class="mt-4 bg-white text-orange-600 px-4 py-2 rounded-md font-medium">Apply Now</button>
+                </div>
+
+                <!-- News Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-left flex flex-col gap-2 items-center">
+                    <img src="./assets/images/pic12.svg" alt="University of Sheffield" class="w-[180px]">
+                    <h3 class="text-lg font-semibold text-center">University of Sheffield Announces Engineering
+                        Scholarship for...</h3>
+                    <p class="text-gray-600 mt-2 text-center">University of Sheffield offers Engineering Excellence
+                        Scholarships worth up to £3,000 for International...</p>
+                    <img src="./assets/images/threestar.svg" alt="star" />
+                    <a href="#" class="text-red-500 font-medium mt-4 inline-block">Read More</a>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-left flex flex-col gap-2 items-center">
+                    <img src="./assets/images/pic13.svg" alt="UK Transnational Education" class="w-[180px]">
+                    <h3 class="text-lg font-semibold text-center">UK Transnational Education Attracts Over 606,000
+                        Students Worldwide in 202...</h3>
+                    <p class="text-gray-600 mt-2 text-center">UK Transnational Education continues to see robust growth
+                        with 606,485 students from 228 countries...</p>
+                    <img src="./assets/images/threestar.svg" alt="star" />
+                    <a href="#" class="text-red-500 font-medium mt-4 inline-block">Read More</a>
+                </div>
+            </div>
+
+            <a href="#" class="text-red-500 font-medium mt-6 inline-block">More News →</a>
+        </div>
+    </div>
+
+    <!--next-->
+    <div class=" flex items-center justify-center w-full px-6 lg:px-10 xl:px-20 py-10">
+        <div class="2xl:w-[1600px] w-full ">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Blogs</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Main Featured Blog -->
+                <div class=" rounded-lg shadow-lg">
+                    <img src="./assets/images/pic14.svg" alt="Featured Blog" class="w-full ">
+                    <div class=" flex flex-col  p-4">
+
                         <p class="text-sm text-blue-600 font-bold">STUDY ABROAD</p>
                         <h3 class="text-lg font-semibold">MBA in Netherlands – Top Universities to Choose</h3>
                         <p class="text-gray-500 text-sm mt-1">Mar 18, 2025</p>
-                    
-                </div>
-            </div>
 
-            <!-- Other Blogs -->
-            <div class="grid grid-cols-1 gap-6">
-                <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="./assets/images/pic15.svg" alt="Blog 1" class="w-1/3 object-cover">
-                    <div class="p-4">
-                        <p class="text-sm text-blue-600 font-bold">STUDENT TESTIMONIAL</p>
-                        <h3 class="text-lg font-semibold">From Nagpur to Queensland: How KC Made My Study Abroad Dream Come True</h3>
-                        <p class="text-gray-500 text-sm mt-1">Dec 06, 2024</p>
                     </div>
                 </div>
 
-                <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="./assets/images/pic16.svg" alt="Blog 2" class="w-1/3 object-cover">
-                    <div class="p-4">
-                        <p class="text-sm text-blue-600 font-bold">COACHING</p>
-                        <h3 class="text-lg font-semibold">GMAT Online Coaching: Benefits, Test Prep, Best Provider & More</h3>
-                        <p class="text-gray-500 text-sm mt-1">Feb 05, 2025</p>
+                <!-- Other Blogs -->
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./assets/images/pic15.svg" alt="Blog 1" class="w-1/3 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-blue-600 font-bold">STUDENT TESTIMONIAL</p>
+                            <h3 class="text-lg font-semibold">From Nagpur to Queensland: How KC Made My Study Abroad
+                                Dream Come True</h3>
+                            <p class="text-gray-500 text-sm mt-1">Dec 06, 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./assets/images/pic16.svg" alt="Blog 2" class="w-1/3 object-cover">
+                        <div class="p-4">
+                            <p class="text-sm text-blue-600 font-bold">COACHING</p>
+                            <h3 class="text-lg font-semibold">GMAT Online Coaching: Benefits, Test Prep, Best Provider &
+                                More</h3>
+                            <p class="text-gray-500 text-sm mt-1">Feb 05, 2025</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="text-center mt-6">
-            <a href="#" class="text-red-500 font-medium">All Blogs →</a>
+            <div class="text-center mt-6">
+                <a href="#" class="text-red-500 font-medium">All Blogs →</a>
+            </div>
         </div>
     </div>
-</div>
 
-<!--next-->
+    <!--next-->
 
-<div class="bg-gray-50 flex items-center justify-center py-10  px-6 lg:px-10 xl:px-20  ">
-    <div class=" text-center w-full 2xl:w-[1600px]">
-        <h2 class="text-3xl font-bold text-gray-900 mb-2 mt-10">KC in the news</h2>
-       
+    <div class="bg-gray-50 flex items-center justify-center py-10  px-6 lg:px-10 xl:px-20  ">
+        <div class=" text-center w-full 2xl:w-[1600px]">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2 mt-10">KC in the news</h2>
 
-        <!--Logos -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center mt-10">
-            <img src="./assets/images/newlogotwo.svg" alt="NUS" class="h-16 mx-auto">
-            <img src="./assets/images/newslogothree.svg" alt="Berkeley" class="h-16 mx-auto">
-            <img src="./assets/images/newslogofour.svg" alt="UNSW Sydney" class="h-16 mx-auto">
-            <img src="./assets/images/newslogofive.svg" alt="TUM Asia" class="h-16 mx-auto">
-            <img src="./assets/images/newslogosix.svg" alt="McGill" class="h-16 mx-auto">
-            <img src="./assets/images/newslogoseven.svg" alt="Monash University" class="h-16 mx-auto">
-            <img src="./assets/images/newslogofive.svg" alt="University of Queensland" class="h-16 mx-auto">
-            <img src="./assets/images/newslogothree.svg" alt="University of Bristol" class="h-16 mx-auto">
-        </div>
 
-        <a href="#" class="text-red-500 mb-10 font-medium mt-6 inline-block">More Universities →</a>
-    </div>
-</div>
-
-<!--Footer-->
-<footer class="flex justify-center bg-[#0B1320] text-white pt-16 pb-8">
-    
-   
-
-    <div class=" w-full 2xl:w-[1600px] px-6">
-        <h2 class="text-center text-lg font-semibold mb-6">Stay updated with KC Overseas</h2>
-        
-        <!-- Subscription Form -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-            <input 
-                type="email" 
-                placeholder="Email ID" 
-                class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none"
-            >
-            <select 
-                class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none"
-            >
-                <option selected disabled>I'm Interested in</option>
-                <option>Student</option>
-                <option>Institute</option>
-                <option>Partners</option>
-                <opttion>Franchisee</opttion>
-            </select>
-            <button 
-                class="bg-orange-500 hover:bg-orange-600 transition px-6 py-2 rounded-lg font-semibold text-white shadow-md"
-            >
-                Subscribe Now
-            </button>
-        </div>
-        
-
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
-            <!-- About -->
-            <div>
-                <h3 class="text-lg font-semibold text-blue-400">KC Overseas</h3>
-                <p class="mt-2 text-gray-400">We are the fastest-growing EdTech brand facilitating international student recruitment...</p>
+            <!--Logos -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center mt-10">
+                <img src="./assets/images/newlogotwo.svg" alt="NUS" class="h-16 mx-auto">
+                <img src="./assets/images/newslogothree.svg" alt="Berkeley" class="h-16 mx-auto">
+                <img src="./assets/images/newslogofour.svg" alt="UNSW Sydney" class="h-16 mx-auto">
+                <img src="./assets/images/newslogofive.svg" alt="TUM Asia" class="h-16 mx-auto">
+                <img src="./assets/images/newslogosix.svg" alt="McGill" class="h-16 mx-auto">
+                <img src="./assets/images/newslogoseven.svg" alt="Monash University" class="h-16 mx-auto">
+                <img src="./assets/images/newslogofive.svg" alt="University of Queensland" class="h-16 mx-auto">
+                <img src="./assets/images/newslogothree.svg" alt="University of Bristol" class="h-16 mx-auto">
             </div>
 
-            <!-- Study Destinations -->
-            <div>
-                <h3 class="text-lg font-semibold text-blue-400">Study Destinations</h3>
-                <ul class="mt-2 space-y-2 text-gray-400">
-                    <li>United States</li>
-                    <li>Canada</li>
-                    <li>United Kingdom</li>
-                    <li>Australia</li>
-                    <li>Europe</li>
-                </ul>
-            </div>
-
-            <!-- Services -->
-            <div>
-                <h3 class="text-lg font-semibold text-blue-400">Services for Students</h3>
-                <ul class="mt-2 space-y-2 text-gray-400">
-                    <li>Test Preparation</li>
-                    <li>Visa Processing</li>
-                    <li>Education Loan</li>
-                    <li>Internships</li>
-                </ul>
-            </div>
-
-            <!-- Company -->
-            <div>
-                <h3 class="text-lg font-semibold text-blue-400">Company</h3>
-                <ul class="mt-2 space-y-2 text-gray-400">
-                    <li>About Us</li>
-                    <li>Careers <span class="text-blue-400 text-xs bg-blue-600 px-2 py-1 rounded">WE'RE HIRING!</span></li>
-                    <li>Blog</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Social Links & Copyright -->
-        <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400">
-           
-            <div class="flex justify-center space-x-6 mt-6">
-                <a href="#" class="text-gray-400">Terms & Conditions</a>
-                <a href="#" class="text-gray-400">Privacy Policy</a>
-                <a href="#" class="text-gray-400">Payment Terms</a>
-            </div>
-
-            <p class="mt-4">&copy; KC Overseas Education 2004-2025</p>
+            <a href="#" class="text-red-500 mb-10 font-medium mt-6 inline-block">More Universities →</a>
         </div>
     </div>
-</footer>
+
+    <!--Footer-->
+    <footer class="flex justify-center bg-[#0B1320] text-white pt-16 pb-8">
 
 
- 
+
+        <div class=" w-full 2xl:w-[1600px] px-6">
+            <h2 class="text-center text-lg font-semibold mb-6">Stay updated with KC Overseas</h2>
+
+            <!-- Subscription Form -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <input type="email" placeholder="Email ID"
+                    class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+                <select
+                    class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+                    <option selected disabled>I'm Interested in</option>
+                    <option>Student</option>
+                    <option>Institute</option>
+                    <option>Partners</option>
+                    <opttion>Franchisee</opttion>
+                </select>
+                <button
+                    class="bg-orange-500 hover:bg-orange-600 transition px-6 py-2 rounded-lg font-semibold text-white shadow-md">
+                    Subscribe Now
+                </button>
+            </div>
+
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-400">KC Overseas</h3>
+                    <p class="mt-2 text-gray-400">We are the fastest-growing EdTech brand facilitating international
+                        student recruitment...</p>
+                </div>
+
+                <!-- Study Destinations -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-400">Study Destinations</h3>
+                    <ul class="mt-2 space-y-2 text-gray-400">
+                        <li><a href="./destinationusa.html" /> United States</li>
+                        <li>Canada</li>
+                        <li>United Kingdom</li>
+                        <li>Australia</li>
+                        <li>Europe</li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-400">Services for Students</h3>
+                    <ul class="mt-2 space-y-2 text-gray-400">
+                        <li>Test Preparation</li>
+                        <li>Visa Processing</li>
+                        <li>Education Loan</li>
+                        <li>Internships</li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-400">Company</h3>
+                    <ul class="mt-2 space-y-2 text-gray-400">
+                        <li>About Us</li>
+                        <li>Careers <span class=" text-xs bg-blue-600 px-2 py-1 text-white rounded">WE'RE
+                                HIRING!</span></li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Links & Copyright -->
+            <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400">
+
+                <div class="flex justify-center space-x-6 mt-6">
+                    <a href="#" class="text-gray-400">Terms & Conditions</a>
+                    <a href="#" class="text-gray-400">Privacy Policy</a>
+                    <a href="#" class="text-gray-400">Payment Terms</a>
+                </div>
+
+                <p class="mt-4">&copy; KC Overseas Education 2004-2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>

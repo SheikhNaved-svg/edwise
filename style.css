@@ -11,4 +11,34 @@
 .font-custom {
     font-family: 'CustomFont', sans-serif;
 }
+.navtoggle{
+    background-color: white;
+}
+.listtoggle{
+    color:black;
+}
+.demotoggle{
+    display: flex;
+}
+.menu, .cross {
+    display: inline-block;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
+.cross {
+    display: none;
+}
+
+.crosstoggle {
+    display: inline-block;
+}
+
+.menutoggle {
+    display: none;
+}
+.sidebartoggle{
+    display:flex;
+}
+.sidebarhidden{
+    display:none;
+}
