@@ -25,3 +25,10 @@ hamburger.addEventListener('click', () => {
     sidebar.classList.toggle('sidebartoggle');
 });
 
+
+document.querySelectorAll('.accordion-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.classList.toggle('hidden');
+    });
+});
