@@ -5,59 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study in USA</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
   </head>
   <body class="font-custom">
     <!--navbar-->
-    <div
-      class="w-full flex flex-col items-center bg-[#6C48F0] hover:bg-white fixed top-0 z-20">
-      <nav
-        class="w-full 2xl:w-[1600px] group py-4 px-5 xl:px-10 2xl:px-40 flex items-center justify-between gap-5 font-custom"
-      >
-        <h1 class="font-bold group-hover:text-black text-white text-4xl">
-          NK Global
-        </h1>
-        <ul
-          class="text-white group-hover:text-black gap-3 font-semibold text-[14px] hidden lg:flex"
-        >
-          <li class="flex gap-2 items-start hover:text-[#FF7361]">
-            Study Destinations
-            <img class="w-3" src="./assets/images/downarrow.svg" alt="image" />
-          </li>
-          <li class="flex items-start gap-2 hover:text-[#FF7361]">
-            Services
-            <img class="w-3" src="./assets/images/downarrow.svg" alt="image" />
-          </li>
-          <li class="hover:text-[#FF7361]">Upcoming Events</li>
-          <li class="hover:text-[#FF7361]">Contact Us</li>
-          <li class="flex gap-2 items-start hover:text-[#FF7361]">
-            Company
-            <img class="w-3" src="./assets/images/downarrow.svg" alt="image" />
-          </li>
-        </ul>
+    <div class="w-full navbar  flex flex-col items-center  bg-[#6C48F0]  sticky top-0 z-20">
+        <nav
+            class=" w-full 2xl:w-[1600px] group py-4 px-5  xl:px-10 2xl:px-40  flex items-center justify-between gap-5 font-custom  ">
+            <a href="./index.html" > <h1 class="font-bold  text-white text-4xl">NK Global</h1></a>
+           
+            <ul class="text-white cursor-pointer navlist   gap-3 font-semibold text-[14px] hidden lg:flex">
+                <li class="flex study gap-2    items-start hover:text-[#FF7361]">Study Destinations <img class="w-3 "
+                        src="./assets/images/downarrow.svg" alt='image' />
+                        
+                    </li>
+                <li class="flex items-start gap-2 hover:text-[#FF7361]">Services <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361]">Upcoming Events</li>
+                <li class="hover:text-[#FF7361]">Contact Us</li>
+                <li class="flex gap-2 items-start hover:text-[#FF7361]">Company <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
 
-        <div class="lg:flex gap-2 hidden">
-         
-          <div
-            class="hidden lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2 rounded-xl"
-          >
-            <img src="./assets/images/camera.svg" alt="image" />
-            <h1 class="font-semibold text-[14px] text-[#FF7361]">
-              Book Online Counselling
-            </h1>
-          </div>
+            </ul>
+                 <div class="hidden cursor-pointer lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2  rounded-xl ">
+                    <img src="./assets/images/camera.svg" alt="image" />
+                    <h1 class="font-semibold text-[14px] text-[#FF7361]">Book Online Counselling</h1>
+                </div>
+            
+
+            <!--menu-->
+            <div class="lg:hidden relative hamburger  w-5 h-5">
+            <img class="menu  " src="./assets/images/menu.svg" alt="image" />
+            <img class="absolute top-0 cross w-7 " src="./assets/images/crossicon.svg" alt="crossicon" />
+            </div>
+
+        </nav>
+        <!--sidbar-->
+        <div class="w-full  sidebar hidden lg:hidden border-t border-gray-300 bg-white h-[100vh]  flex-col items-center">
+            
+            <ul class="w-full font-bold cursor-pointer text-xl flex flex-col gap-5 py-14 px-6">
+                <li class="flex studies gap-2 ">
+                    <img src="./assets/images/study.svg" alt="study" class="mr-3" />
+                    Study Destinations 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' />
+                        
+                </li>
+                <li class="flex  gap-2 hover:text-[#FF7361]">
+                    <img src="./assets/images/services.svg" alt="services" class="mr-3" />
+                    Services 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361] flex gap-2 items-center">
+                    <img src="./assets/images/upcomingevents.svg" alt="event" class="mr-3 " />
+                    Upcoming Events
+                </li>
+                <li class="hover:text-[#FF7361] flex gap-2">
+                    <img src="./assets/images/contact.svg" alt="contact"  class="mr-3 "/>
+                    Contact Us</li>
+                <li class="flex gap-2  hover:text-[#FF7361]">
+                    <img src="./assets/images/company.svg" alt="company" class="mr-3" />
+                    Company <img class="w-3"
+                        src="./assets/images/blackarrow.svg" alt='image' /></li>
+
+            </ul>
+            
+            <div class="bg-gradient-to-r from-orange-400 to-red-400 text-white cursor-pointer flex gap-4  items-center justify-center  px-2 py-3 text-xl w-[370px] rounded-xl ">
+               
+                <h1 class="font-semibold text-[14px] text-white">Book  Online Counselling</h1>
+            </div>
+          
+
+
         </div>
 
-        <!--menu-->
-        <img class="lg:hidden" src="./assets/images/menu.svg" alt="image" />
-      </nav>
+        
+        <div class="demo w-full   justify-center px-40 py-7 font-bold border-t border-gray-400 cursor-pointer bg-white hidden absolute top-[100%] z-10">
+            
+            <div class="grid grid-cols-3 gap-5 justify-between w-full 2xl:w-[1500px] px-5 lg:px-10 xl:px-20">
+            <div ><a class=" flex items-center gap-2" href="./destinationusa.html" > <img src="./assets/images/usa.svg" alt="usa"  />USA</a></div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/ireland.svg" alt="usa"  />Ireland</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/europ.svg" alt="usa"  />Europ</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/canada.svg" alt="usa"  />Canada</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/austrailia.svg" alt="austrailia"  />Austrailia</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/asia.svg" alt="aia"  />Asia</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/unitedkingdom.svg" alt="uk"  />United Kingdom</div>
+            <div class=" flex items-center gap-2"><img src="./assets/images/newzealand.svg" alt="usa"  />New Zealand</div>
+            </div>
+        </div>
+    
+       
+        
     </div>
+
+
 <!--hero -->
 <div>
-<div class="w-full h-[300px] mt-[60px] z-[-10] rounded-bl-[100%] rounded-br-[100%] absolute   bg-[#6C48F0]">
+<div class="w-full h-[300px]  z-[-10] rounded-bl-[100%] rounded-br-[100%] absolute   bg-[#6C48F0]">
   </div>
 
-<div class="w-full flex flex-col items-center pt-[80px]">
+<div class="w-full flex flex-col items-center ">
 <div class=" z-10 py-12 text-center w-full 2xl:w-[1600px]">
   <p class="text-white "><span class="opacity-[80%]">Study Destinations •</span> USA</p>
   <h2 class="text-[41px]  text-white mt-2">Study In USA</h2>
@@ -363,65 +409,8 @@
   </div>
 
 </div>
-<!--next-->
-<div class="bg-white flex justify-center  w-full">
+<!--end-->
 
-  <div class="w-full 2xl:w-[1600px] py-12 px-6 lg:px-20 xl:px-40">
-      <h2 class="text-3xl lg:text-[41px] font-semibold text-black mb-8 text-center">Student's Speak</h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Card 1 -->
-          <div class="bg-white p-4 rounded-lg shadow-lg text-left">
-              <div class="relative">
-                  <img src="https://via.placeholder.com/350x200" alt="Rashmi Borah" class="w-full rounded-lg">
-                  <button class="absolute inset-0 flex items-center justify-center">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/YouTube_social_red_circle_%282017%29.svg" 
-                           alt="Play Button" class="w-12">
-                  </button>
-              </div>
-              <p class="font-bold text-gray-800 mt-4">Rashmi Borah</p>
-              <p class="text-sm text-gray-500">Northeastern University, Boston</p>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="bg-white p-4 rounded-lg shadow-lg text-left">
-              <div class="relative">
-                  <img src="https://via.placeholder.com/350x200" alt="Varennyam Joshi" class="w-full rounded-lg">
-                  <button class="absolute inset-0 flex items-center justify-center">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/YouTube_social_red_circle_%282017%29.svg" 
-                           alt="Play Button" class="w-12">
-                  </button>
-              </div>
-              <p class="font-bold text-gray-800 mt-4">Varennyam Joshi</p>
-              <p class="text-sm text-gray-500">University of South Florida, Tampa</p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="bg-white p-4 rounded-lg shadow-lg text-left">
-              <div class="relative">
-                  <img src="https://via.placeholder.com/350x200" alt="Varun Salve" class="w-full rounded-lg">
-                  <button class="absolute inset-0 flex items-center justify-center">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/YouTube_social_red_circle_%282017%29.svg" 
-                           alt="Play Button" class="w-12">
-                  </button>
-              </div>
-              <p class="font-bold text-gray-800 mt-4">Varun Salve</p>
-              <p class="text-sm text-gray-500">Gannon University</p>
-          </div>
-      </div>
-
-      <!-- Slider Controls -->
-      <div class="flex justify-center mt-6">
-          <button class="bg-white p-2 rounded-full shadow-lg mx-2">
-              <span class="text-xl">⬅️</span>
-          </button>
-          <button class="bg-white p-2 rounded-full shadow-lg mx-2">
-              <span class="text-xl">➡️</span>
-          </button>
-      </div>
-  </div>
-
-</div>
 <!--kc updates-->
 <div class="bg-orange-50 flex items-center justify-center  px-6 py-10">
   <div class="2xl:w-[1600px] w-full  text-center">
@@ -511,20 +500,20 @@
   </div>
 </div>
 <!--Accordian-->
-<div class="bg-white flex justify-center py-10 px-6 lg:px-20 xl:px-40 ">
+<div class="bg-gray-100 flex justify-center py-10 px-6 lg:px-20 xl:px-40 ">
 
-  <div class="max-w-3xl mx-auto py-12">
-      <h2 class="text-3xl font-semibold text-center text-gray-900 mb-6">Study in USA FAQ's</h2>
+  <div class="max-w-5xl mx-auto py-10">
+      <h2 class="text-3xl lg:text-[41px] font-semibold text-center text-gray-900 pb-10">Study in USA FAQ's</h2>
 
-      <div class="space-y-4">
+      <div class="flex flex-col gap-7">
           <!-- Accordion Item 1 -->
           <div class="bg-white shadow-md rounded-lg">
               <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
                   Can you work while studying in the United States?
-                  <span class="text-gray-500">▼</span>
+                  <img src="./assets/images/accordian.svg" alt="image" />
               </button>
               <div class="hidden p-4 text-gray-700">
-                  Yes, international students on F-1 visas can work on-campus up to 20 hours per week during academic sessions.
+                As an international student you may work on campus up to 20 hours/week in the first year of study in US and can apply to work off-campus in the subsequent years only with due permission of the International Student Office under CPT or OPT.
               </div>
           </div>
 
@@ -532,10 +521,10 @@
           <div class="bg-white shadow-md rounded-lg">
               <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
                   What are the English Language Proficiency requirements?
-                  <span class="text-gray-500">▼</span>
+                  <img src="./assets/images/accordian.svg" alt="image" />
               </button>
               <div class="hidden p-4 text-gray-700">
-                  Most universities require TOEFL or IELTS scores for non-native English speakers.
+                U.S. universities require an English language proficiency test before admission and the test requirements vary depending on the course you apply for. English Language Ability Tests. The most common tests of English language ability are the Test of English as a Foreign Language (TOEFL), the International English Language Testing System (IELTS), and the Pearson Test of English (PTE).
               </div>
           </div>
 
@@ -543,10 +532,10 @@
           <div class="bg-white shadow-md rounded-lg">
               <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
                   What are the other Standardized Tests for USA?
-                  <span class="text-gray-500">▼</span>
+                  <img src="./assets/images/accordian.svg" alt="image" />
               </button>
               <div class="hidden p-4 text-gray-700">
-                  Common tests include GRE, GMAT, SAT, and ACT, depending on the program.
+                Undergraduate Level Examinations SAT: A standardized test to evaluate the written, verbal and mathematical skills of the applicants. ACT: To test the student's ability in English, Math, Science, Reading and Writing sections. Graduate-Level Examinations GRE: A standardized test of verbal reasoning, quantitative reasoning, and analytical writing for graduate-level study. GMAT: A standardized test for MBA applicants and for business programs that measures basic verbal, mathematical, analytical writing and integrated reasoning skills. MCAT: A standardized examination that assesses problem solving, critical thinking, writing skills, and knowledge of science concepts and principles essential for the study of medicine. LSAT: A standardized test to measure the reading and verbal reasoning skills used by the law schools as an assessment factor for admission. DAT: A test to measure general academic ability, comprehension of scientific information, and perceptual ability, used for admission to Dental schools.
               </div>
           </div>
 
@@ -554,10 +543,10 @@
           <div class="bg-white shadow-md rounded-lg">
               <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
                   What are the popular courses in the USA?
-                  <span class="text-gray-500">▼</span>
+                  <img src="./assets/images/accordian.svg" alt="image" />
               </button>
               <div class="hidden p-4 text-gray-700">
-                  Popular courses include Computer Science, Engineering, Business, and Healthcare.
+                STEM (Sciences, Technology, Engineering and Mathematics) subjects are mostly opted by international as well as domestic students in the USA. However, Psychology, Business Administration, Education, Economics and Political Science are certain other popular courses.
               </div>
           </div>
 
@@ -565,22 +554,25 @@
           <div class="bg-white shadow-md rounded-lg">
               <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
                   Are any scholarships available for international students in USA?
-                  <span class="text-gray-500">▼</span>
+                  <img src="./assets/images/accordian.svg" alt="image" />
               </button>
               <div class="hidden p-4 text-gray-700">
-                  Yes, many universities and organizations offer scholarships based on merit and need.
+                Scholarships and grants are usually awarded to international students in USA on the basis of merit, need or any other exceptional excellence like proficiency in sports, cultural activities or a remarkable contribution in community service. The scholarships are highly competitive. Many American universities also offer grants for foreign students who wish to study at their institution but these vary substantially from university to university. The Standardized Test scores play a vital role in U.S. universities granting scholarships.
               </div>
           </div>
       </div>
+      
+      
+      </div>
   </div>
 </div>
-<!--next-->
-<div class="flex justify-center bg-white py-10">
+<!--help-->
+<div class="flex justify-center w-full bg-white py-20 px-6 lg:px-20 xl:px-40">
 
-  <div class="relative w-[90%] max-w-5xl bg-[#5C3BFE] text-white rounded-lg shadow-lg p-6 flex justify-between items-center">
+  <div class="relative flex flex-col lg:flex-row w-full 2xl:w-[1600px] bg-[#6C48F0] text-white rounded-lg shadow-lg px-6 py-10 gap-5 justify-between items-center">
       <p class="text-lg font-medium">Need guidance? Let us help you.</p>
 
-      <div class="flex gap-4">
+      <div class="flex flex-col md:flex-row gap-4">
           <button class="px-5 py-2 border border-white rounded-md text-white hover:bg-white hover:text-[#5C3BFE] transition">
               Contact Us
           </button>
@@ -589,8 +581,7 @@
           </button>
       </div>
 
-      <!-- Background Text (KC) -->
-      <span class="absolute right-6 text-[100px] text-white opacity-10 font-bold">KC</span>
+     
   </div>
 
 </div>
@@ -599,29 +590,31 @@
 
 
 
-  <div class=" w-full 2xl:w-[1600px] px-6">
+  <div class=" w-full 2xl:w-[1600px] px-6 lg:px-20 flex flex-col items-center">
       <h2 class="text-center text-lg font-semibold mb-6">Stay updated with KC Overseas</h2>
 
       <!-- Subscription Form -->
-      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-          <input type="email" placeholder="Email ID"
+      <form action="" method="POST"
+      class="flex flex-col md:flex-row items-center justify-center gap-4">
+          <input type="email" name="email" placeholder="Email ID"
               class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
           <select
-              class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
-              <option selected disabled>I'm Interested in</option>
+              class="px-4 py-2  w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+              <option selected >I'm Interested in</option>
               <option>Student</option>
               <option>Institute</option>
               <option>Partners</option>
               <opttion>Franchisee</opttion>
           </select>
           <button
+              type="submit"
               class="bg-orange-500 hover:bg-orange-600 transition px-6 py-2 rounded-lg font-semibold text-white shadow-md">
               Subscribe Now
           </button>
-      </div>
+        </form>
 
 
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 justify-center gap-8 text-sm">
           <!-- About -->
           <div>
               <h3 class="text-lg font-semibold text-blue-400">KC Overseas</h3>
@@ -674,9 +667,12 @@
               <a href="#" class="text-gray-400">Payment Terms</a>
           </div>
 
-          <p class="mt-4">&copy; KC Overseas Education 2004-2025</p>
+          <p class="mt-4 one">&copy; KC Overseas Education 2004-2025</p>
       </div>
   </div>
 </footer>
+
+<script src="./script.js" defer></script>
+
 </body>
 </html>

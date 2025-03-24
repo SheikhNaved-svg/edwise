@@ -1,3 +1,7 @@
+
+  
+
+
 const nav=document.querySelector('.navbar')
 const studydestination=document.querySelector('.study');
 const navlist=document.querySelector('.navlist');
@@ -5,6 +9,9 @@ const demo=document.querySelector('.demo')
 const hamburger=document.querySelector('.hamburger')
 const sidebar=document.querySelector('.sidebar');
 const studies=document.querySelector('.studies');
+const fofo=document.querySelector('.fofo');
+
+
 
 studies.addEventListener('click',()=>{
     demo.classList.toggle('demotoggle')
@@ -32,3 +39,8 @@ document.querySelectorAll('.accordion-btn').forEach(button => {
         content.classList.toggle('hidden');
     });
 });
+
+document.querySelector('.one').addEventListener('click',()=>{
+    alert('working')
+})
+
