@@ -1,7 +1,5 @@
 
-  
-
-
+console.log('javascript is loaded')
 const nav=document.querySelector('.navbar')
 const studydestination=document.querySelector('.study');
 const navlist=document.querySelector('.navlist');
@@ -9,15 +7,28 @@ const demo=document.querySelector('.demo')
 const hamburger=document.querySelector('.hamburger')
 const sidebar=document.querySelector('.sidebar');
 const studies=document.querySelector('.studies');
-const fofo=document.querySelector('.fofo');
+
 const servicesList=document.querySelector('.serviceslist');
 const services=document.querySelector('.services')
 
-
-services.addEventListener('click',()=>{
+/*services.addEventListener('click',()=>{
     servicesList.classList.toggle('serviceslisttoggle')
     demo.classList.remove('.demotoggle')
-})
+    navlist.classList.toggle('listtoggle')
+    nav.classList.toggle('navtoggle')
+    alert('working')
+})*/
+if (services && servicesList && demo && navlist && nav) {
+    services.addEventListener('click', () => {
+        servicesList.classList.toggle('serviceslisttoggle');
+        demo.classList.remove('demotoggle'); // ❌ Removed the dot (.)
+        navlist.classList.toggle('listtoggle');
+        nav.classList.toggle('navtoggle');
+        
+    });
+} else {
+    console.warn("Some elements are missing. JavaScript event listener not applied.");
+}
 studies.addEventListener('click',()=>{
     demo.classList.toggle('demotoggle')
     sidebar.classList.toggle('sidebarhidden')
@@ -26,8 +37,9 @@ studies.addEventListener('click',()=>{
 studydestination.addEventListener('click',()=>{
     navlist.classList.toggle('listtoggle')
    nav.classList.toggle('navtoggle')
-   demo.classList.toggle('demotoggle')
    servicesList.classList.remove('serviceslisttoggle')
+   demo.classList.toggle('demotoggle')
+  
     
 })
 
@@ -39,14 +51,9 @@ hamburger.addEventListener('click', () => {
 });
 
 
-document.querySelectorAll('.accordion-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const content = button.nextElementSibling;
-        content.classList.toggle('hidden');
-    });
-});
 
-document.querySelector('.one').addEventListener('click',()=>{
-    alert('working')
-})
+
+
+
+
 
