@@ -42,3 +42,6 @@
 .sidebarhidden{
     display:none;
 }
+.serviceslisttoggle{
+    display:flex;
+}

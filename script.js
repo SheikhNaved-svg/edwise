@@ -10,9 +10,14 @@ const hamburger=document.querySelector('.hamburger')
 const sidebar=document.querySelector('.sidebar');
 const studies=document.querySelector('.studies');
 const fofo=document.querySelector('.fofo');
+const servicesList=document.querySelector('.serviceslist');
+const services=document.querySelector('.services')
 
 
-
+services.addEventListener('click',()=>{
+    servicesList.classList.toggle('serviceslisttoggle')
+    demo.classList.remove('.demotoggle')
+})
 studies.addEventListener('click',()=>{
     demo.classList.toggle('demotoggle')
     sidebar.classList.toggle('sidebarhidden')
@@ -22,6 +27,7 @@ studydestination.addEventListener('click',()=>{
     navlist.classList.toggle('listtoggle')
    nav.classList.toggle('navtoggle')
    demo.classList.toggle('demotoggle')
+   servicesList.classList.remove('serviceslisttoggle')
     
 })
 
