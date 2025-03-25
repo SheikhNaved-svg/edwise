@@ -50,6 +50,33 @@ hamburger.addEventListener('click', () => {
     sidebar.classList.toggle('sidebartoggle');
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const accordions = document.querySelectorAll(".accordion-btn");
+
+    accordions.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector(".accordion-icon");
+
+            // Toggle active state
+            content.classList.toggle("hidden");
+            icon.classList.toggle("rotate-180");
+
+            // Close other open accordions
+            document.querySelectorAll(".accordion-content").forEach((otherContent) => {
+                if (otherContent !== content) {
+                    otherContent.classList.add("hidden");
+                }
+            });
+
+            document.querySelectorAll(".accordion-icon").forEach((otherIcon) => {
+                if (otherIcon !== icon) {
+                    otherIcon.classList.remove("rotate-180");
+                }
+            });
+        });
+    });
+});
 
 
 
