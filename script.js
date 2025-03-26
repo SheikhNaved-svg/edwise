@@ -10,6 +10,16 @@ const studies=document.querySelector('.studies');
 
 const servicesList=document.querySelector('.serviceslist');
 const services=document.querySelector('.services')
+const companybtn=document.querySelector('.companybtn')
+const company=document.querySelector('.company')
+
+companybtn.addEventListener('click',()=>{
+    company.classList.toggle('comp');
+})
+
+
+   
+
 
 /*services.addEventListener('click',()=>{
     servicesList.classList.toggle('serviceslisttoggle')

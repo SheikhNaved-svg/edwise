@@ -21,7 +21,7 @@
                         src="./assets/images/downarrow.svg" alt='image' /></li>
                 <li class="hover:text-[#FF7361]">Upcoming Events</li>
                 <li class="hover:text-[#FF7361]">Contact Us</li>
-                <li class="flex gap-2 items-start hover:text-[#FF7361]">Company <img class="w-3"
+                <li class="flex gap-2 companybtn items-start hover:text-[#FF7361]">Company <img class="w-3"
                         src="./assets/images/downarrow.svg" alt='image' /></li>
 
             </ul>
@@ -56,7 +56,7 @@
                 <li class="hover:text-[#FF7361] flex gap-2">
                     <img src="./assets/images/contact.svg" alt="contact"  class="mr-3 "/>
                     Contact Us</li>
-                <li class="flex gap-2  hover:text-[#FF7361]">
+                <li class="flex gap-2   hover:text-[#FF7361]">
                     <img src="./assets/images/company.svg" alt="company" class="mr-3" />
                     Company <img class="w-3"
                         src="./assets/images/blackarrow.svg" alt='image' /></li>
@@ -81,12 +81,13 @@
         </div>
         <!--services list-->
 <div class="bg-white w-full justify-center serviceslist border-t border-gray-300 cursor-pointer hidden absolute top-[100%] z-10 ">
-    <div class="w-full 2xl:w-[1600px] py-5 px-10  ">       
-     <div class="grid grid-cols-4 grid-rows-4 gap-4 w-full">
+    <div class="w-full 2xl:w-[1600px] py-5 px-10  ">  
+
+     <div class="grid grid-cols-3 grid-rows-4 gap-4 w-full">
     <div class="col-span-3 font-semibold flex gap-5 hover:text-orange-400  "><img src="./assets/images/student.svg" alt="studenticon" /> For Student</div>
     <div class="col-start-1 row-start-2 text-gray-600 hover:text-orange-400 ">Counselling</div>
     <div class="col-start-1 row-start-3 text-gray-600  hover:text-orange-400">Test Preparation</div>
-    <div class="col-start-1 row-start-4 text-gray-600  hover:text-orange-400 ">Country and University Selection</div>
+    <div class="col-start-1 row-start-4 text-gray-600  hover:text-orange-400 flex  ">Country and University Selection</div>
     <div class="col-start-2 row-start-2 text-gray-600 hover:text-orange-400">Application and Addmission</div>
     <div class="col-start-2 row-start-3 text-gray-600 hover:text-orange-400">Scholarship</div>
     <div class="col-start-2 row-start-4 text-gray-600 hover:text-orange-400">Internship</div>
@@ -99,6 +100,21 @@
 </div>
             </div>
         </div>
+
+        <!--company -->
+        <div class="w-full company justify-center bg-white absolute top-[100%] hidden">
+        <div class=" bg-white flex justify-around w-[600px] py-10">
+            <div >
+            <div class="pb-5 flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/staricon.svg" alt="start" /> About Us</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/news.svg" alt="newsicon" /> News And Press</div>
+           
+            </div>
+            <div>
+                <div class="pb-5 flex gap-3 items-center hover:text-orange-400 "><img src="./assets/images/blog.svg" alt="image" /> Blog</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/icon.svg" alt="image" /> Careers <span class="bg-blue-500 ml-2 text-white rounded-sm text-[12px] p-2">WE'RE HIRING</span></div>
+            </div>
+        </div>
+        </div> 
     </div>
     <!--navbar end here-->
     <!--hero section-->
