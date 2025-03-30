@@ -17,6 +17,21 @@ companybtn.addEventListener('click',()=>{
     company.classList.toggle('comp');
 })
 
+document.addEventListener("scroll", ()=>{
+    const div = document.getElementById("myDiv");
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    
+    if (scrollPosition > windowHeight) {
+        setTimeout(() => {
+            div.style.display = "flex";
+        }, 0); // Delay of 2 seconds before showing the div
+    } else {
+        div.style.display = "none";
+    }
+});
+
+
 
    
 
