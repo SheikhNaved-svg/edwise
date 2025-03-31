@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study in USA</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-custom">
+    <!--navbar-->
+    <div class="w-full navbar  flex flex-col items-center  bg-[#6C48F0]  sticky top-0 z-20">
+        <nav
+            class=" w-full 2xl:w-[1600px] group py-4 px-5  xl:px-10 2xl:px-40  flex items-center justify-between gap-5 font-custom  ">
+            <a href="./index.html" > <h1 class="font-bold  text-white text-4xl">NK Global</h1></a>
+            <ul class="text-white cursor-pointer navlist   gap-3 font-semibold text-[14px] hidden lg:flex">
+                <li class="flex study gap-2    items-start hover:text-[#FF7361]">Study Destinations <img class="w-3 " src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="flex items-start gap-2 services hover:text-[#FF7361]">Services <img class="w-3" src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361]">Upcoming Events</li>
+                <li class="hover:text-[#FF7361]">Contact Us</li>
+                <li class="flex gap-2 companybtn items-start hover:text-[#FF7361]">Company <img class="w-3" src="./assets/images/downarrow.svg" alt='image' /></li>
+             </ul>
+                 <div class="hidden cursor-pointer lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2  rounded-xl ">
+                    <img src="./assets/images/camera.svg" alt="image" />
+                    <h1 class="font-semibold text-[14px] text-[#FF7361]">Book Online Counselling</h1>
+                </div>
+            <!--menu-->
+            <div class="lg:hidden relative hamburger  w-5 h-5">
+            <img class="menu  " src="./assets/images/menu.svg" alt="image" />
+            <img class="absolute top-0 cross w-7 " src="./assets/images/crossicon.svg" alt="crossicon" />
+            </div>
+        </nav>
+        <!--sidbar-->
+        <div class="w-full  sidebar hidden lg:hidden border-t border-gray-300 bg-white h-[100vh]  flex-col items-center">
+            <ul class="w-full font-bold cursor-pointer text-xl flex flex-col gap-5 py-14 px-6">
+                <li class="flex studies gap-2 ">
+                    <img src="./assets/images/study.svg" alt="study" class="mr-3" />
+                    Study Destinations 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' />      
+                </li>
+                <li class="flex  gap-2 hover:text-[#FF7361]">
+                    <img src="./assets/images/services.svg" alt="services" class="mr-3" />
+                    Services 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361] flex gap-2 items-center">
+                    <img src="./assets/images/upcomingevents.svg" alt="event" class="mr-3 " />
+                    Upcoming Events
+                </li>
+                <li class="hover:text-[#FF7361] flex gap-2">
+                    <img src="./assets/images/contact.svg" alt="contact"  class="mr-3 "/>
+                    Contact Us</li>
+                <li class="flex gap-2  hover:text-[#FF7361]">
+                    <img src="./assets/images/company.svg" alt="company" class="mr-3" />
+                    Company <img class="w-3"
+                        src="./assets/images/blackarrow.svg" alt='image' /></li>
+            </ul>
+            <div class="bg-gradient-to-r from-orange-400 to-red-400 text-white cursor-pointer flex gap-4  items-center justify-center  px-2 py-3 text-xl w-[370px] rounded-xl ">
+                <h1 class="font-semibold text-[14px] text-white">Book  Online Counselling</h1>
+            </div>
+        </div>
+        <!--study destination country list-->
+        <div class="demo w-full   justify-center px-40 py-7 font-bold border-t border-gray-400 cursor-pointer bg-white hidden absolute top-[100%] z-10">
+            <div class="grid grid-cols-3 gap-5 justify-between w-full 2xl:w-[1500px] px-5 lg:px-10 xl:px-20">
+            <a class="hover:text-orange-400 flex items-center gap-2" href="./usa.html" > <img src="./assets/images/usa.svg" alt="usa"  />USA</a>
+            <a href="./ireland.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/ireland.svg" alt="usa"  />Ireland</a>
+            <a href="./europe.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/europ.svg" alt="usa"  />Europ</a>
+            <a href="./canada.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/canada.svg" alt="usa"  />Canada</a>
+            <a href="./austrailia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/austrailia.svg" alt="austrailia"  />Austrailia</a>
+            <a href="./asia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/asia.svg" alt="aia"  />Asia</a>
+            <a href="./uk.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/unitedkingdom.svg" alt="uk"  />United Kingdom</a>
+            <a href="./newzealand.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/newzealand.svg" alt="usa"  />New Zealand</a>
+            </div>
+        </div>
+        <!--services list-->
+<div class="bg-white w-full justify-center serviceslist hidden absolute top-[100%] z-10 ">
+    <div class="w-full 2xl:w-[1600px] py-5 px-10  ">       
+     <div class="grid grid-cols-4 grid-rows-4 gap-4 w-full">
+    <div class="col-span-3 font-semibold flex gap-5 hover:text-orange-400  "><img src="./assets/images/student.svg" alt="studenticon" /> For Student</div>
+    <div class="col-start-1 row-start-2 text-gray-600 hover:text-orange-400 ">Counselling</div>
+    <div class="col-start-1 row-start-3 text-gray-600  hover:text-orange-400">Test Preparation</div>
+    <div class="col-start-1 row-start-4 text-gray-600  hover:text-orange-400 ">Country and University Selection</div>
+    <div class="col-start-2 row-start-2 text-gray-600 hover:text-orange-400">Application and Addmission</div>
+    <div class="col-start-2 row-start-3 text-gray-600 hover:text-orange-400">Scholarship</div>
+    <div class="col-start-2 row-start-4 text-gray-600 hover:text-orange-400">Internship</div>
+    <div class="col-start-3 row-start-2 text-gray-600 hover:text-orange-400">Education Loan</div>
+    <div class="col-start-3 row-start-3 text-gray-600 hover:text-orange-400">Visa Processing</div>
+    <div class="col-start-3 row-start-4 text-gray-600 hover:text-orange-400">Allied Services</div>
+    <div class="col-start-4 row-start-1 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/institute.svg" alt="studenticon" />For Institute</div>
+    <div class="col-start-4 row-start-2 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/partners.svg" alt="studenticon" />For Partners</div>
+    <div class="col-start-4 row-start-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/franchisee.svg" alt="studenticon" />For Franchisees</div>
+</div>
+            </div>
+        </div>
+ <!--company -->
+ <div class="w-full company justify-center bg-white absolute top-[100%] hidden">
+    <div class=" bg-white flex justify-around w-[600px] py-10">
+        <div >
+        <div class="pb-5 flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/staricon.svg" alt="start" /> About Us</div>
+        <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/news.svg" alt="newsicon" /> News And Press</div>
+        </div>
+        <div>
+            <div class="pb-5 flex gap-3 items-center hover:text-orange-400 "><img src="./assets/images/blog.svg" alt="image" /> Blog</div>
+        <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/icon.svg" alt="image" /> Careers <span class="bg-blue-500 ml-2 text-white rounded-sm text-[12px] p-2">WE'RE HIRING</span></div>
+        </div>
+    </div>
+    </div> 
+    </div>
+<!--hero -->
+<div>
+<div class="w-full h-[300px]  z-[-10] rounded-bl-[100%] rounded-br-[100%] absolute   bg-[#6C48F0]">
+  </div>
+<div class="w-full flex flex-col items-center ">
+<div class=" z-10 py-12 text-center w-full 2xl:w-[1600px]">
+  <p class="text-white "><span class="opacity-[80%]">Study Destinations • </span> France</p>
+  <h2 class="text-[41px]  text-white mt-2">Study In France</h2>
+  <div class="flex flex-col md:flex-row justify-center items-center gap-6 mt-8">
+      <img src="./assets/images/francepic1.svg" alt="Statue of Liberty" class="w-80 lg:w-96 rounded-lg shadow-lg">
+      <img src="./assets/images/francepic2.svg" alt="New York Skyline" class="hidden md:block w-80 lg:w-96 rounded-lg shadow-lg">
+  </div>
+</div>
+<div class="text-center  py-8 px-4">
+<p class="max-w-3xl mx-auto text-lg leading-relaxed">
+France is home to one of the most prestigious educational systems in the world. No matter what subjects or degrees you wish to pursue, there are plenty of universities and institutions that are a perfect match to your academic pursuits in France.
+</p>
+<button class="mt-6 px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-orange-400 to-red-500 shadow-md">
+    Get Free Expert Assistance
+</button>
+</div>
+</div>
+<hr/>
+</div>
+
+<!--next-->
+<div class="w-full bg-white flex justify-center px-6 lg:px-10 xl:px-20  py-10">
+  <div class="w-full 2xl:w-[1600px]  flex flex-col gap-5 lg:flex-row lg:justify-center">
+      <!--left-->
+      <div class="w-full lg:w-1/2"> 
+        <h2 class="text-[18px] font-semibold mb-5">Why Study in France?</h2>
+        <p>Studying in France comes with a plethora of advantages such as accredited research laboratories, veteran professors committed to help you excel in your academics and institutions of world repute with excellent learning capabilities & infrastructure. Paris, France’s leading education destination is a hub for innovation, tech start-ups and Europe’s savvy entrepreneurs who are leading exciting ventures to tackle world’s biggest challenges. This country also offers an excellent multicultural study experience bringing together students from different parts of the world.
+        </p>
+      </div>
+      <!--right-->
+      <div class="w-full lg:w-1/2">
+        <h2 class="font-semibold text-[18px] mb-5">Quick Facts</h2>
+        <div class="flex items-center space-x-3">
+            <img src="./assets/images/start.svg" alt="Star" class="">
+            <p>64 Nobel Laureates and 15 Fields Medals</p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/start.svg" alt="Star" class="">
+            <p>Post Study Work Visa up to 2 Years (post Masters’ degree)</p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/start.svg" alt="Star" class="">
+            <p>France is home to 3,500 higher education institutions</p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/start.svg" alt="Star" class="">
+            <p>4 French universities in top 100 in the world (QS World Rankings 2024)</p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/start.svg" alt="Star" class="">
+            <p>Affordable tuition fee and living expenses</p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/start.svg" alt="Star" class="">
+            <p></p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/start.svg" alt="Star" class="">
+            <p></p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/start.svg" alt="Star" class="">
+            <p></p>
+        </div>
+        <div class="flex items-center space-x-3">
+            <img src="./assets/images/start.svg" alt="Star" class="">
+              <p></p>
+          </div>
+    </div>
+  </div>
+</div>
+<!--next-->
+<div class="px-6 lg:px-10 xl:px-20 py-10 w-full flex flex-col items-center">
+  <div class="w-full 2xl:w-[1600px]">
+  <h2 class="text-center text-[24px]  font-semibold text-gray-900 mb-10">
+      Cost of Studying in UK
+  </h2>
+  <table class="w-full border  text-gray-900">
+      <thead>
+          <tr class="bg-[#FBBFB6] text-left">
+              <th class="py-3 px-4 font-semibold">Types of Expenses</th>
+              <th class="py-3 px-4 font-semibold text-right">Annual Expenses in USD</th>
+          </tr>
+      </thead>
+      <tbody class="text-gray-800">
+          <tr class="border-t ">
+              <td class="py-2 px-4">Tuition Fees for one-year (Indicative)*</td>
+              <td class="py-2 px-4 text-right">14,000</td>
+          </tr>
+          <tr class="border-t border-gray-300">
+              <td class="py-2 px-4">Living and Accommodation</td>
+              <td class="py-2 px-4 text-right">9207</td>
+          </tr>
+          <tr class="border-t border-gray-300">
+              <td class="py-2 px-4">Airfare from India to USA</td>
+              <td class="py-2 px-4 text-right">490</td>
+          </tr>
+          <tr class="border-t border-gray-300">
+              <td class="py-2 px-4">Visa Fees (Visa & SEVIS)</td>
+              <td class="py-2 px-4 text-right">1164</td>
+          </tr>
+          <tr class="border-t  bg-[#FFDCD8] font-semibold">
+              <td class="py-3 px-4">Total Expenses</td>
+              <td class="py-3 px-4 text-right">24,775</td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+</div>
+
+<!--next-->
+<div class="w-full flex justify-center px-6 lg:px-10 xl:px-20 py-10">
+  <div class="w-full 2xl:w-[1600px] flex flex-col lg:flex-row gap-5">
+    <!--left-->
+    <div class="w-full lg:w-[50%] gap-5 flex flex-col items-center justify-center  lg:flex-row">
+      <img src="./assets/images/ukcareerspic1.svg" alt="image" class="w-[300px] md:w-[400px] lg:w-[220px] xl:w-[300px]" />
+      <img src="./assets/images/ukcareerpic2.svg" alt="image" class="lg:mt-40 w-[300px] md:w-[400px] lg:w-[220px] xl:w-[300px]" />
+    </div>
+    <!--right-->
+    <div class="w-full lg:w-[50%] lg:mt-40 ">
+        <h2 class="font-semibold text-[18px] text-justify mb-2">Careers & Industry Insights</h2>
+        <p>The UK is one of the most globalised economies comprising of England, Scotland, Wales and Northern Ireland and is among the world’s biggest economies. The sectors that dominate UK’s economy include service sector, financial services, higher education, aerospace, pharmaceuticals, manufacturing and production. Best paid jobs in the UK include Information Technology Managers, Engineering Professionals, Business and Financial Management Professionals, Legal Professionals, Aircraft Pilots & Flight Engineers, Higher Education Teaching Professionals and Medical Practitioners.
+        </p>
+    </div>
+
+  </div>
+
+</div>
+<!--top universitie sin uk-->
+<div class="bg-[#DBD9FF] flex justify-center py-10 w-full">
+  <div class="w-full 2xl:w-[1600px] px-6 lg:px-10 xl:px-20 ">
+      <h1 class="text-3xl lg:text-[41px] font-bold text-center mb-10">Popular Universities in UK</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic3.svg" alt="UConn Logo" class="h-12 w-12 mr-4">
+              <p>University of Bristol, Bristol, England</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic4.webp" alt="Johns Hopkins Logo" class="h-12 w-12 mr-4">
+              <p>University of Glasgow, Glasgow, Scotland</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic5.jfif" alt="ASU Logo" class="h-12 w-12 mr-4">
+              <p>University of Southampton, Southampton, England</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic6.svg" alt="UMass Logo" class="h-12 w-12 mr-4">
+              <p>University of Birmingham, Birmingham, England</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic7.svg" alt="UCR Logo" class="h-12 w-12 mr-4">
+              <p>University of Leeds, Leeds, England</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic8.svg" alt="Virginia Tech Logo" class="h-12 w-12 mr-4">
+              <p>Durham University, Durham, England</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic9.svg" alt="USF Logo" class="h-12 w-12 mr-4">
+              <p>The University of Sheffield, Sheffield, England</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic10.svg" alt="Arizona Logo" class="h-12 w-12 mr-4">
+              <p>University of Nottingham, Nottingham, England</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic11.webp" alt="Drexel Logo" class="h-12 w-12 mr-4">
+              <p>Queen Mary University of London, London, England</p>
+          </div>
+          <div class="flex items-center p-4 bg-white rounded-xl shadow-md">
+              <img src="./assets/images/ukpic12.svg" alt="UDel Logo" class="h-12 w-12 mr-4">
+              <p>Newcastle University, Newcastle upon Tyne, England</p>
+          </div>
+      </div>
+      <div class="text-center mt-6">
+          <a href="#" class="text-red-500 font-semibold hover:underline">View More &gt;</a>
+      </div>
+  </div>
+</div>
+<!--Popular course in uk-->
+<div class="w-full flex justify-center">
+  <div class="w-full 2xl:w-[1600px] px-6 lg:px-10 xl:px-20 py-10 flex flex-col lg:flex-row gap-5">
+    <!--left-->
+    <div class="w-full lg:w-1/2 flex justify-center">
+   <img  src="./assets/images/boyreading.svg" alt="image" />
+   </div>
+    <!--right-->
+    <div class="w-full lg:w-1/2 lg:pl-20">
+      <h1 class="text-[28px] mb-5">Popular Courses In UK</h1>
+          <ul class="w-full flex flex-col gap-5">
+                <li class="flex items-center gap-4 p-4 border border-gray-600 rounded-md text-gray-900">
+                  <img src="./assets/images/starttwo.svg" alt="start" /> Art & Design
+                </li>
+                <li class="flex items-center gap-4 p-4 border border-gray-600 rounded-md text-gray-900">
+                    <img src="./assets/images/starttwo.svg" alt="start" /> Business & Management
+                </li>
+                <li class="flex items-center gap-4 p-4 border border-gray-600 rounded-md text-gray-900">
+                  <img src="./assets/images/starttwo.svg" alt="start" /> Engineering & Information Technology
+
+                </li>
+                <li class="flex items-center gap-4 p-4 border border-gray-600 rounded-md text-gray-900">
+                  <img src="./assets/images/starttwo.svg" alt="start" /> Media & Communication
+
+                </li>
+                <li class="flex items-center gap-4 p-4 border border-gray-600 rounded-md text-gray-900">
+                  <img src="./assets/images/starttwo.svg" alt="start" /> Sciences
+                </li>
+           </ul>
+    </div>
+  </div>
+</div>
+<!--important link-->
+<div class="w-full flex justify-center">
+  <div class="w-full 2xl:w-[1600px] px-6 lg:px-10 xl:px-20 py-10 flex flex-col lg:flex-row-reverse gap-5">
+    <!--left-->
+    <div class="w-full lg:w-1/2 flex justify-center">
+   <img  src="./assets/images/implink.svg" alt="image" />
+   </div>
+    <!--right-->
+    <div class="w-full lg:w-1/2 lg:pl-20">
+      <h1 class="text-[28px] mb-5">Important Links</h1>
+      <ul class="flex flex-col gap-5">
+        <li class="flex items-center p-4 border border-gray-600 rounded-md text-gray-900">
+            <span class="text-red-400 mr-3">◆</span>  Masters in UK
+        </li>
+        <li class="flex items-center p-4 border border-gray-600 rounded-md text-gray-900">
+            <span class="text-red-400 mr-3">◆</span>  MBA in UK
+        </li>
+        <li class="flex items-center p-4 border border-gray-600 rounded-md text-gray-900">
+            <span class="text-red-400 mr-3">◆</span>  Scholarships to Study in UK
+            
+        </li>
+        <li class="flex items-center p-4 border border-gray-600 rounded-md text-gray-900">
+            <span class="text-red-400 mr-3">◆</span>  UK Student Visa
+        </li>
+       
+    </ul>
+    </div>
+
+  </div>
+</div>
+<!--testimonials-->
+<div class="bg-[#dbe7ff] flex justify-center w-full">
+
+  <div class="2xl:w-[1600px] w-full  py-12  px-6 lg:px-20 xl:px-40">
+      <h2 class="text-3xl lg:text-[41px] font-semibold text-black mb-8 text-center">Our students love us</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-10">
+          <!-- Card 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-left">
+              <img src="./assets/images/quotation.svg" alt="image" />
+              <p class="text-gray-600 my-4">
+                  It was a game-changing experience in KC. From a student with a vague and confused vision regarding my future plans to enrolling into one of the universities on the west coast...
+              </p>
+              <p class="font-bold text-gray-800">Naman Agrawal</p>
+              <p class="text-sm text-gray-500">MS in Software Engineering</p>
+              <p class="text-sm text-gray-500">San Jose State University, USA</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-left">
+            <img src="./assets/images/quotation.svg" alt="image" />
+              <p class="text-gray-600 my-4">
+                  I joined KC for VISA assistance. The counselors assigned to me were very friendly and guided me well. I had my mock interview two times which boosted my confidence...
+              </p>
+              <p class="font-bold text-gray-800">Christopher Roy</p>
+              <p class="text-sm text-gray-500">MS in Computer Science</p>
+              <p class="text-sm text-gray-500">University of Buffalo</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-left">
+            <img src="./assets/images/quotation.svg" alt="image" />
+              <p class="text-gray-600 my-4">
+                  Thank you, KC, for all the support you have provided right from shortlisting the university to the visa interview preparations. I really admire the attention and support...
+              </p>
+              <p class="font-bold text-gray-800">Mandar Suryawanshi</p>
+              <p class="text-sm text-gray-500">Northeastern University, USA</p>
+          </div>
+      </div>
+  </div>
+
+</div>
+<!--end-->
+
+<!--kc updates-->
+<div class="bg-orange-50 flex items-center justify-center  px-6 py-10">
+  <div class="2xl:w-[1600px] w-full  text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Latest NK Global Updates</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Hiring Card -->
+          <div class="bg-orange-400 p-6 rounded-lg text-left text-white relative flex flex-col justify-between">
+              <h3 class="text-2xl font-bold mb-3">We're Hiring!</h3>
+              <p class="text-lg">Join the fastest growing EdTech brand offering endless learning and growth
+                  opportunities and advance your career with us.</p>
+              <button class="mt-4 bg-white text-orange-600 px-4 py-2 rounded-md font-medium">Apply Now</button>
+          </div>
+
+          <!-- News Card 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-left flex flex-col gap-2 items-center">
+              <img src="./assets/images/pic12.svg" alt="University of Sheffield" class="w-[180px]">
+              <h3 class="text-lg font-semibold text-center">University of Sheffield Announces Engineering
+                  Scholarship for...</h3>
+              <p class="text-gray-600 mt-2 text-center">University of Sheffield offers Engineering Excellence
+                  Scholarships worth up to £3,000 for International...</p>
+              <img src="./assets/images/threestar.svg" alt="star" />
+              <a href="#" class="text-red-500 font-medium mt-4 inline-block">Read More</a>
+          </div>
+
+          <!-- News Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-left flex flex-col gap-2 items-center">
+              <img src="./assets/images/pic13.svg" alt="UK Transnational Education" class="w-[180px]">
+              <h3 class="text-lg font-semibold text-center">UK Transnational Education Attracts Over 606,000
+                  Students Worldwide in 202...</h3>
+              <p class="text-gray-600 mt-2 text-center">UK Transnational Education continues to see robust growth
+                  with 606,485 students from 228 countries...</p>
+              <img src="./assets/images/threestar.svg" alt="star" />
+              <a href="#" class="text-red-500 font-medium mt-4 inline-block">Read More</a>
+          </div>
+      </div>
+
+      <a href="#" class="text-red-500 font-medium mt-6 inline-block">More News →</a>
+  </div>
+</div>
+
+<!--next-->
+<div class=" flex items-center justify-center w-full px-6 lg:px-10 xl:px-20 py-10">
+  <div class="2xl:w-[1600px] w-full ">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Blogs</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Main Featured Blog -->
+          <div class=" rounded-lg shadow-lg">
+              <img src="./assets/images/pic14.svg" alt="Featured Blog" class="w-full ">
+              <div class=" flex flex-col  p-4">
+
+                  <p class="text-sm text-blue-600 font-bold">STUDY ABROAD</p>
+                  <h3 class="text-lg font-semibold">MBA in Netherlands – Top Universities to Choose</h3>
+                  <p class="text-gray-500 text-sm mt-1">Mar 18, 2025</p>
+
+              </div>
+          </div>
+
+          <!-- Other Blogs -->
+          <div class="grid grid-cols-1 gap-6">
+              <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+                  <img src="./assets/images/pic15.svg" alt="Blog 1" class="w-1/3 object-cover">
+                  <div class="p-4">
+                      <p class="text-sm text-blue-600 font-bold">STUDENT TESTIMONIAL</p>
+                      <h3 class="text-lg font-semibold">From Nagpur to Queensland: How KC Made My Study Abroad
+                          Dream Come True</h3>
+                      <p class="text-gray-500 text-sm mt-1">Dec 06, 2024</p>
+                  </div>
+              </div>
+
+              <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+                  <img src="./assets/images/pic16.svg" alt="Blog 2" class="w-1/3 object-cover">
+                  <div class="p-4">
+                      <p class="text-sm text-blue-600 font-bold">COACHING</p>
+                      <h3 class="text-lg font-semibold">GMAT Online Coaching: Benefits, Test Prep, Best Provider &
+                          More</h3>
+                      <p class="text-gray-500 text-sm mt-1">Feb 05, 2025</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="text-center mt-6">
+          <a href="#" class="text-red-500 font-medium">All Blogs →</a>
+      </div>
+  </div>
+</div>
+<!--Accordian-->
+
+<div class="bg-gray-100 flex justify-center py-10 px-6 lg:px-20 xl:px-40">
+    <div class="  py-10">
+        <h2 class="text-3xl lg:text-[41px] font-semibold text-center text-gray-900 pb-10">Study in UK FAQ's</h2>
+        <div class="flex flex-col gap-7">
+            <!-- Accordion Item 1 -->
+            <div class="bg-white shadow-md rounded-lg max-w-xl">
+                <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
+                    What are the popular courses to study in UK?
+                    <img src="./assets/images/accordian.svg" class="accordion-icon transition-transform duration-300" alt="icon" />
+                </button>
+                <div class="hidden p-4 text-gray-700 accordion-content">
+                    UK is the global leader in numerous areas of education like engineering, science, art & design, business & management, law and finance.
+                </div>
+            </div>
+            <!-- Accordion Item 2 -->
+            <div class="bg-white shadow-md rounded-lg max-w-xl">
+                <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
+                    How can we apply for undergraduate or post graduate courses to study in UK?
+                    <img src="./assets/images/accordian.svg" class="accordion-icon transition-transform duration-300" alt="icon" />
+                </button>
+                <div class="hidden p-4 text-gray-700 accordion-content">
+                    You can register and apply for an undergraduate course through UCAS (Universities and Colleges Admissions Service). Postgraduate courses in the UK have their own particular entry requirements and application processes, so it is better to check the individual course websites for the relevant instructions
+                </div>
+            </div>
+            <!-- Accordion Item 3 -->
+            <div class="bg-white shadow-md rounded-lg max-w-xl">
+                <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
+                    Do international students get scholarships in UK?
+                    <img src="./assets/images/accordian.svg" class="accordion-icon transition-transform duration-300" alt="icon" />
+                </button>
+                <div class="hidden p-4 text-gray-700 accordion-content">
+                    Numerous scholarships, bursaries and grant schemes are on offer for international students and depending on your nationality, you may be eligible for a loan or financial support also from the UK government. Many institutions also offer their own financial assistance.
+                </div>
+            </div>
+            <!-- Accordion Item 4 -->
+            <div class="bg-white shadow-md rounded-lg max-w-xl">
+                <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
+                    Can I work in the UK on a study visa?
+                    <img src="./assets/images/accordian.svg" class="accordion-icon transition-transform duration-300" alt="icon" />
+                </button>
+                <div class="hidden p-4 text-gray-700 accordion-content">
+                    You can take a part-time job, work placement or internship alongside your studies in UK and the hours and type of work will depend on the type of visa and your sponsoring university or college.
+                </div>
+            </div>
+            <!-- Accordion Item 5 -->
+            <div class="bg-white shadow-md rounded-lg max-w-xl">
+                <button class="w-full text-left p-4 flex justify-between items-center font-medium text-gray-900 accordion-btn">
+                    What type of accommodation is available for students in UK?
+                    <img src="./assets/images/accordian.svg" class="accordion-icon transition-transform duration-300" alt="icon" />
+                </button>
+                <div class="hidden p-4 text-gray-700 accordion-content">
+                    You can stay in the halls of residence that are on-site or nearby the university or college or rent your own accommodation. You can also opt for a shared living accommodation.
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+<!--help-->
+<div class="flex justify-center w-full bg-white py-20 px-6 lg:px-20 xl:px-40">
+
+  <div class="relative flex flex-col lg:flex-row w-full 2xl:w-[1600px] bg-[#6C48F0] text-white rounded-lg shadow-lg px-6 py-10 gap-5 justify-between items-center">
+      <p class="text-lg font-medium">Need guidance? Let us help you.</p>
+
+      <div class="flex flex-col md:flex-row gap-4">
+          <button class="px-5 py-2 border border-white rounded-md text-white hover:bg-white hover:text-[#5C3BFE] transition">
+              Contact Us
+          </button>
+          <button class="px-5 py-2 bg-gradient-to-r from-orange-400 to-red-500 rounded-md text-white hover:opacity-90 transition">
+              Enquire Now
+          </button>
+      </div>
+
+     
+  </div>
+
+</div>
+<!--footer-->
+<footer class="flex justify-center bg-[#0B1320] text-white pt-16 pb-8">
+
+
+
+  <div class=" w-full 2xl:w-[1600px] px-6 lg:px-20 flex flex-col items-center">
+      <h2 class="text-center text-lg font-semibold mb-6">Stay updated with KC Overseas</h2>
+
+      <!-- Subscription Form -->
+      <form action="" method="POST"
+      class="flex flex-col md:flex-row items-center justify-center gap-4">
+          <input type="email" name="email" placeholder="Email ID"
+              class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+          <select
+              class="px-4 py-2  w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+              <option selected >I'm Interested in</option>
+              <option>Student</option>
+              <option>Institute</option>
+              <option>Partners</option>
+              <opttion>Franchisee</opttion>
+          </select>
+          <button
+              type="submit"
+              class="bg-orange-500 hover:bg-orange-600 transition px-6 py-2 rounded-lg font-semibold text-white shadow-md">
+              Subscribe Now
+          </button>
+        </form>
+
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 justify-center gap-8 text-sm">
+          <!-- About -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">KC Overseas</h3>
+              <p class="mt-2 text-gray-400">We are the fastest-growing EdTech brand facilitating international
+                  student recruitment...</p>
+          </div>
+
+          <!-- Study Destinations -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Study Destinations</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li><a href="./destinationusa.html" /> United States</li>
+                  <li>Canada</li>
+                  <li>United Kingdom</li>
+                  <li>Australia</li>
+                  <li>Europe</li>
+              </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Services for Students</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li>Test Preparation</li>
+                  <li>Visa Processing</li>
+                  <li>Education Loan</li>
+                  <li>Internships</li>
+              </ul>
+          </div>
+
+          <!-- Company -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Company</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li>About Us</li>
+                  <li>Careers <span class=" text-xs bg-blue-600 px-2 py-1 text-white rounded">WE'RE
+                          HIRING!</span></li>
+                  <li>Blog</li>
+                  <li>Contact Us</li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Social Links & Copyright -->
+      <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400">
+
+          <div class="flex justify-center space-x-6 mt-6">
+              <a href="#" class="text-gray-400">Terms & Conditions</a>
+              <a href="#" class="text-gray-400">Privacy Policy</a>
+              <a href="#" class="text-gray-400">Payment Terms</a>
+          </div>
+
+          <p class="mt-4 one">&copy; KC Overseas Education 2004-2025</p>
+      </div>
+  </div>
+</footer>
+
+<script src="./script.js" defer></script>
+
+</body>
+</html>

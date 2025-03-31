@@ -30,7 +30,19 @@ document.addEventListener("scroll", ()=>{
         div.style.display = "none";
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const countryLinks = document.querySelectorAll(".country");
 
+    countryLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            // Remove the orange color from all links
+            countryLinks.forEach(item => item.style.color = "");
+
+            // Set the clicked link color to orange
+            this.style.color = "orange";
+        });
+    });
+});
 
 
    
