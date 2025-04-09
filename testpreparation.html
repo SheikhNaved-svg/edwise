@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Global</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-custom scroll-smooth">
+    <!--navbar-->
+    <div class="w-full navbar  flex flex-col items-center  bg-[#5132C2]  sticky top-0 z-20">
+        <nav
+            class=" w-full 2xl:w-[1600px] group py-4 px-5  xl:px-10 2xl:px-40  flex items-center justify-between gap-5 font-custom  ">
+            <a href="./index.html" > <h1 class="font-bold  text-white text-4xl">NK Global</h1></a>
+           
+            <ul class="text-white cursor-pointer navlist   gap-3 font-semibold text-[14px] hidden lg:flex">
+                <li class="flex study gap-2    items-start hover:text-[#FF7361]">Study Destinations <img class="w-3 "
+                     src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="flex items-start gap-2 services hover:text-[#FF7361]">Services <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361]">Upcoming Events</li>
+                <li class="hover:text-[#FF7361]">Contact Us</li>
+                <li class="flex gap-2 companybtn items-start hover:text-[#FF7361]">Company <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+
+            </ul>
+                 <div class="hidden cursor-pointer lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2  rounded-xl ">
+                    <img src="./assets/images/camera.svg" alt="image" />
+                    <h1 class="font-semibold text-[14px] text-[#FF7361]">Book Online Counselling</h1>
+                </div>
+            <!--menu-->
+            <div class="lg:hidden relative hamburger  w-5 h-5">
+            <img class="menu  " src="./assets/images/menu.svg" alt="image" />
+            <img class="absolute top-0 cross w-7 " src="./assets/images/crossicon.svg" alt="crossicon" />
+            </div>
+        </nav>
+        <!--sidbar-->
+        <div class="w-full  sidebar hidden lg:hidden border-t border-gray-300 bg-white h-[100vh]  flex-col items-center">
+            
+            <ul class="w-full font-bold cursor-pointer text-xl flex flex-col gap-5 py-14 px-6">
+                <li class="flex studies gap-2 ">
+                    <img src="./assets/images/study.svg" alt="study" class="mr-3" />
+                    Study Destinations 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' />
+                        
+                </li>
+                <li class="flex  gap-2 hover:text-[#FF7361]">
+                    <img src="./assets/images/services.svg" alt="services" class="mr-3" />
+                    Services 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361] flex gap-2 items-center">
+                    <img src="./assets/images/upcomingevents.svg" alt="event" class="mr-3 " />
+                    Upcoming Events
+                </li>
+                <li class="hover:text-[#FF7361] flex gap-2">
+                    <img src="./assets/images/contact.svg" alt="contact"  class="mr-3 "/>
+                    Contact Us</li>
+                <li class="flex gap-2   hover:text-[#FF7361]">
+                    <img src="./assets/images/company.svg" alt="company" class="mr-3" />
+                    Company <img class="w-3"
+                        src="./assets/images/blackarrow.svg" alt='image' /></li>
+
+            </ul>
+            <div class="bg-gradient-to-r from-orange-400 to-red-400 text-white cursor-pointer flex gap-4  items-center justify-center  px-2 py-3 text-xl w-[370px] rounded-xl ">
+                <h1 class="font-semibold text-[14px] text-white">Book  Online Counselling</h1>
+            </div>
+        </div>
+        <!--study destination country list-->
+        <div class="demo w-full h-screen lg:h-auto   justify-center px-40 py-7 font-bold border-t border-gray-400  bg-white hidden absolute top-[100%] z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5   lg:justify-between w-full 2xl:w-[1500px] px-5 lg:px-10 xl:px-20">
+            <a class="hover:text-orange-400 flex items-center  gap-2" href="./usa.html" > <img src="./assets/images/usa.svg" alt="usa"  />USA</a>
+            <a href="./ireland.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/ireland.svg" alt="usa"  />Ireland</a>
+            <a href="./europe.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/europ.svg" alt="usa"  />Europ</a>
+            <a href="./canada.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/canada.svg" alt="usa"  />Canada</a>
+            <a href="./austrailia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/austrailia.svg" alt="austrailia"  />Austrailia</a>
+            <a href="./asia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/asia.svg" alt="aia"  />Asia</a>
+            <a href="./uk.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/unitedkingdom.svg" alt="uk"  />United Kingdom</a>
+            <a href="./newzealand.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/newzealand.svg" alt="usa"  />New Zealand</a>
+            </div>
+        </div>
+        <!--services list-->
+<div class="bg-white w-full justify-center serviceslist border-t border-gray-300 cursor-pointer hidden absolute top-[100%] z-10 ">
+    <div class="w-full 2xl:w-[1600px] py-5 px-10  ">  
+
+     <div class="grid grid-cols-3 grid-rows-4 gap-4 w-full">
+    <a href="./forstudent.html" class="col-span-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/student.svg" alt="studenticon" /> For Student</a>
+    <div class="col-start-1 row-start-2 text-gray-600 hover:text-orange-400 ">Counselling</div>
+    <div class="col-start-1 row-start-3 text-gray-600  hover:text-orange-400">Test Preparation</div>
+    <div class="col-start-1 row-start-4 text-gray-600  hover:text-orange-400 flex  ">Country and University Selection</div>
+    <div class="col-start-2 row-start-2 text-gray-600 hover:text-orange-400">Application and Addmission</div>
+    <div class="col-start-2 row-start-3 text-gray-600 hover:text-orange-400">Scholarship</div>
+    <div class="col-start-2 row-start-4 text-gray-600 hover:text-orange-400">Internship</div>
+    <div class="col-start-3 row-start-2 text-gray-600 hover:text-orange-400">Education Loan</div>
+    <div class="col-start-3 row-start-3 text-gray-600 hover:text-orange-400">Visa Processing</div>
+    <div class="col-start-3 row-start-4 text-gray-600 hover:text-orange-400">Allied Services</div>
+    <div class="col-start-4 row-start-1 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/institute.svg" alt="studenticon" />For Institute</div>
+    <div class="col-start-4 row-start-2 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/partners.svg" alt="studenticon" />For Partners</div>
+    <div class="col-start-4 row-start-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/franchisee.svg" alt="studenticon" />For Franchisees</div>
+</div>
+            </div>
+        </div>
+
+        <!--company -->
+        <div class="w-full company justify-center bg-white border-t border-gray-300 absolute top-[100%] hidden">
+        <div class=" bg-white flex justify-around w-[600px] py-10">
+            <div >
+            <div class="pb-5 flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/staricon.svg" alt="start" /> About Us</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/news.svg" alt="newsicon" /> News And Press</div>
+           
+            </div>
+            <div>
+                <div class="pb-5 flex gap-3 items-center hover:text-orange-400 "><img src="./assets/images/blog.svg" alt="image" /> Blog</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/icon.svg" alt="image" /> Careers <span class="bg-blue-500 ml-2 text-white rounded-sm text-[12px] p-2">WE'RE HIRING</span></div>
+            </div>
+        </div>
+        </div> 
+
+    </div>
+    <!--hero-->
+    <div class="bg-[#5132C2] flex items-center justify-center py-10 px-6 lg:px-10">
+        <div class="container  max-w-7xl text-white flex flex-col md:flex-row items-center">
+            <!-- Left Content -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <nav class="text-sm text-gray-300 mb-2">
+                    <span class="text-gray-400">Home</span> • <span class="font-semibold text-white">Test Preparation</span>
+                </nav>
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
+                    KC Academy the smartest way to reach your top test score
+                </h1>
+                <p class="text-gray-300 mb-6">
+                    We are the test prep partner you are looking for. Experience the most seamless test prep techniques with KC Academy and reach the test scores you need to land in your dream university.
+                </p>
+                <button class="bg-orange-400 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-orange-500 transition">
+                    Book Free Demo Class
+                </button>
+            </div>
+            <!-- Right Image -->
+            <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+                <img src="./assets/images/testpreparationgirl.svg" alt="Student Studying" class="">
+            </div>
+        </div>
+    </div>
+    <!--upcomming batches-->
+    <div class="bg-gray-100 flex items-center justify-center ">
+        <div class="w-full max-w-7xl p-6">
+            <h2 class="text-3xl font-bold text-center mb-6">Upcoming Batches</h2>
+            <div class="relative">
+                <div class="flex space-x-4 overflow-x-auto scrollbar-hide">
+                    <!-- Batch Card 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md min-w-[300px] flex-shrink-0">
+                        <img src="https://via.placeholder.com/50" alt="SAT" class="mx-auto mb-3">
+                        <h3 class="text-lg font-semibold text-center">SAT</h3>
+                        <p class="text-gray-600 text-center">Live Batch</p>
+                        <p class="text-sm text-gray-500 text-center">Date: 03 Apr 2025</p>
+                        <p class="text-sm text-gray-500 text-center">Time: 6:00 pm - 7:30 pm</p>
+                        <p class="text-sm text-gray-500 text-center">Duration: 1.5 months</p>
+                        <p class="text-sm text-gray-500 text-center">Batch: Online</p>
+                        <a href="#" class="text-red-500 block text-center mt-2">View More →</a>
+                        <button class="bg-orange-500 text-white w-full py-2 rounded mt-3">Enroll Now</button>
+                    </div>
+                    
+                    <!-- Batch Card 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md min-w-[300px] flex-shrink-0">
+                        <img src="https://via.placeholder.com/50" alt="Duolingo" class="mx-auto mb-3">
+                        <h3 class="text-lg font-semibold text-center">Duolingo English Test</h3>
+                        <p class="text-gray-600 text-center">Live Batch</p>
+                        <p class="text-sm text-gray-500 text-center">Date: 04 Apr 2025</p>
+                        <p class="text-sm text-gray-500 text-center">Time: 7:00 am - 8:30 am</p>
+                        <p class="text-sm text-gray-500 text-center">Duration: 12 Classes</p>
+                        <p class="text-sm text-gray-500 text-center">Batch: Online</p>
+                        <a href="#" class="text-red-500 block text-center mt-2">View More →</a>
+                        <button class="bg-orange-500 text-white w-full py-2 rounded mt-3">Enroll Now</button>
+                    </div>
+                    
+                    <!-- Batch Card 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md min-w-[300px] flex-shrink-0">
+                        <img src="https://via.placeholder.com/50" alt="SAT" class="mx-auto mb-3">
+                        <h3 class="text-lg font-semibold text-center">SAT</h3>
+                        <p class="text-gray-600 text-center">In-Class Batch (IT Park)</p>
+                        <p class="text-sm text-gray-500 text-center">Date: 04 Apr 2025</p>
+                        <p class="text-sm text-gray-500 text-center">Time: 4:00 pm - 5:30 pm</p>
+                        <p class="text-sm text-gray-500 text-center">Duration: 1.5 months</p>
+                        <p class="text-sm text-gray-500 text-center">Batch: Offline</p>
+                        <a href="#" class="text-red-500 block text-center mt-2">View More →</a>
+                        <button class="bg-orange-500 text-white w-full py-2 rounded mt-3">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    </body>

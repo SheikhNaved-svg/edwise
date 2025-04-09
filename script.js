@@ -15,6 +15,8 @@ const company=document.querySelector('.company')
 
 companybtn.addEventListener('click',()=>{
     company.classList.toggle('comp');
+    navlist.classList.toggle('listtoggle')
+    nav.classList.toggle('navtoggle')
 })
 
 document.addEventListener("scroll", ()=>{
@@ -116,6 +118,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+   
 
 
 
