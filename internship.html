@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Global</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-custom scroll-smooth">
+    <!--navbar-->
+    <div class="w-full navbar  flex flex-col items-center  bg-[#6C48F0]  sticky top-0 z-20">
+        <nav
+            class=" w-full 2xl:w-[1600px] group py-4 px-5  xl:px-10 2xl:px-40  flex items-center justify-between gap-5 font-custom  ">
+            <a href="./index.html" > <h1 class="font-bold  text-white text-4xl">NK Global</h1></a>
+           
+            <ul class="text-white cursor-pointer navlist   gap-3 font-semibold text-[14px] hidden lg:flex">
+                <li class="flex study gap-2    items-start hover:text-[#FF7361]">Study Destinations <img class="w-3 "
+                     src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="flex items-start gap-2 services hover:text-[#FF7361]">Services <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361]">Upcoming Events</li>
+                <li class="hover:text-[#FF7361]">Contact Us</li>
+                <li class="flex gap-2 companybtn items-start hover:text-[#FF7361]">Company <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+
+            </ul>
+                 <div class="hidden cursor-pointer lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2  rounded-xl ">
+                    <img src="./assets/images/camera.svg" alt="image" />
+                    <h1 class="font-semibold text-[14px] text-[#FF7361]">Book Online Counselling</h1>
+                </div>
+            <!--menu-->
+            <div class="lg:hidden relative hamburger  w-5 h-5">
+            <img class="menu  " src="./assets/images/menu.svg" alt="image" />
+            <img class="absolute top-0 cross w-7 " src="./assets/images/crossicon.svg" alt="crossicon" />
+            </div>
+        </nav>
+        <!--sidbar-->
+        <div class="w-full  sidebar hidden lg:hidden border-t border-gray-300 bg-white h-[100vh]  flex-col items-center">
+            
+            <ul class="w-full font-bold cursor-pointer text-xl flex flex-col gap-5 py-14 px-6">
+                <li class="flex studies gap-2 ">
+                    <img src="./assets/images/study.svg" alt="study" class="mr-3" />
+                    Study Destinations 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' />
+                        
+                </li>
+                <li class="flex  gap-2 hover:text-[#FF7361]">
+                    <img src="./assets/images/services.svg" alt="services" class="mr-3" />
+                    Services 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361] flex gap-2 items-center">
+                    <img src="./assets/images/upcomingevents.svg" alt="event" class="mr-3 " />
+                    Upcoming Events
+                </li>
+                <li class="hover:text-[#FF7361] flex gap-2">
+                    <img src="./assets/images/contact.svg" alt="contact"  class="mr-3 "/>
+                    Contact Us</li>
+                <li class="flex gap-2   hover:text-[#FF7361]">
+                    <img src="./assets/images/company.svg" alt="company" class="mr-3" />
+                    Company <img class="w-3"
+                        src="./assets/images/blackarrow.svg" alt='image' /></li>
+
+            </ul>
+            <div class="bg-gradient-to-r from-orange-400 to-red-400 text-white cursor-pointer flex gap-4  items-center justify-center  px-2 py-3 text-xl w-[370px] rounded-xl ">
+                <h1 class="font-semibold text-[14px] text-white">Book  Online Counselling</h1>
+            </div>
+        </div>
+        <!--study destination country list-->
+        <div class="demo w-full h-screen lg:h-auto   justify-center px-40 py-7 font-bold border-t border-gray-400  bg-white hidden absolute top-[100%] z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5   lg:justify-between w-full 2xl:w-[1500px] px-5 lg:px-10 xl:px-20">
+            <a class="hover:text-orange-400 flex items-center  gap-2" href="./usa.html" > <img src="./assets/images/usa.svg" alt="usa"  />USA</a>
+            <a href="./ireland.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/ireland.svg" alt="usa"  />Ireland</a>
+            <a href="./europe.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/europ.svg" alt="usa"  />Europ</a>
+            <a href="./canada.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/canada.svg" alt="usa"  />Canada</a>
+            <a href="./austrailia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/austrailia.svg" alt="austrailia"  />Austrailia</a>
+            <a href="./asia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/asia.svg" alt="aia"  />Asia</a>
+            <a href="./uk.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/unitedkingdom.svg" alt="uk"  />United Kingdom</a>
+            <a href="./newzealand.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/newzealand.svg" alt="usa"  />New Zealand</a>
+            </div>
+        </div>
+        <!--services list-->
+<div class="bg-white w-full justify-center serviceslist border-t border-gray-300  hidden absolute top-[100%] z-10 ">
+    <div class="w-full 2xl:w-[1600px] py-5 px-10  ">  
+
+     <div class="grid grid-cols-3 grid-rows-4 gap-4 w-full">
+        <a href="./forstudent.html" class="col-span-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/student.svg" alt="studenticon" /> For Student</a>
+        <a href="./forstudent.html" class="col-start-1 row-start-2 text-gray-600 hover:text-orange-400 ">Counselling</a>
+        <a href="./testpreparation.html" class="col-start-1 row-start-3 text-gray-600  hover:text-orange-400">Test Preparation</a>
+    <a href="./universities.html" class="col-start-1 row-start-4 text-gray-600  hover:text-orange-400 flex  ">Country and University Selection</a>
+    <div class="col-start-2 row-start-2 text-gray-600 hover:text-orange-400">Application and Addmission</div>
+    <div class="col-start-2 row-start-3 text-gray-600 hover:text-orange-400">Scholarship</div>
+    <div class="col-start-2 row-start-4 text-gray-600 hover:text-orange-400">Internship</div>
+    <div class="col-start-3 row-start-2 text-gray-600 hover:text-orange-400">Education Loan</div>
+    <div class="col-start-3 row-start-3 text-gray-600 hover:text-orange-400">Visa Processing</div>
+    <div class="col-start-3 row-start-4 text-gray-600 hover:text-orange-400">Allied Services</div>
+    <div class="col-start-4 row-start-1 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/institute.svg" alt="studenticon" />For Institute</div>
+    <div class="col-start-4 row-start-2 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/partners.svg" alt="studenticon" />For Partners</div>
+    <div class="col-start-4 row-start-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/franchisee.svg" alt="studenticon" />For Franchisees</div>
+</div>
+            </div>
+        </div>
+
+        <!--company -->
+        <div class="w-full company justify-center bg-white border-t border-gray-300 absolute top-[100%] hidden">
+        <div class=" bg-white flex justify-around w-[600px] py-10">
+            <div >
+            <div class="pb-5 flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/staricon.svg" alt="start" /> About Us</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/news.svg" alt="newsicon" /> News And Press</div>
+           
+            </div>
+            <div>
+                <div class="pb-5 flex gap-3 items-center hover:text-orange-400 "><img src="./assets/images/blog.svg" alt="image" /> Blog</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/icon.svg" alt="image" /> Careers <span class="bg-blue-500 ml-2 text-white rounded-sm text-[12px] p-2">WE'RE HIRING</span></div>
+            </div>
+        </div>
+        </div> 
+    </div>
+    <!--navbar end here-->
+    <!--hero-->
+    <div class="bg-white">
+
+        <!-- Hero Section -->
+        <section class="bg-[#6C48F0]  text-white pt-16 pb-40 px-4 relative overflow-hidden">
+          <!-- Breadcrumb -->
+          <div class="text-sm text-center mb-4">
+            <span class="opacity-70">Home</span> • <span class="font-medium">Internships</span>
+          </div>
+      
+          <!-- Heading -->
+          <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">Earn, Learn & Get Hired!</h1>
+      
+          <!-- Subheading -->
+          <p class="text-center text-lg opacity-90 max-w-2xl mx-auto mb-8 px-2">
+            Learn real world skills, develop a professional network, stand out from the rest,
+            and make your resume look more impressive for your future employers.
+          </p>
+      
+          <!-- CTA Button -->
+          <div class="text-center">
+            <a href="#" class="bg-orange-400 hover:bg-orange-500 text-white font-medium px-6 py-3 rounded-md shadow-md transition">
+              Get Free Expert Assistance
+            </a>
+          </div>
+        </section>
+      
+        <!-- Overlapping Images -->
+        <section class="relative z-10 -mt-32 px-6">
+          <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-center items-start gap-6">
+            <img src="./assets/images/Internships_Page_1_68969535ff (1).png" alt="student 1"
+              class="rounded-xl shadow-lg w-full sm:w-1/3 object-cover h-[300px]" />
+            <img src="./assets/images/Internships_Page_2_802c201fd8.png" alt="student 2"
+              class="rounded-xl shadow-lg w-full sm:w-1/3 object-cover h-[300px]" />
+           
+          </div>
+        </section>
+      
+    </div>
+    <!--next-->
+    <div class="bg-white text-gray-800">
+
+        <section class="max-w-7xl mx-auto px-6 py-16">
+          
+          <!-- Centered Heading -->
+          <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-2">
+              Programs Powered by Internships to Make you
+            </h2>
+            <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 italic">
+              ‘Future-Ready’
+            </h3>
+          </div>
+      
+          <!-- Flex Container for Image and Content -->
+          <div class="flex flex-col lg:flex-row items-center gap-10">
+            
+            <!-- Left Image -->
+            <div class="flex-shrink-0 w-full lg:w-1/2">
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Students" class="rounded-xl shadow-lg w-full h-auto" />
+            </div>
+      
+            <!-- Right Content -->
+            <div class="w-full lg:w-1/2">
+              <!-- Paragraph -->
+              <p class="text-gray-600 mb-6 text-sm sm:text-base leading-relaxed">
+                In today’s hypercompetitive world, where employers prefer graduates with experience,
+                your internship can be the determining factor to get you hired over your peers.
+                Thus, choosing to study a program with an inbuilt internship could be your smartest decision
+                to boost your future employment opportunities. Study in our represented global universities
+                that offer programs with inbuilt internships and graduate with skills that top global employers are looking for.
+              </p>
+      
+              <!-- Bullet Points -->
+              <ul class="space-y-4 text-sm sm:text-base">
+                <li class="flex items-start gap-3">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-6 h-6" alt="Check icon" />
+                  <span class="text-blue-900">Full-Time and Part-Time Internships</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-6 h-6" alt="Check icon" />
+                  <span class="text-blue-900">Paid and Unpaid Internships</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-6 h-6" alt="Check icon" />
+                  <span class="text-blue-900">Graduate Teaching Assistantships</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-6 h-6" alt="Check icon" />
+                  <span class="text-blue-900">Semester Internships & Co-op Programs</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      
+    </div>
+    <!--next-->
+
+    <div class="bg-[#e5e1ff]">
+
+        <section class="max-w-7xl mx-auto px-6 py-20">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Left column -->
+            <div class="space-y-6">
+              <!-- Step 1 -->
+              <div class="flex items-center gap-4">
+                <div class="bg-[#d3ccef] text-black font-bold w-10 h-10 rounded-full flex items-center justify-center">1</div>
+                <div class="bg-white rounded-lg shadow px-6 py-4 w-full">
+                  <h3 class="font-semibold text-lg">Counselling</h3>
+                  <p class="text-gray-600 text-sm">Plan your Academic and Career Goals</p>
+                </div>
+              </div>
+      
+              <!-- Step 2 -->
+              <div class="flex items-center gap-4">
+                <div class="bg-[#d3ccef] text-black font-bold w-10 h-10 rounded-full flex items-center justify-center">2</div>
+                <div class="bg-white rounded-lg shadow px-6 py-4 w-full">
+                  <h3 class="font-semibold text-lg">Test Preparation</h3>
+                  <p class="text-gray-600 text-sm">Appear for Standardized Tests</p>
+                </div>
+              </div>
+      
+              <!-- Step 3 -->
+              <div class="flex items-center gap-4">
+                <div class="bg-[#d3ccef] text-black font-bold w-10 h-10 rounded-full flex items-center justify-center">3</div>
+                <div class="bg-white rounded-lg shadow px-6 py-4 w-full">
+                  <h3 class="font-semibold text-lg">Course, Country & University Selection</h3>
+                  <p class="text-gray-600 text-sm">Select the Country, the Program and the University</p>
+                </div>
+              </div>
+      
+              <!-- Step 4 -->
+              <div class="flex items-center gap-4">
+                <div class="bg-[#d3ccef] text-black font-bold w-10 h-10 rounded-full flex items-center justify-center">4</div>
+                <div class="bg-white rounded-lg shadow px-6 py-4 w-full">
+                  <h3 class="font-semibold text-lg">Application & Admission</h3>
+                  <p class="text-gray-600 text-sm">Apply to your Preferred Universities or Institutions</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Right column -->
+            <div class="space-y-6">
+              <!-- Step 5 -->
+              <div class="flex items-center gap-4">
+                <div class="bg-[#d3ccef] text-black font-bold w-10 h-10 rounded-full flex items-center justify-center">5</div>
+                <div class="bg-white rounded-lg shadow px-6 py-4 w-full">
+                  <h3 class="font-semibold text-lg">Education Loan & Financials</h3>
+                  <p class="text-gray-600 text-sm">Apply for Education Loan and Arrange Requisite Financials</p>
+                </div>
+              </div>
+      
+              <!-- Step 6 -->
+              <div class="flex items-center gap-4">
+                <div class="bg-[#d3ccef] text-black font-bold w-10 h-10 rounded-full flex items-center justify-center">6</div>
+                <div class="bg-white rounded-lg shadow px-6 py-4 w-full">
+                  <h3 class="font-semibold text-lg">Visa Processing</h3>
+                  <p class="text-gray-600 text-sm">Pay your Deposit, Accept your Offer and Apply for Visa</p>
+                </div>
+              </div>
+      
+              <!-- Step 7 -->
+              <div class="flex items-center gap-4">
+                <div class="bg-[#d3ccef] text-black font-bold w-10 h-10 rounded-full flex items-center justify-center">7</div>
+                <div class="bg-white rounded-lg shadow px-6 py-4 w-full">
+                  <h3 class="font-semibold text-lg">Additional Support</h3>
+                  <p class="text-gray-600 text-sm">Attend Pre-Departure Session, Avail Forex & Insurance and Fly Abroad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+    </div>
+    </body>
+    </html>

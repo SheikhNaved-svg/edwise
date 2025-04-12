@@ -1,0 +1,616 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Global</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-custom scroll-smooth">
+    <!--navbar-->
+    <div class="w-full navbar  flex flex-col items-center  bg-[#7C3AED]  sticky top-0 z-20">
+        <nav
+            class=" w-full 2xl:w-[1600px] group py-4 px-5  xl:px-10 2xl:px-40  flex items-center justify-between gap-5 font-custom  ">
+            <a href="./index.html" > <h1 class="font-bold  text-white text-4xl">NK Global</h1></a>
+           
+            <ul class="text-white cursor-pointer navlist   gap-3 font-semibold text-[14px] hidden lg:flex">
+                <li class="flex study gap-2    items-start hover:text-[#FF7361]">Study Destinations <img class="w-3 "
+                     src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="flex items-start gap-2 services hover:text-[#FF7361]">Services <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361]">Upcoming Events</li>
+                <li class="hover:text-[#FF7361]">Contact Us</li>
+                <li class="flex gap-2 companybtn items-start hover:text-[#FF7361]">Company <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+
+            </ul>
+                 <div class="hidden cursor-pointer lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2  rounded-xl ">
+                    <img src="./assets/images/camera.svg" alt="image" />
+                    <h1 class="font-semibold text-[14px] text-[#FF7361]">Book Online Counselling</h1>
+                </div>
+            <!--menu-->
+            <div class="lg:hidden relative hamburger  w-5 h-5">
+            <img class="menu  " src="./assets/images/menu.svg" alt="image" />
+            <img class="absolute top-0 cross w-7 " src="./assets/images/crossicon.svg" alt="crossicon" />
+            </div>
+        </nav>
+        <!--sidbar-->
+        <div class="w-full  sidebar hidden lg:hidden border-t border-gray-300 bg-white h-[100vh]  flex-col items-center">
+            
+            <ul class="w-full font-bold cursor-pointer text-xl flex flex-col gap-5 py-14 px-6">
+                <li class="flex studies gap-2 ">
+                    <img src="./assets/images/study.svg" alt="study" class="mr-3" />
+                    Study Destinations 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' />
+                        
+                </li>
+                <li class="flex  gap-2 hover:text-[#FF7361]">
+                    <img src="./assets/images/services.svg" alt="services" class="mr-3" />
+                    Services 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361] flex gap-2 items-center">
+                    <img src="./assets/images/upcomingevents.svg" alt="event" class="mr-3 " />
+                    Upcoming Events
+                </li>
+                <li class="hover:text-[#FF7361] flex gap-2">
+                    <img src="./assets/images/contact.svg" alt="contact"  class="mr-3 "/>
+                    Contact Us</li>
+                <li class="flex gap-2   hover:text-[#FF7361]">
+                    <img src="./assets/images/company.svg" alt="company" class="mr-3" />
+                    Company <img class="w-3"
+                        src="./assets/images/blackarrow.svg" alt='image' /></li>
+
+            </ul>
+            <div class="bg-gradient-to-r from-orange-400 to-red-400 text-white cursor-pointer flex gap-4  items-center justify-center  px-2 py-3 text-xl w-[370px] rounded-xl ">
+                <h1 class="font-semibold text-[14px] text-white">Book  Online Counselling</h1>
+            </div>
+        </div>
+        <!--study destination country list-->
+        <div class="demo w-full h-screen lg:h-auto   justify-center px-40 py-7 font-bold border-t border-gray-400  bg-white hidden absolute top-[100%] z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5   lg:justify-between w-full 2xl:w-[1500px] px-5 lg:px-10 xl:px-20">
+            <a class="hover:text-orange-400 flex items-center  gap-2" href="./usa.html" > <img src="./assets/images/usa.svg" alt="usa"  />USA</a>
+            <a href="./ireland.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/ireland.svg" alt="usa"  />Ireland</a>
+            <a href="./europe.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/europ.svg" alt="usa"  />Europ</a>
+            <a href="./canada.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/canada.svg" alt="usa"  />Canada</a>
+            <a href="./austrailia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/austrailia.svg" alt="austrailia"  />Austrailia</a>
+            <a href="./asia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/asia.svg" alt="aia"  />Asia</a>
+            <a href="./uk.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/unitedkingdom.svg" alt="uk"  />United Kingdom</a>
+            <a href="./newzealand.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/newzealand.svg" alt="usa"  />New Zealand</a>
+            </div>
+        </div>
+        <!--services list-->
+<div class="bg-white w-full justify-center serviceslist border-t border-gray-300  hidden absolute top-[100%] z-10 ">
+    <div class="w-full 2xl:w-[1600px] py-5 px-10  ">  
+
+     <div class="grid grid-cols-3 grid-rows-4 gap-4 w-full">
+        <a href="./forstudent.html" class="col-span-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/student.svg" alt="studenticon" /> For Student</a>
+        <a href="./forstudent.html" class="col-start-1 row-start-2 text-gray-600 hover:text-orange-400 ">Counselling</a>
+        <a href="./testpreparation.html" class="col-start-1 row-start-3 text-gray-600  hover:text-orange-400">Test Preparation</a>
+    <a href="./universities.html" class="col-start-1 row-start-4 text-gray-600  hover:text-orange-400 flex  ">Country and University Selection</a>
+    <div class="col-start-2 row-start-2 text-gray-600 hover:text-orange-400">Application and Addmission</div>
+    <div class="col-start-2 row-start-3 text-gray-600 hover:text-orange-400">Scholarship</div>
+    <div class="col-start-2 row-start-4 text-gray-600 hover:text-orange-400">Internship</div>
+    <div class="col-start-3 row-start-2 text-gray-600 hover:text-orange-400">Education Loan</div>
+    <div class="col-start-3 row-start-3 text-gray-600 hover:text-orange-400">Visa Processing</div>
+    <div class="col-start-3 row-start-4 text-gray-600 hover:text-orange-400">Allied Services</div>
+    <div class="col-start-4 row-start-1 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/institute.svg" alt="studenticon" />For Institute</div>
+    <div class="col-start-4 row-start-2 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/partners.svg" alt="studenticon" />For Partners</div>
+    <div class="col-start-4 row-start-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/franchisee.svg" alt="studenticon" />For Franchisees</div>
+</div>
+            </div>
+        </div>
+
+        <!--company -->
+        <div class="w-full company justify-center bg-white border-t border-gray-300 absolute top-[100%] hidden">
+        <div class=" bg-white flex justify-around w-[600px] py-10">
+            <div >
+            <div class="pb-5 flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/staricon.svg" alt="start" /> About Us</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/news.svg" alt="newsicon" /> News And Press</div>
+           
+            </div>
+            <div>
+                <div class="pb-5 flex gap-3 items-center hover:text-orange-400 "><img src="./assets/images/blog.svg" alt="image" /> Blog</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/icon.svg" alt="image" /> Careers <span class="bg-blue-500 ml-2 text-white rounded-sm text-[12px] p-2">WE'RE HIRING</span></div>
+            </div>
+        </div>
+        </div> 
+    </div>
+    <!--navbar end here-->
+    <!--hero-->
+    <div class="bg-white">
+
+        <!-- Header Section -->
+        <div class="bg-[#7C3AED] text-white text-center py-20 px-4 relative">
+          <div class="max-w-4xl mx-auto">
+            <p class="text-sm opacity-80 mb-2">Home • Scholarships</p>
+            <h1 class="text-3xl md:text-4xl font-semibold">Top global scholarships for you</h1>
+          </div>
+          <!-- Optional floating stars or icons can go here -->
+        </div>
+      
+        <!-- Image Section -->
+        <div class="max-w-7xl mx-auto px-4 lg:px-20 py-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Image 1 -->
+          <div>
+            <img 
+              src="./assets/images/schlashipt1.svg" 
+              alt="Graduates throwing hats" 
+              class="rounded-xl object-cover w-full h-full max-h-[300px]"
+            />
+          </div>
+      
+          <!-- Image 2 -->
+          <div>
+            <img 
+              src="./assets/images/schlashipt2.svg" 
+              alt="Graduate holding diploma" 
+              class="rounded-xl object-cover w-full h-full max-h-[300px]"
+            />
+          </div>
+        </div>
+      
+    </div>
+
+    <!--enquire now-->
+    <div class="bg-white text-[#0F172A]">
+
+        <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 ">
+      
+          <!-- Left Text Section -->
+          <div>
+            <p class="text-sm md:text-base leading-relaxed text-gray-700">
+              Our global universities have plenty of scholarships, grants & bursaries on offer for ambitious and aspiring international students like you. We will help you identify the ones that match your profile the best and receive the ones you deserve the most.
+            </p>
+          </div>
+      
+          <!-- Right Offerings Section -->
+          <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-lg font-semibold mb-4">Offerings</h3>
+      
+            <ul class="space-y-4 text-sm md:text-base">
+              <li class="flex items-center gap-3">
+                <img src="./assets/images/start.svg" alt="icon" class="" />
+                <span>Alerts on latest and high value scholarships</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <img src="./assets/images/start.svg" alt="icon" />
+                <span>Guidance on ‘how’ to apply for scholarships</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <img src="./assets/images/start.svg" alt="icon"  />
+                <span>Assistance for scholarship essays</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <img src="./assets/images/start.svg" alt="icon"  />
+                <span>Merit-based, country-based and faculty-based scholarships</span>
+              </li>
+            </ul>
+      
+            <!-- Enquire Button -->
+            <div class="mt-6">
+              <button class="bg-gradient-to-r from-orange-400 to-pink-500 text-white px-6 py-2 rounded-md shadow-md hover:opacity-90 transition">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <!--explore scholarship opportunity-->
+    <div class="bg-[#e0d9ff] font-sans">
+        <div class="max-w-4xl mx-auto py-10 px-4">
+          <h1 class="text-2xl lg:text-[41px] font-bold text-center mb-8">Explore Scholarships opportunities</h1>
+      
+          <div class="space-y-10">
+            <!-- USA -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <img src="./assets/images/statue.svg" alt="USA" class="w-full md:w-1/2 h-64 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" class="w-6 h-4 mr-2" />
+                  <h2 class="font-semibold text-lg">Scholarship to Study in USA</h2>
+                </div>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  <li>Financial aid and need based scholarships for UG students</li>
+                  <li>Research, Teaching & Graduate assistantships for PG students</li>
+                  <li>Scholarships based on need, merit, or excellence</li>
+                  <li>Extracurricular activities may help scholarship prospects</li>
+                </ul>
+                <div class="mt-4 space-x-2">
+                  <button class="bg-orange-400 text-white px-4 py-1 rounded">Enquire Now</button>
+                  <button class="text-orange-500 font-medium text-sm">Know More →</button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Canada -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <img src="./assets/images/kenneda.svg" alt="Canada" class="w-full md:w-1/2 h-64 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" class="w-6 h-4 mr-2" />
+                  <h2 class="font-semibold text-lg">Scholarship to Study in Canada</h2>
+                </div>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  <li>Academic excellence-based scholarships</li>
+                  <li>No separate scholarship application needed</li>
+                  <li>Renewable entrance scholarships</li>
+                  <li>Comprehensive Ph.D. scholarships</li>
+                </ul>
+                <div class="mt-4 space-x-2">
+                  <button class="bg-orange-400 text-white px-4 py-1 rounded">Enquire Now</button>
+                  <button class="text-orange-500 font-medium text-sm">Know More →</button>
+                </div>
+              </div>
+            </div>
+      
+           <!-- UK -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+        <img src="./assets/images/uk.svg" alt="UK" class="w-full md:w-1/2 h-64 object-cover">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" class="w-6 h-4 mr-2" />
+            <h2 class="font-semibold text-lg">Scholarship to Study in UK</h2>
+          </div>
+          <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+            <li>100+ scholarships for all levels</li>
+            <li>Fully funded PhD options</li>
+            <li>Accommodation-inclusive scholarships for undergrads</li>
+            <li>Most universities offer tuition fee waivers</li>
+          </ul>
+          <div class="mt-4 space-x-2">
+            <button class="bg-orange-400 text-white px-4 py-1 rounded">Enquire Now</button>
+            <button class="text-orange-500 font-medium text-sm">Know More →</button>
+          </div>
+        </div>
+      </div>
+
+            <!-- Ireland -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <img src="./assets/images/ire.svg" alt="Ireland" class="w-full md:w-1/2 h-64 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg" class="w-6 h-4 mr-2" />
+                  <h2 class="font-semibold text-lg">Scholarship to Study in Ireland</h2>
+                </div>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  <li>100+ international student scholarships</li>
+                  <li>Merit-based grants from €1,000 to 100% waiver</li>
+                  <li>Separate scholarships for sports and excellence</li>
+                  <li>Scholarships for all education levels</li>
+                </ul>
+                <div class="mt-4 space-x-2">
+                  <button class="bg-orange-400 text-white px-4 py-1 rounded">Enquire Now</button>
+                  <button class="text-orange-500 font-medium text-sm">Know More →</button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Australia -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <img src="./assets/images/australia.svg" alt="Australia" class="w-full md:w-1/2 h-64 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg" class="w-6 h-4 mr-2" />
+                  <h2 class="font-semibold text-lg">Scholarship to Study in Australia</h2>
+                </div>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  <li>3,000+ scholarships available</li>
+                  <li>Tuition & health expenses covered</li>
+                  <li>Govt. allocates over AUD 300M to scholarships</li>
+                  <li>Monthly PhD stipend of AUD 2,000+</li>
+                </ul>
+                <div class="mt-4 space-x-2">
+                  <button class="bg-orange-400 text-white px-4 py-1 rounded">Enquire Now</button>
+                  <button class="text-orange-500 font-medium text-sm">Know More →</button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- New Zealand -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <img src="./assets/images/newze.svg" alt="New Zealand" class="w-full md:w-1/2 h-64 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg" class="w-6 h-4 mr-2" />
+                  <h2 class="font-semibold text-lg">Scholarship to Study in New Zealand</h2>
+                </div>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  <li>100+ scholarships available</li>
+                  <li>NZ $10,000+ scholarship options</li>
+                  <li>Simple application process</li>
+                  <li>Living expense stipend offered</li>
+                </ul>
+                <div class="mt-4 space-x-2">
+                  <button class="bg-orange-400 text-white px-4 py-1 rounded">Enquire Now</button>
+                  <button class="text-orange-500 font-medium text-sm">Know More →</button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Europe -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <img src="./assets/images/euro.jpg" alt="Europe" class="w-full md:w-1/2 h-64 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="w-6 h-4 mr-2" />
+                  <h2 class="font-semibold text-lg">Scholarship to Study in Europe</h2>
+                </div>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  <li>Erasmus+, DAAD, other EU programs</li>
+                  <li>Need-based, merit-based or field-specific scholarships</li>
+                  <li>Focus areas: STEM, arts, business</li>
+                </ul>
+                <div class="mt-4 space-x-2">
+                  <button class="bg-orange-400 text-white px-4 py-1 rounded">Enquire Now</button>
+                  <button class="text-orange-500 font-medium text-sm">Know More →</button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Asia -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <img src="./assets/images/asiaa.jpg" alt="Asia" class="w-full md:w-1/2 h-64 object-cover">
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Asia_flag.svg" class="w-6 h-4 mr-2" />
+                  <h2 class="font-semibold text-lg">Scholarship to Study in Asia</h2>
+                </div>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  <li>Affordable tuition compared to US/UK</li>
+                  <li>Campuses of top Western universities</li>
+                  <li>Top Asian universities ranked globally</li>
+                  <li>Growing job sectors in tech, finance, and logistics</li>
+                </ul>
+                <div class="mt-4 space-x-2">
+                  <button class="bg-orange-400 text-white px-4 py-1 rounded">Enquire Now</button>
+                  <button class="text-orange-500 font-medium text-sm">Know More →</button>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+    </div>
+
+    <!--faq-->
+    <div class="bg-[#f1f0fa] flex items-center justify-center min-h-screen px-4">
+        <div class="w-full max-w-3xl">
+          <h1 class="text-3xl md:text-4xl font-bold text-center text-[#0a1b3c] mb-10">
+            Study Abroad Scholarships FAQ's
+          </h1>
+    
+          <div class="space-y-4" id="accordion">
+            <!-- Accordion Item -->
+            <div class="bg-white rounded-lg shadow">
+              <button
+                class="w-full flex justify-between items-center p-5 font-semibold focus:outline-none"
+                data-accordion-button
+              >
+                What types of scholarships are available for international students?
+                <svg class="accordion-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="px-5 pb-4 hidden" data-accordion-content>
+                <p class="text-sm text-gray-600">
+                  Scholarships include merit-based, need-based, government-funded, university-specific, and private scholarships.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Repeat -->
+            <div class="bg-white rounded-lg shadow">
+              <button
+                class="w-full flex justify-between items-center p-5 font-semibold focus:outline-none"
+                data-accordion-button
+              >
+                How can I apply for scholarships to study abroad?
+                <svg class="accordion-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="px-5 pb-4 hidden" data-accordion-content>
+                <p class="text-sm text-gray-600">
+                  You can apply through scholarship portals, university websites, or by contacting embassies and organizations offering aid.
+                </p>
+              </div>
+            </div>
+    
+            <div class="bg-white rounded-lg shadow">
+              <button
+                class="w-full flex justify-between items-center p-5 font-semibold focus:outline-none"
+                data-accordion-button
+              >
+                What documents are required for study abroad scholarship applications?
+                <svg class="accordion-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="px-5 pb-4 hidden" data-accordion-content>
+                <p class="text-sm text-gray-600">
+                  Common documents include academic transcripts, recommendation letters, personal statement, passport copy, and proof of language proficiency.
+                </p>
+              </div>
+            </div>
+    
+            <div class="bg-white rounded-lg shadow">
+              <button
+                class="w-full flex justify-between items-center p-5 font-semibold focus:outline-none"
+                data-accordion-button
+              >
+                Are there scholarships specifically for undergraduate or postgraduate students?
+                <svg class="accordion-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="px-5 pb-4 hidden" data-accordion-content>
+                <p class="text-sm text-gray-600">
+                  Yes, many scholarships are tailored specifically for undergraduates, postgraduates, or research students depending on the program.
+                </p>
+              </div>
+            </div>
+    
+            <div class="bg-white rounded-lg shadow">
+              <button
+                class="w-full flex justify-between items-center p-5 font-semibold focus:outline-none"
+                data-accordion-button
+              >
+                Can I get a scholarship if I don’t have high academic scores?
+                <svg class="accordion-icon w-5 h-5 text-gray-500" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="px-5 pb-4 hidden" data-accordion-content>
+                <p class="text-sm text-gray-600">
+                  Yes, some scholarships consider leadership, volunteering, talents, or financial need, not just academic scores.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- View More -->
+          <div class="mt-6 text-center">
+            <a href="#" class="text-[#f75555] font-medium inline-flex items-center hover:underline">
+              View More
+              <svg
+                class="ml-2 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+    
+       
+    </div>
+     <!--help-->
+     <div class=" flex items-center justify-center py-20 ">
+
+        <div class="bg-[#6C4CF1] text-white rounded-2xl shadow-xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-4 w-full max-w-5xl relative overflow-hidden">
+          <!-- Optional background image watermark -->
+          <div class="absolute right-0 bottom-0 opacity-10 text-[10rem] font-bold -z-0 pointer-events-none pr-4">
+            NK
+          </div>
+      
+          <!-- Text -->
+          <p class="text-xl font-medium z-10">Need guidance? Let us help you.</p>
+      
+          <!-- Buttons -->
+          <div class="flex gap-4 z-10">
+            <button class="px-5 py-2 border border-white text-white rounded-lg hover:bg-white hover:text-[#6C4CF1] transition">Contact Us</button>
+            <button class="px-5 py-2 rounded-lg text-white bg-gradient-to-r from-orange-400 to-pink-500 hover:opacity-90 transition">Enquire Now</button>
+          </div>
+        </div>
+      
+      </div>
+      <footer class="flex justify-center bg-[#0B1320] text-white pt-16 pb-8">
+        <div class=" w-full 2xl:w-[1600px] px-6 lg:px-20 flex flex-col items-center">
+            <h2 class="text-center text-lg font-semibold mb-6">Stay updated with KC Overseas</h2>
+            <!-- Subscription Form -->
+            <form action="" method="POST"
+            class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <input type="email" name="email" placeholder="Email ID"
+                    class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+                <select
+                    class="px-4 py-2  w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+                    <option selected >I'm Interested in</option>
+                    <option>Student</option>
+                    <option>Institute</option>
+                    <option>Partners</option>
+                    <option>Franchisee</option>
+                </select>
+                <button
+                    type="submit"
+                    class="bg-orange-500 hover:bg-orange-600 transition px-6 py-2 rounded-lg font-semibold text-white shadow-md">
+                    Subscribe Now
+                </button>
+              </form>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 justify-center gap-8 text-sm">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-400">KC Overseas</h3>
+                    <p class="mt-2 text-gray-400">We are the fastest-growing EdTech brand facilitating international
+                        student recruitment...</p>
+                </div>
+                <!-- Study Destinations -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-400">Study Destinations</h3>
+                    <ul class="mt-2 space-y-2 text-gray-400">
+                        <li><a href="./destinationusa.html" /> United States</li>
+                        <li>Canada</li>
+                        <li>United Kingdom</li>
+                        <li>Australia</li>
+                        <li>Europe</li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-400">Services for Students</h3>
+                    <ul class="mt-2 space-y-2 text-gray-400">
+                        <li>Test Preparation</li>
+                        <li>Visa Processing</li>
+                        <li>Education Loan</li>
+                        <li>Internships</li>
+                    </ul>
+                </div>
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-400">Company</h3>
+                    <ul class="mt-2 space-y-2 text-gray-400">
+                        <li>About Us</li>
+                        <li>Careers <span class=" text-xs bg-blue-600 px-2 py-1 text-white rounded">WE'RE
+                                HIRING!</span></li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+      
+            <!-- Social Links & Copyright -->
+            <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400">
+      
+                <div class="flex justify-center space-x-6 mt-6">
+                    <a href="#" class="text-gray-400">Terms & Conditions</a>
+                    <a href="#" class="text-gray-400">Privacy Policy</a>
+                    <a href="#" class="text-gray-400">Payment Terms</a>
+                </div>
+      
+                <p class="mt-4 one">&copy; KC Overseas Education 2004-2025</p>
+            </div>
+        </div>
+      </footer>
+    <script >
+         const buttons = document.querySelectorAll('[data-accordion-button]');
+
+buttons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.accordion-icon');
+
+    const isOpen = !content.classList.contains('hidden');
+
+    // Close all
+    document.querySelectorAll('[data-accordion-content]').forEach((el) => el.classList.add('hidden'));
+    document.querySelectorAll('.accordion-icon').forEach((ic) => ic.classList.remove('rotate'));
+
+    if (!isOpen) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate');
+    }
+  });
+});
+
+    </script>
+    </body>
+    </html>

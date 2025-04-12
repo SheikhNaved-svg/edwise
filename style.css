@@ -48,3 +48,10 @@
 .comp{
     display:flex;
 }
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+  }
+  .accordion-icon.rotate {
+    transform: rotate(180deg);
+  }

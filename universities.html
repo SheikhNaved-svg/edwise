@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Global</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const universities = [
+          { name: "Uppsala University, Uppsala", url: "www.uu.se/en" ,img:"./assets/images/University_of_Dubrovnik_Dubrovni_39395f75ec.png" },
+          { name: "University of Padua, Padua", url: "www.unipd.it/en", img:"./assets/images/padua.svg" },
+          { name: "University of Dubrovnik, Dubrovnik", url: "https://www.unidu.hr/" },
+          { name: "Modul University, Vienna", url: "www.modul.ac.at" },
+          { name: "University of Birmingham, Dubai Campus", url: "www.birmingham.ac.uk/dubai/index.aspx" },
+          { name: "National University of Singapore (SCALE and ISS courses)", url: "www.nus.edu.sg/" },
+          { name: "INSEEC Business School, Paris", url: "https://www.inseec.com/en/" },
+          { name: "University of Zurich, Zürich (Only PG)", url: "https://www.uzh.ch/cmsssl/en.html" },
+          { name: "University of Nicosia, Nicosia", url: "www.unic.ac.cy" },
+          { name: "University of Ecology and Management in Warsaw, Warsaw", url: "https://wseiz.pl/en/" },
+          { name: "National Research Nuclear University (MEPhI), Moscow", url: "https://mephi.ru/" },
+          { name: "University of Alberta, Edmonton, Alberta(Only UG)", url: "https://www.ualberta.ca/en/index.html" },
+          { name: "International College of Liberal Arts, Kofu", url: "https://www.icla.ygu.ac.jp/en/" },
+          { name: "Aalto University, Espoo", url: "www.aalto.fi/en" },
+          { name: "University of Connecticut, Storrs, Connecticut (Public Ivy)", url: "uconn.edu" },
+          { name: "Constructor University", url: "www.jacobs-university.de" },
+          { name: "University of Antwerp, Antwerp", url: "https://www.uantwerpen.be/en/" },
+          { name: "George Mason University, Korea Campus", url: "https://masonkorea.gmu.edu/" },
+          { name: "International University of Monaco, Monaco", url: "https://www.monaco.edu/" },
+          { name: "David Tvildiani Medical University, Tbilisi", url: "https://www.dtmu.ge/" },
+          { name: "Trinity College Dublin, Dublin", url: "www.tcd.ie" },
+          { name: "The University of New South Wales, Sydney", url: "www.unsw.edu.au" },
+          { name: "University of Auckland, Auckland", url: "https://www.auckland.ac.nz/en.html" },
+          { name: "University of Twente, Enschede", url: "www.utwente.nl/en" },
+          { name: "Monash University, Malaysia Campus", url: "www.monash.edu.my" },
+        ];
+  
+        const totalPages = 36;
+        let currentPage = 1;
+  
+        const renderUniversities = () => {
+          const container = document.getElementById("university-list");
+          container.innerHTML = "";
+          universities.forEach((uni) => {
+            container.innerHTML += `
+              <div class="flex justify-between items-center   p-4 rounded bg-white shadow-sm">
+                <div>
+                  <h2 class="font-semibold text-lg">${uni.name}</h2>
+                  <a href="https://${uni.url}" class="text-sm text-blue-500 hover:underline">${uni.url}</a>
+                </div>
+                <img src="${uni.img}" alt="University Logo" class=" w-32 object-contain" />
+              </div>
+            `;
+          });
+        };
+  
+        const renderPagination = () => {
+          const container = document.getElementById("pagination");
+          container.innerHTML = "";
+  
+          const addButton = (label, page, active = false) => {
+            const button = document.createElement("button");
+            button.textContent = label;
+            button.className = `w-8 h-8 rounded-full text-sm border ${
+              active ? 'bg-black text-white font-bold' : 'border-black text-black'
+            }`;
+            button.onclick = () => {
+              currentPage = page;
+              renderUniversities();
+              renderPagination();
+            };
+            container.appendChild(button);
+          };
+  
+          const prev = document.createElement("button");
+          prev.textContent = "←";
+          prev.className = "w-8 h-8 rounded-full border border-black text-black text-sm";
+          prev.onclick = () => {
+            if (currentPage > 1) {
+              currentPage--;
+              renderUniversities();
+              renderPagination();
+            }
+          };
+          container.appendChild(prev);
+  
+          for (let i = 1; i <= totalPages; i++) {
+            if (i === 1 || i === totalPages || Math.abs(i - currentPage) <= 1) {
+              addButton(i, i, i === currentPage);
+            } else if (i === currentPage - 2 || i === currentPage + 2) {
+              const span = document.createElement("span");
+              span.textContent = "...";
+              span.className = "text-black";
+              container.appendChild(span);
+            }
+          }
+  
+          const next = document.createElement("button");
+          next.textContent = "→";
+          next.className = "w-8 h-8 rounded-full border border-black text-black text-sm";
+          next.onclick = () => {
+            if (currentPage < totalPages) {
+              currentPage++;
+              renderUniversities();
+              renderPagination();
+            }
+          };
+          container.appendChild(next);
+        };
+  
+        renderUniversities();
+        renderPagination();
+      });
+    </script>
+</head>
+<body class="font-custom scroll-smooth">
+    <!--navbar-->
+    <div class="w-full navbar  flex flex-col items-center  bg-[#313145]  sticky top-0 z-20">
+        <nav
+            class=" w-full 2xl:w-[1600px] group py-4 px-5  xl:px-10 2xl:px-40  flex items-center justify-between gap-5 font-custom  ">
+            <a href="./index.html" > <h1 class="font-bold  text-white text-4xl">NK Global</h1></a>
+           
+            <ul class="text-white cursor-pointer navlist   gap-3 font-semibold text-[14px] hidden lg:flex">
+                <li class="flex study gap-2    items-start hover:text-[#FF7361]">Study Destinations <img class="w-3 "
+                     src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="flex items-start gap-2 services hover:text-[#FF7361]">Services <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361]">Upcoming Events</li>
+                <li class="hover:text-[#FF7361]">Contact Us</li>
+                <li class="flex gap-2 companybtn items-start hover:text-[#FF7361]">Company <img class="w-3"
+                        src="./assets/images/downarrow.svg" alt='image' /></li>
+
+            </ul>
+                 <div class="hidden cursor-pointer lg:flex gap-2 h-[50px] items-center justify-center bg-white px-2  rounded-xl ">
+                    <img src="./assets/images/camera.svg" alt="image" />
+                    <h1 class="font-semibold text-[14px] text-[#FF7361]">Book Online Counselling</h1>
+                </div>
+            <!--menu-->
+            <div class="lg:hidden relative hamburger  w-5 h-5">
+            <img class="menu  " src="./assets/images/menu.svg" alt="image" />
+            <img class="absolute top-0 cross w-7 " src="./assets/images/crossicon.svg" alt="crossicon" />
+            </div>
+        </nav>
+        <!--sidbar-->
+        <div class="w-full  sidebar hidden lg:hidden border-t border-gray-300 bg-white h-[100vh]  flex-col items-center">
+            
+            <ul class="w-full font-bold cursor-pointer text-xl flex flex-col gap-5 py-14 px-6">
+                <li class="flex studies gap-2 ">
+                    <img src="./assets/images/study.svg" alt="study" class="mr-3" />
+                    Study Destinations 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' />
+                        
+                </li>
+                <li class="flex  gap-2 hover:text-[#FF7361]">
+                    <img src="./assets/images/services.svg" alt="services" class="mr-3" />
+                    Services 
+                    <img class="w-3" src="./assets/images/blackarrow.svg" alt='image' /></li>
+                <li class="hover:text-[#FF7361] flex gap-2 items-center">
+                    <img src="./assets/images/upcomingevents.svg" alt="event" class="mr-3 " />
+                    Upcoming Events
+                </li>
+                <li class="hover:text-[#FF7361] flex gap-2">
+                    <img src="./assets/images/contact.svg" alt="contact"  class="mr-3 "/>
+                    Contact Us</li>
+                <li class="flex gap-2   hover:text-[#FF7361]">
+                    <img src="./assets/images/company.svg" alt="company" class="mr-3" />
+                    Company <img class="w-3"
+                        src="./assets/images/blackarrow.svg" alt='image' /></li>
+
+            </ul>
+            <div class="bg-gradient-to-r from-orange-400 to-red-400 text-white cursor-pointer flex gap-4  items-center justify-center  px-2 py-3 text-xl w-[370px] rounded-xl ">
+                <h1 class="font-semibold text-[14px] text-white">Book  Online Counselling</h1>
+            </div>
+        </div>
+        <!--study destination country list-->
+        <div class="demo w-full h-screen lg:h-auto   justify-center px-40 py-7 font-bold border-t border-gray-400  bg-white hidden absolute top-[100%] z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5   lg:justify-between w-full 2xl:w-[1500px] px-5 lg:px-10 xl:px-20">
+            <a class="hover:text-orange-400 flex items-center  gap-2" href="./usa.html" > <img src="./assets/images/usa.svg" alt="usa"  />USA</a>
+            <a href="./ireland.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/ireland.svg" alt="usa"  />Ireland</a>
+            <a href="./europe.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/europ.svg" alt="usa"  />Europ</a>
+            <a href="./canada.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/canada.svg" alt="usa"  />Canada</a>
+            <a href="./austrailia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/austrailia.svg" alt="austrailia"  />Austrailia</a>
+            <a href="./asia.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/asia.svg" alt="aia"  />Asia</a>
+            <a href="./uk.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/unitedkingdom.svg" alt="uk"  />United Kingdom</a>
+            <a href="./newzealand.html" class="hover:text-orange-400 flex items-center gap-2"><img src="./assets/images/newzealand.svg" alt="usa"  />New Zealand</a>
+            </div>
+        </div>
+        <!--services list-->
+<div class="bg-white w-full justify-center serviceslist border-t border-gray-300  hidden absolute top-[100%] z-10 ">
+    <div class="w-full 2xl:w-[1600px] py-5 px-10  ">  
+
+     <div class="grid grid-cols-3 grid-rows-4 gap-4 w-full">
+        <a href="./forstudent.html" class="col-span-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/student.svg" alt="studenticon" /> For Student</a>
+        <a href="./forstudent.html" class="col-start-1 row-start-2 text-gray-600 hover:text-orange-400 ">Counselling</a>
+        <a href="./testpreparation.html" class="col-start-1 row-start-3 text-gray-600  hover:text-orange-400">Test Preparation</a>
+    <div class="col-start-1 row-start-4 text-gray-600  hover:text-orange-400 flex  ">Country and University Selection</div>
+    <div class="col-start-2 row-start-2 text-gray-600 hover:text-orange-400">Application and Addmission</div>
+    <div class="col-start-2 row-start-3 text-gray-600 hover:text-orange-400">Scholarship</div>
+    <div class="col-start-2 row-start-4 text-gray-600 hover:text-orange-400">Internship</div>
+    <div class="col-start-3 row-start-2 text-gray-600 hover:text-orange-400">Education Loan</div>
+    <div class="col-start-3 row-start-3 text-gray-600 hover:text-orange-400">Visa Processing</div>
+    <div class="col-start-3 row-start-4 text-gray-600 hover:text-orange-400">Allied Services</div>
+    <div class="col-start-4 row-start-1 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/institute.svg" alt="studenticon" />For Institute</div>
+    <div class="col-start-4 row-start-2 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/partners.svg" alt="studenticon" />For Partners</div>
+    <div class="col-start-4 row-start-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/franchisee.svg" alt="studenticon" />For Franchisees</div>
+</div>
+            </div>
+        </div>
+
+        <!--company -->
+        <div class="w-full company justify-center bg-white border-t border-gray-300 absolute top-[100%] hidden">
+        <div class=" bg-white flex justify-around w-[600px] py-10">
+            <div >
+            <div class="pb-5 flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/staricon.svg" alt="start" /> About Us</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/news.svg" alt="newsicon" /> News And Press</div>
+           
+            </div>
+            <div>
+                <div class="pb-5 flex gap-3 items-center hover:text-orange-400 "><img src="./assets/images/blog.svg" alt="image" /> Blog</div>
+            <div class="flex gap-3 items-center hover:text-orange-400"><img src="./assets/images/icon.svg" alt="image" /> Careers <span class="bg-blue-500 ml-2 text-white rounded-sm text-[12px] p-2">WE'RE HIRING</span></div>
+            </div>
+        </div>
+        </div> 
+    </div>
+    <!--navbar end here-->
+    <!--hero-->
+    <div class="flex justify-center bg-[#313145] py-40">
+    <div class=" text-white max-w-7xl  flex items-center justify-center bg-cover bg-center" >
+        <div class="text-center px-4">
+          <nav class="text-sm text-gray-400 mb-2">
+            Home <span class="mx-1">•</span> Universities
+          </nav>
+          <h1 class="text-3xl sm:text-5xl font-bold mb-4">
+            List of Top Universities To Study Abroad
+          </h1>
+          <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+            Choose a university that fuels your passion & purpose and that quenches your academic & career pursuits.
+          </p>
+          <button class="bg-gradient-to-r from-orange-400 to-pink-500 text-white font-semibold py-2 px-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+            Talk to an Expert
+          </button>
+        </div>
+    </div>
+    </div>
+    <div class="w-full flex justify-center py-5">
+    <div class="bg-white p-6 rounded-lg shadow-xl   w-full max-w-lg ">
+        <h2 class="text-center text-lg font-semibold mb-4">Select Country</h2>
+        <form id="searchForm" class="flex gap-4">
+            <select id="countrySelect" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="" selected disabled>All</option>
+                <option value="Austria">Austria</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Italy">Italy</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Norway">Norway</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+            </select>
+           
+        </form>
+    </div>
+    </div>
+   
+    <!--universitei list-->
+    <div class="bg-white text-black font-sans min-h-screen p-4">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-4">
+        <p class="text-sm text-gray-500">Showing Results in All Countries</p>
+        <input type="text" placeholder="Search Universities" class="bg-white border border-black text-black rounded px-3 py-1 w-64">
+      </div>
+    
+      <!-- University Cards -->
+      <div id="university-list" class="space-y-4"></div>
+    
+      <!-- Pagination -->
+      <div id="pagination" class="flex justify-center mt-8 flex-wrap gap-2"></div>
+    </div>
+    <!--help-->
+    <div class=" flex items-center justify-center py-20 ">
+
+      <div class="bg-[#6C4CF1] text-white rounded-2xl shadow-xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-4 w-full max-w-5xl relative overflow-hidden">
+        <!-- Optional background image watermark -->
+        <div class="absolute right-0 bottom-0 opacity-10 text-[10rem] font-bold -z-0 pointer-events-none pr-4">
+          NK
+        </div>
+    
+        <!-- Text -->
+        <p class="text-xl font-medium z-10">Need guidance? Let us help you.</p>
+    
+        <!-- Buttons -->
+        <div class="flex gap-4 z-10">
+          <button class="px-5 py-2 border border-white text-white rounded-lg hover:bg-white hover:text-[#6C4CF1] transition">Contact Us</button>
+          <button class="px-5 py-2 rounded-lg text-white bg-gradient-to-r from-orange-400 to-pink-500 hover:opacity-90 transition">Enquire Now</button>
+        </div>
+      </div>
+    
+    </div>
+<!--faq-->
+<div class="bg-white flex items-center justify-center px-4 lg:px-20 py-12">
+
+  <div class="max-w-7xl w-full">
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-10">
+      Frequently Asked Questions about Study Abroad Universities
+    </h2>
+
+    <!-- FAQ Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Accordion Item -->
+      <div class="bg-white shadow-md rounded-lg p-5">
+        <button class="w-full flex items-center justify-between" onclick="toggleAccordion(this)">
+          <p class="font-semibold text-gray-900 text-left">How do I choose the right university abroad?</p>
+          <span class="text-2xl text-red-400 font-bold toggle-icon">+</span>
+        </button>
+        <div class="mt-3 text-gray-600 hidden toggle-content">
+          Consider your field of interest, university ranking, cost, location, and career opportunities before choosing.
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-5">
+        <button class="w-full flex items-center justify-between" onclick="toggleAccordion(this)">
+          <p class="font-semibold text-gray-900 text-left">What are the top countries for studying abroad?</p>
+          <span class="text-2xl text-red-400 font-bold toggle-icon">+</span>
+        </button>
+        <div class="mt-3 text-gray-600 hidden toggle-content">
+          Popular destinations include the USA, UK, Canada, Australia, and Germany due to their quality education systems.
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-5">
+        <button class="w-full flex items-center justify-between" onclick="toggleAccordion(this)">
+          <p class="font-semibold text-gray-900 text-left">What is the application process for universities abroad?</p>
+          <span class="text-2xl text-red-400 font-bold toggle-icon">+</span>
+        </button>
+        <div class="mt-3 text-gray-600 hidden toggle-content">
+          You generally need to submit an application form, academic transcripts, language test scores, SOP, and letters of recommendation.
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-5">
+        <button class="w-full flex items-center justify-between" onclick="toggleAccordion(this)">
+          <p class="font-semibold text-gray-900 text-left">Are there scholarships available for international students?</p>
+          <span class="text-2xl text-red-400 font-bold toggle-icon">+</span>
+        </button>
+        <div class="mt-3 text-gray-600 hidden toggle-content">
+          Yes, many universities and governments offer scholarships based on merit, need, or program-specific criteria.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ 
+</div>
+<footer class="flex justify-center bg-[#0B1320] text-white pt-16 pb-8">
+  <div class=" w-full 2xl:w-[1600px] px-6 lg:px-20 flex flex-col items-center">
+      <h2 class="text-center text-lg font-semibold mb-6">Stay updated with KC Overseas</h2>
+      <!-- Subscription Form -->
+      <form action="" method="POST"
+      class="flex flex-col md:flex-row items-center justify-center gap-4">
+          <input type="email" name="email" placeholder="Email ID"
+              class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+          <select
+              class="px-4 py-2  w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+              <option selected >I'm Interested in</option>
+              <option>Student</option>
+              <option>Institute</option>
+              <option>Partners</option>
+              <option>Franchisee</option>
+          </select>
+          <button
+              type="submit"
+              class="bg-orange-500 hover:bg-orange-600 transition px-6 py-2 rounded-lg font-semibold text-white shadow-md">
+              Subscribe Now
+          </button>
+        </form>
+  <div class="mt-12 grid grid-cols-1 md:grid-cols-3 justify-center gap-8 text-sm">
+          <!-- About -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">KC Overseas</h3>
+              <p class="mt-2 text-gray-400">We are the fastest-growing EdTech brand facilitating international
+                  student recruitment...</p>
+          </div>
+          <!-- Study Destinations -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Study Destinations</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li><a href="./destinationusa.html" /> United States</li>
+                  <li>Canada</li>
+                  <li>United Kingdom</li>
+                  <li>Australia</li>
+                  <li>Europe</li>
+              </ul>
+          </div>
+          <!-- Services -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Services for Students</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li>Test Preparation</li>
+                  <li>Visa Processing</li>
+                  <li>Education Loan</li>
+                  <li>Internships</li>
+              </ul>
+          </div>
+          <!-- Company -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Company</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li>About Us</li>
+                  <li>Careers <span class=" text-xs bg-blue-600 px-2 py-1 text-white rounded">WE'RE
+                          HIRING!</span></li>
+                  <li>Blog</li>
+                  <li>Contact Us</li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Social Links & Copyright -->
+      <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400">
+
+          <div class="flex justify-center space-x-6 mt-6">
+              <a href="#" class="text-gray-400">Terms & Conditions</a>
+              <a href="#" class="text-gray-400">Privacy Policy</a>
+              <a href="#" class="text-gray-400">Payment Terms</a>
+          </div>
+
+          <p class="mt-4 one">&copy; KC Overseas Education 2004-2025</p>
+      </div>
+  </div>
+</footer>
+    <script src="./script.js" ></script>
+    </body>
+    </html>

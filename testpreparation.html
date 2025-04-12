@@ -6,6 +6,7 @@
     <title>NK Global</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body class="font-custom scroll-smooth">
     <!--navbar-->
@@ -86,7 +87,7 @@
      <div class="grid grid-cols-3 grid-rows-4 gap-4 w-full">
     <a href="./forstudent.html" class="col-span-3 font-semibold flex gap-5 hover:text-orange-400"><img src="./assets/images/student.svg" alt="studenticon" /> For Student</a>
     <div class="col-start-1 row-start-2 text-gray-600 hover:text-orange-400 ">Counselling</div>
-    <div class="col-start-1 row-start-3 text-gray-600  hover:text-orange-400">Test Preparation</div>
+    <div  class="col-start-1 row-start-3 text-gray-600  hover:text-orange-400">Test Preparation</div>
     <div class="col-start-1 row-start-4 text-gray-600  hover:text-orange-400 flex  ">Country and University Selection</div>
     <div class="col-start-2 row-start-2 text-gray-600 hover:text-orange-400">Application and Addmission</div>
     <div class="col-start-2 row-start-3 text-gray-600 hover:text-orange-400">Scholarship</div>
@@ -142,52 +143,806 @@
         </div>
     </div>
     <!--upcomming batches-->
-    <div class="bg-gray-100 flex items-center justify-center ">
-        <div class="w-full max-w-7xl p-6">
-            <h2 class="text-3xl font-bold text-center mb-6">Upcoming Batches</h2>
-            <div class="relative">
-                <div class="flex space-x-4 overflow-x-auto scrollbar-hide">
-                    <!-- Batch Card 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md min-w-[300px] flex-shrink-0">
-                        <img src="https://via.placeholder.com/50" alt="SAT" class="mx-auto mb-3">
-                        <h3 class="text-lg font-semibold text-center">SAT</h3>
-                        <p class="text-gray-600 text-center">Live Batch</p>
-                        <p class="text-sm text-gray-500 text-center">Date: 03 Apr 2025</p>
-                        <p class="text-sm text-gray-500 text-center">Time: 6:00 pm - 7:30 pm</p>
-                        <p class="text-sm text-gray-500 text-center">Duration: 1.5 months</p>
-                        <p class="text-sm text-gray-500 text-center">Batch: Online</p>
-                        <a href="#" class="text-red-500 block text-center mt-2">View More →</a>
-                        <button class="bg-orange-500 text-white w-full py-2 rounded mt-3">Enroll Now</button>
-                    </div>
-                    
-                    <!-- Batch Card 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md min-w-[300px] flex-shrink-0">
-                        <img src="https://via.placeholder.com/50" alt="Duolingo" class="mx-auto mb-3">
-                        <h3 class="text-lg font-semibold text-center">Duolingo English Test</h3>
-                        <p class="text-gray-600 text-center">Live Batch</p>
-                        <p class="text-sm text-gray-500 text-center">Date: 04 Apr 2025</p>
-                        <p class="text-sm text-gray-500 text-center">Time: 7:00 am - 8:30 am</p>
-                        <p class="text-sm text-gray-500 text-center">Duration: 12 Classes</p>
-                        <p class="text-sm text-gray-500 text-center">Batch: Online</p>
-                        <a href="#" class="text-red-500 block text-center mt-2">View More →</a>
-                        <button class="bg-orange-500 text-white w-full py-2 rounded mt-3">Enroll Now</button>
-                    </div>
-                    
-                    <!-- Batch Card 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md min-w-[300px] flex-shrink-0">
-                        <img src="https://via.placeholder.com/50" alt="SAT" class="mx-auto mb-3">
-                        <h3 class="text-lg font-semibold text-center">SAT</h3>
-                        <p class="text-gray-600 text-center">In-Class Batch (IT Park)</p>
-                        <p class="text-sm text-gray-500 text-center">Date: 04 Apr 2025</p>
-                        <p class="text-sm text-gray-500 text-center">Time: 4:00 pm - 5:30 pm</p>
-                        <p class="text-sm text-gray-500 text-center">Duration: 1.5 months</p>
-                        <p class="text-sm text-gray-500 text-center">Batch: Offline</p>
-                        <a href="#" class="text-red-500 block text-center mt-2">View More →</a>
-                        <button class="bg-orange-500 text-white w-full py-2 rounded mt-3">Enroll Now</button>
-                    </div>
-                </div>
+    <div class="bg-gray-100 relative flex flex-col items-center gap-10 py-10 px-5 lg:px-20  justify-center ">
+      <h1 class="text-[36px] lg:text-[41px] font-bold">Upcomming Batches</h1>
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper w-full max-w-7xl">
+        <div class="swiper-wrapper">
+          <!--card1-->
+            <div class="bg-white swiper-slide  shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+              <div class="flex flex-col items-center">
+                <img src="./assets/images/livebatch.svg" alt="SAT" class="h-10 mb-2"/>
+                <h3 class="text-lg text-gray-500 mb-4">Live Batch</h3>
+                <p class="mb-1">Date: 03 Apr 2025</p>
+                <p class="mb-1">Time: 6:00 pm - 7:30 pm</p>
+                <p class="mb-1">Duration: 1.5 months</p>
+                <p class="mb-1">Batch: Online</p>
+              </div>
+              <div class="mt-4 flex flex-col items-center">
+                <a href="#" class="text-orange-500 font-medium text-center inline-flex items-center mb-2">
+                  View More <span class="ml-1">&#8594;</span>
+                </a>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+                  Enroll Now
+                </button>
+              </div>
             </div>
+          
+          <!-- Card 2 -->
+        <div class="bg-white swiper-slide shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+          <div class="flex flex-col items-center">
+            <img src="./assets/images/livebatch2.svg" alt="Duolingo" class="h-10 mb-2"/>
+            <h3 class="text-lg text-gray-500 mb-4">Live Batch</h3>
+            <p class="mb-1">Date: 04 Apr 2025</p>
+            <p class="mb-1">Time: 7:00 am - 8:30 am</p>
+            <p class="mb-1">Duration: 12 Classes</p>
+            <p class="mb-1">Batch: Online</p>
+          </div>
+          <div class="mt-4 flex flex-col items-center">
+            <a href="#" class="text-orange-500 font-medium inline-flex items-center mb-2">
+              View More <span class="ml-1">&#8594;</span>
+            </a>
+            <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+              Enroll Now
+            </button>
+          </div>
         </div>
+
+            <!-- Card 3 -->
+        <div class="swiper-slide bg-white shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+          <div class="flex flex-col items-center">
+            <img src="./assets/images/livebatch3.png" alt="SAT" class="h-10 mb-2"/>
+            <h3 class="text-lg text-gray-500 mb-4">In-Class Batch (IT Park)</h3>
+            <p class="mb-1">Date: 04 Apr 2025</p>
+            <p class="mb-1">Time: 4:00 pm - 5:30 pm</p>
+            <p class="mb-1">Duration: 1.5 months</p>
+            <p class="mb-1">Batch: Offline</p>
+          </div>
+          <div class="mt-4 flex flex-col items-center">
+            <a href="#" class="text-orange-500 font-medium inline-flex items-center mb-2">
+              View More <span class="ml-1">&#8594;</span>
+            </a>
+            <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+              Enroll Now
+            </button>
+          </div>
+        </div>
+
+         <!--card1-->
+         <div class="bg-white swiper-slide  shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+          <div class="flex flex-col items-center">
+            <img src="./assets/images/livebatch.svg" alt="SAT" class="h-10 mb-2"/>
+            <h3 class="text-lg text-gray-500 mb-4">Live Batch</h3>
+            <p class="mb-1">Date: 03 Apr 2025</p>
+            <p class="mb-1">Time: 6:00 pm - 7:30 pm</p>
+            <p class="mb-1">Duration: 1.5 months</p>
+            <p class="mb-1">Batch: Online</p>
+          </div>
+          <div class="mt-4 flex flex-col items-center">
+            <a href="#" class="text-orange-500 font-medium inline-flex items-center mb-2">
+              View More <span class="ml-1">&#8594;</span>
+            </a>
+            <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+              Enroll Now
+            </button>
+          </div>
+        </div>
+      
+      <!-- Card 2 -->
+    <div class="bg-white swiper-slide shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+      <div class="flex flex-col items-center">
+        <img src="./assets/images/livebatch2.svg" alt="Duolingo" class="h-10 mb-2"/>
+        <h3 class="text-lg text-gray-500 mb-4">Live Batch</h3>
+        <p class="mb-1">Date: 04 Apr 2025</p>
+        <p class="mb-1">Time: 7:00 am - 8:30 am</p>
+        <p class="mb-1">Duration: 12 Classes</p>
+        <p class="mb-1">Batch: Online</p>
+      </div>
+      <div class="mt-4 flex flex-col items-center">
+        <a href="#" class="text-orange-500 font-medium inline-flex items-center mb-2">
+          View More <span class="ml-1">&#8594;</span>
+        </a>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+          Enroll Now
+        </button>
+      </div>
     </div>
-   
+
+        <!-- Card 3 -->
+    <div class="swiper-slide bg-white shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+      <div class="flex flex-col items-center">
+        <img src="./assets/images/livebatch3.png" alt="SAT" class="h-10 mb-2"/>
+        <h3 class="text-lg text-gray-500 mb-4">In-Class Batch (IT Park)</h3>
+        <p class="mb-1">Date: 04 Apr 2025</p>
+        <p class="mb-1">Time: 4:00 pm - 5:30 pm</p>
+        <p class="mb-1">Duration: 1.5 months</p>
+        <p class="mb-1">Batch: Offline</p>
+      </div>
+      <div class="mt-4 flex flex-col items-center">
+        <a href="#" class="text-orange-500 font-medium inline-flex items-center mb-2">
+          View More <span class="ml-1">&#8594;</span>
+        </a>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+          Enroll Now
+        </button>
+      </div>
+    </div>
+
+
+     <!--card1-->
+     <div class="bg-white swiper-slide  shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+      <div class="flex flex-col items-center">
+        <img src="./assets/images/livebatch.svg" alt="SAT" class="h-10 mb-2"/>
+        <h3 class="text-lg text-gray-500 mb-4">Live Batch</h3>
+        <p class="mb-1">Date: 03 Apr 2025</p>
+        <p class="mb-1">Time: 6:00 pm - 7:30 pm</p>
+        <p class="mb-1">Duration: 1.5 months</p>
+        <p class="mb-1">Batch: Online</p>
+      </div>
+      <div class="mt-4 flex flex-col items-center">
+        <a href="#" class="text-orange-500 font-medium inline-flex items-center mb-2">
+          View More <span class="ml-1">&#8594;</span>
+        </a>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+          Enroll Now
+        </button>
+      </div>
+    </div>
+  
+  <!-- Card 2 -->
+<div class="bg-white swiper-slide shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+  <div class="flex flex-col items-center">
+    <img src="./assets/images/livebatch2.svg" alt="Duolingo" class="h-10 mb-2"/>
+    <h3 class="text-lg text-gray-500 mb-4">Live Batch</h3>
+    <p class="mb-1">Date: 04 Apr 2025</p>
+    <p class="mb-1">Time: 7:00 am - 8:30 am</p>
+    <p class="mb-1">Duration: 12 Classes</p>
+    <p class="mb-1">Batch: Online</p>
+  </div>
+  <div class="mt-4 flex flex-col items-center">
+    <a href="#" class="text-orange-500 font-medium inline-flex items-center mb-2">
+      View More <span class="ml-1">&#8594;</span>
+    </a>
+    <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+      Enroll Now
+    </button>
+  </div>
+</div>
+
+    <!-- Card 3 -->
+<div class="swiper-slide bg-white shadow-md rounded-xl p-6 pb-10 w-80 flex flex-col justify-between">
+  <div class="flex flex-col items-center">
+    <img src="./assets/images/livebatch3.png" alt="SAT" class="h-10 mb-2"/>
+    <h3 class="text-lg text-gray-500 mb-4">In-Class Batch (IT Park)</h3>
+    <p class="mb-1">Date: 04 Apr 2025</p>
+    <p class="mb-1">Time: 4:00 pm - 5:30 pm</p>
+    <p class="mb-1">Duration: 1.5 months</p>
+    <p class="mb-1">Batch: Offline</p>
+  </div>
+  <div class="mt-4 flex flex-col items-center">
+    <a href="#" class="text-orange-500 font-medium inline-flex items-center mb-2">
+      View More <span class="ml-1">&#8594;</span>
+    </a>
+    <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded w-full">
+      Enroll Now
+    </button>
+  </div>
+</div> 
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-10"></div>
+      </div>
+    </div>
+  
+    <!--next-->
+    <div class="bg-white text-gray-800 font-sans py-10">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">NK Global : The Academy of Top Scorers</h2>
+      
+      <section class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center gap-10">
+        <!-- Left image with rounded background -->
+        <div class="relative w-full md:w-1/2 flex justify-center">
+            <img src="./assets/images/Group_3291_4_e02aa7cffa.png" alt="KC Academy" />
+        </div>
+    
+        <!-- Right content -->
+        <div class="w-full flex flex-col items-center lg:justify-normal md:w-1/2">
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Welcome to NK Group, a group of highly motivated and skilled tutors, who have over two decades of expertise of driving thousands of ambitious test seekers like you to excellence. Our students routinely achieve top test scores, thanks to the exceptional tutoring by our passionate and accomplished faculties and our test prep methodologies that are highly effective, yet are easy, interactive & fun. Enrol with us and get the score you are aiming for, effortlessly.
+          </p>
+    
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2">
+              <img src="./assets/images/tick.svg" alt="Tick" >
+             <span class="pt-2"> Access top quality test-prep material</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <img src="./assets/images/tick.svg" alt="Tick" >
+              <span class="pt-2">Interactive online audio/video content</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <img src="./assets/images/tick.svg" alt="Tick" >
+              <span class="pt-2">Small class sizes – personalized attention</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <img src="./assets/images/tick.svg" alt="Tick" >
+              <span class="pt-2">Rich database of practice questions</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <img src="./assets/images/tick.svg" alt="Tick" >
+             <span class="pt-2"> Mock tests simulating real test environment</span>
+            </li>
+          </ul>
+    
+          <button class="bg-gradient-to-r from-orange-400 to-red-400 hover:from-orange-500 hover:to-red-500 text-white px-6 py-2 rounded w-[200px]">
+            Enroll Now
+          </button>
+        </div>
+      </section>
+    </div>
+    
+<!--next-->
+<div class="bg-orange-50 py-12 px-6 flex justify-center">
+    <div class="max-w-7xl ">
+      <div class=" w-full flex flex-col lg:flex-row gap-7 ">
+        <!--for bachelor-->
+        
+        <div class="flex w-full gap-5 lg:w-1/2 flex-col md:flex-row">
+             <!-- SAT Card -->
+             <div class="bg-white rounded-lg shadow p-6 w-full md:w-1/2">
+              <div class="bg-yellow-300 text-center font-semibold text-sm py-1 rounded">SAT</div>
+              <ul class="mt-4  text-gray-600 text-sm">
+                <li>✦ Offline and Online Coaching</li>
+                <li>✦ Expert Faculty</li>
+                <li>✦ Realistic Mock Tests</li>
+              </ul>
+              <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+              <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+            </div>
+
+         <!-- ACT Card -->
+            <div class="bg-white rounded-lg shadow p-6 w-full  md:w-1/2">
+                <div class="bg-orange-300 text-center font-semibold text-sm py-1 rounded">ACT</div>
+                <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+            <li>✦ On-demand batches</li>
+            <li>✦ One-to-one coaching</li>
+            <li>✦ Realistic Mock Tests</li>
+                 </ul>
+              <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+                <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+             </div>
+          </div>
+        <!--for master-->
+        <div class="flex w-full gap-5 lg:w-1/2 flex-col md:flex-row ">
+           <!-- GRE Card -->
+           <div class="bg-white rounded-lg shadow p-6 w-full md:w-1/2">
+            <div class="bg-pink-200 text-center font-semibold text-sm py-1 rounded">GRE</div>
+            <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+              <li>✦ Offline and Online Coaching</li>
+              <li>✦ Industry leaders as faculty members</li>
+              <li>✦ Realistic Mock Tests</li>
+            </ul>
+            <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+            <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+          </div>
+      
+          <!-- GMAT Card -->
+          <div class="bg-white rounded-lg shadow p-6 w-full md:w-1/2">
+            <div class="bg-red-100 text-center font-semibold text-sm py-1 rounded">GMAT</div>
+            <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+              <li>✦ Offline and Online Coaching</li>
+              <li>✦ Industry leaders as faculty members</li>
+              <li>✦ Realistic Mock Tests</li>
+            </ul>
+            <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+            <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+          </div>
+      
+        </div>
+      
+      </div>
+      <!-- English Proficiency -->
+      <div>
+        <h2 class="text-center text-lg font-semibold text-gray-800 mb-6">English Proficiency</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- IELTS -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <div class="bg-purple-200 text-center font-semibold text-sm py-1 rounded">IELTS</div>
+            <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+              <li>✦ Offline and Online Coaching</li>
+              <li>✦ Certified trainers</li>
+              <li>✦ Personal assessment</li>
+            </ul>
+            <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+            <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+          </div>
+  
+          <!-- PTE -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <div class="bg-purple-300 text-center font-semibold text-sm py-1 rounded">PTE</div>
+            <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+              <li>✦ Offline and Online Coaching</li>
+              <li>✦ Expert Faculty</li>
+              <li>✦ Realistic assessments</li>
+            </ul>
+            <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+            <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+          </div>
+  
+          <!-- TOEFL -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <div class="bg-purple-300 text-center font-semibold text-sm py-1 rounded">TOEFL</div>
+            <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+              <li>✦ Offline and Online Coaching</li>
+              <li>✦ Expert Faculty</li>
+              <li>✦ Personal assessment</li>
+            </ul>
+            <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+            <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+          </div>
+          <!-- Duolingo -->
+          <div class="bg-white rounded-lg shadow p-6">
+            <div class="bg-purple-200 text-center font-semibold text-sm py-1 rounded">Duolingo Test</div>
+            <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+              <li>✦ Offline and Online Coaching</li>
+              <li>✦ Expert Faculty</li>
+              <li>✦ Realistic Practice</li>
+            </ul>
+            <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+            <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- German Language -->
+      <div>
+        <h2 class="text-center text-lg font-semibold text-gray-800 mb-6">German Language</h2>
+        <div class="flex justify-center">
+          <div class="bg-white rounded-lg shadow p-6 w-full max-w-xs">
+            <div class="bg-purple-300 text-center font-semibold text-sm py-1 rounded">
+              Level A1 - German Language
+            </div>
+            <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+              <li>✦ Online Coaching</li>
+              <li>✦ Expert Faculty</li>
+              <li>✦ Personal assessment</li>
+            </ul>
+            <div class="mt-4 text-orange-500 text-sm font-semibold cursor-pointer hover:underline">View More →</div>
+            <button class="mt-2 w-full bg-orange-400 hover:bg-orange-500 text-white py-2 rounded">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+</div>
+<!--expert-->
+
+<div class="bg-white text-gray-800 font-sans">
+
+  <section class="max-w-7xl mx-auto px-4 py-16 text-center">
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">Our Expert Team</h2>
+
+    <!-- Team Members -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Member 1 -->
+      <div>
+        <img src="./assets/images/Leher_Nijon1_enhanced_306a990948.jpg" alt="Leher Nijhon" class="mx-auto w-40 h-40 object-cover rounded-[20px]"/>
+        <h3 class="mt-4 text-lg font-semibold">Leher Nijhon</h3>
+        <p class="text-sm text-gray-600 mt-1">IELTS, TOEFL, PTE, Duolingo,<br>MA in English</p>
+        <p class="text-sm text-gray-500 mt-1">13 Years in the industry</p>
+      </div>
+
+      <!-- Member 2 -->
+      <div>
+        <img src="./assets/images/Harinder_Bhandari_1jpg_enhanced_502f252b11.jpg" alt="Harinder Bhandari" class="mx-auto w-40 h-40 object-cover rounded-[20px]"/>
+        <h3 class="mt-4 text-lg font-semibold">Harinder Bhandari</h3>
+        <p class="text-sm text-gray-600 mt-1">GRE, GMAT, SAT, ACT, MA, MPhil</p>
+        <p class="text-sm text-gray-500 mt-1">30 Years in the industry</p>
+      </div>
+
+      <!-- Member 3 -->
+      <div>
+        <img src="./assets/images/Deepika_Shastri_Pande_1_enhanced_3523d3b28a.jpg" alt="Deepika Shastri Pande" class="mx-auto w-40 h-40 object-cover rounded-[20px]"/>
+        <h3 class="mt-4 text-lg font-semibold">Deepika Shastri Pande</h3>
+        <p class="text-sm text-gray-600 mt-1">
+          IELTS, TOEFL, PTE, Duolingo,<br>GRE, GMAT, SAT, ACT, Master in HR
+        </p>
+        <p class="text-sm text-gray-500 mt-1">12 Years in the industry</p>
+      </div>
+
+      <!-- Member 4 -->
+      <div>
+        <img src="./assets/images/Ranjan_Sir_enhanced_5bb0eb39c0.jpg" alt="Ranjan Deb" class="mx-auto w-40 h-40 object-cover rounded-[20px]"/>
+        <h3 class="mt-4 text-lg font-semibold">Ranjan Deb</h3>
+        <p class="text-sm text-gray-600 mt-1">
+          GRE, GMAT, SAT, ACT, IELTS,<br>TOEFL, PTE, Duolingo, MBA<br>(HR & Marketing)
+        </p>
+        <p class="text-sm text-gray-500 mt-1">30 Years in the industry</p>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+<!--student achivement-->
+<div>
+  
+<!--rough work-->
+
+<div class="bg-white text-gray-800 font-sans">
+
+  <section class="max-w-7xl mx-auto px-4 py-16 text-center relative">
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">Our Students Achievements</h2>
+
+    <!-- Carousel Container -->
+    <div class="flex items-center justify-center gap-6">
+      <!-- Left Arrow -->
+      <button class="w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center">
+        <span class="text-2xl">&larr;</span>
+      </button>
+
+      <!-- Cards Container -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 w-72 relative pt-16">
+          <img src="./assets/images/Om_Patre_eef56c9a35.png" alt="Om Patre" class="w-20 h-20 rounded-full absolute -top-10 left-1/2 transform -translate-x-1/2 shadow-md border-4 border-white"/>
+          <h3 class="mt-4 font-semibold text-blue-600">Om Patre</h3>
+          <p class="text-sm text-gray-700 mt-2">Test Score : <span class="font-medium text-gray-600">GRE - 323/340</span></p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 w-72 relative pt-16">
+          <img src="./assets/images/Aarya_Majumdar_15c064eb54.png" alt="Aarya Majumdar" class="w-20 h-20 rounded-full absolute -top-10 left-1/2 transform -translate-x-1/2 shadow-md border-4 border-white"/>
+          <h3 class="mt-4 font-semibold text-blue-600">Aarya Majumdar</h3>
+          <p class="text-sm text-gray-700 mt-2">Test Score : <span class="font-medium text-gray-600">GRE - 322/340</span></p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 w-72 relative pt-16">
+          <img src="./assets/images/Saket_Koppinidi_e661c7d8da.png" alt="Saket Prasad" class="w-20 h-20 rounded-full absolute -top-10 left-1/2 transform -translate-x-1/2 shadow-md border-4 border-white"/>
+          <h3 class="mt-4 font-semibold text-blue-600">Saket Prasad Koppineedi</h3>
+          <p class="text-sm text-gray-700 mt-2">Test Score : <span class="font-medium text-gray-600">90/90</span></p>
+        </div>
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center">
+        <span class="text-2xl">&rarr;</span>
+      </button>
+    </div>
+
+    <!-- Pagination Dots -->
+    <div class="flex justify-center mt-10 gap-3">
+      <span class="w-3 h-3 bg-gray-900 rounded-full"></span>
+      <span class="w-3 h-3 bg-gray-300 rounded-full"></span>
+      <span class="w-3 h-3 bg-gray-300 rounded-full"></span>
+      <span class="w-3 h-3 bg-gray-300 rounded-full"></span>
+      <span class="w-3 h-3 bg-gray-300 rounded-full"></span>
+    </div>
+  </section>
+
+</div>
+<!--top country-->
+<div class="bg-white text-gray-800 font-sans">
+
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+      
+      <!-- Left Content -->
+      <div class="lg:w-1/2 w-full text-center flex flex-col gap-5 lg:text-left">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          850+ Global University Tie Ups
+        </h2>
+        <h3 class="text-xl text-gray-600 font-semibold mb-4">
+          Study in the global university of your choice!
+        </h3>
+        <p class="text-gray-500 leading-relaxed">
+          We value your career aspirations, which is why we map your preferences with the best that our global universities have to offer. Thousands of our students are pursuing their programs and aspirations in eminent universities globally and we welcome you to pursue yours!
+        </p>
+      </div>
+
+      <!-- Right Image Grid -->
+      <div class="flex justify-center w-full lg:w-1/2">
+       
+        <!-- Image 4 -->
+        <div class="rounded-xl overflow-hidden">
+          <img src="./assets/images/global_Tiups_60f3eecd72 (1).svg" alt="Canadian Building" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+ <!--webinar and event-->
+ <div class="bg-white flex items-center justify-center py-10  px-6 lg:px-20">
+  <div class=" w-full 2xl:w-[1600px]">
+      <h2 class="text-[40px] font-bold text-gray-900 text-center mb-6">Webinars & Events</h2>
+
+      <!-- Main Container -->
+      <div class="flex flex-col gap-5 md:flex-row w-full py-5">
+          <!-- Large Event Card -->
+          <div class=" w-full md:w-[50%] bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="./assets/images/pic7.svg" alt="Event Image" class="w-full">
+              <div class="p-4">
+                  <p class="text-blue-600 text-sm font-medium">Sat, 29th March 2025 · 2:00 pm - 6:00 pm IST</p>
+                  <h3 class="text-xl font-bold text-gray-900 mt-2">Attend Virtual Study Abroad Loan Fair</h3>
+                  <p class="text-gray-600 mt-1">Interact Online with 20+ Leading Banks & Financial Institutions
+                  </p>
+                  <a href="#" class="text-red-500 font-medium mt-4 inline-block">Register Now →</a>
+              </div>
+          </div>
+
+          <!-- Side Event Cards -->
+          <div class="w-full md:w-[50%]">
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden flex gap-2 md:gap-3 lg:gap-7">
+                  <img src="./assets/images/pic8.svg" alt="Event" class="w-[45%] ">
+                  <div class="flex flex-col justify-center">
+                      <p class="text-blue-600 text-sm font-medium">Friday, 21st March 2025 · 8:00 pm - 9:30 pm</p>
+                      <h3 class="text-lg font-bold text-gray-900 mt-1">Test Preparation for IELTS</h3>
+                      <p class="text-gray-600 text-sm mt-1">Crack your IELTS in one go with 8+ Bands.</p>
+                      <a href="#" class="text-red-500 font-medium mt-2 inline-block">Register Now →</a>
+                  </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden mt-5 gap-2 md:gap-4 lg:gap-7 flex">
+                  <img src="./assets/images/pic9.svg" alt="Event" class="w-[45%]">
+                  <div class="flex flex-col justify-center">
+                      <p class="text-blue-600 text-sm font-medium">Tuesday, 25th March 2025 · 7:00 am - 8:30 am
+                      </p>
+                      <h3 class="text-lg font-bold text-gray-900 mt-1">Test Preparation for GRE</h3>
+                      <p class="text-gray-600 text-sm mt-1">Get ready to study at a Top-ranked University.</p>
+                      <a href="#" class="text-red-500 font-medium mt-2 inline-block">Register Now →</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- See More -->
+      <div class="text-center mt-6">
+          <a href="#" class="text-red-500 font-medium">See More →</a>
+      </div>
+  </div>
+</div>
+<!--7 step-->
+<div class="bg-[#dbe8fd] font-sans">
+
+  <section class="text-center py-16 px-4">
+    <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-10">
+      7 Easy Steps to Land in your Dream University
+    </h2>
+
+    <div class="relative flex flex-col items-center max-w-md mx-auto">
+      <!-- Circle with Step Number -->
+      <div id="stepNumber" class="absolute -top-6 bg-white shadow-md w-14 h-14 rounded-full flex items-center justify-center text-lg font-medium z-10">
+        1
+      </div>
+
+      <!-- Step Card -->
+      <div class="mt-7 bg-white shadow-md rounded-lg p-8 pt-12 relative">
+        <!-- Triangle -->
+        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rotate-45 shadow-md z-0"></div>
+
+        <h3 id="stepTitle" class="text-lg font-semibold mb-2">Career Counseling</h3>
+        <p id="stepDesc" class="text-gray-500 text-sm">
+          Get expert advice to choose the right career path.
+        </p>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="mt-6 flex items-center justify-center gap-6 text-sm font-semibold">
+        <button id="prevBtn" class="text-red-500 hover:underline flex items-center gap-1">
+          <span>&lt;</span> Previous Step
+        </button>
+        <button id="nextBtn" class="text-red-500 hover:underline flex items-center gap-1">
+          Next Step <span>&gt;</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!--kc updates-->
+<div class="bg-orange-50 flex items-center justify-center  px-6 py-10">
+  <div class="2xl:w-[1600px] w-full  text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Latest NK Global Updates</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Hiring Card -->
+          <div class="bg-orange-400 p-6 rounded-lg text-left text-white relative flex flex-col justify-between">
+              <h3 class="text-2xl font-bold mb-3">We're Hiring!</h3>
+              <p class="text-lg">Join the fastest growing EdTech brand offering endless learning and growth
+                  opportunities and advance your career with us.</p>
+              <button class="mt-4 bg-white text-orange-600 px-4 py-2 rounded-md font-medium">Apply Now</button>
+          </div>
+
+          <!-- News Card 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-left flex flex-col gap-2 items-center">
+              <img src="./assets/images/pic12.svg" alt="University of Sheffield" class="w-[180px]">
+              <h3 class="text-lg font-semibold text-center">University of Sheffield Announces Engineering
+                  Scholarship for...</h3>
+              <p class="text-gray-600 mt-2 text-center">University of Sheffield offers Engineering Excellence
+                  Scholarships worth up to £3,000 for International...</p>
+              <img src="./assets/images/threestar.svg" alt="star" />
+              <a href="#" class="text-red-500 font-medium mt-4 inline-block">Read More</a>
+          </div>
+
+          <!-- News Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-left flex flex-col gap-2 items-center">
+              <img src="./assets/images/pic13.svg" alt="UK Transnational Education" class="w-[180px]">
+              <h3 class="text-lg font-semibold text-center">UK Transnational Education Attracts Over 606,000
+                  Students Worldwide in 202...</h3>
+              <p class="text-gray-600 mt-2 text-center">UK Transnational Education continues to see robust growth
+                  with 606,485 students from 228 countries...</p>
+              <img src="./assets/images/threestar.svg" alt="star" />
+              <a href="#" class="text-red-500 font-medium mt-4 inline-block">Read More</a>
+          </div>
+      </div>
+
+      <a href="#" class="text-red-500 font-medium mt-6 inline-block">More News →</a>
+  </div>
+</div>
+
+<!--next-->
+<div class=" flex items-center justify-center w-full px-6 lg:px-10 xl:px-20 py-10">
+  <div class="2xl:w-[1600px] w-full ">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Blogs</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Main Featured Blog -->
+          <div class=" rounded-lg shadow-lg">
+              <img src="./assets/images/pic14.svg" alt="Featured Blog" class="w-full ">
+              <div class=" flex flex-col  p-4">
+
+                  <p class="text-sm text-blue-600 font-bold">STUDY ABROAD</p>
+                  <h3 class="text-lg font-semibold">MBA in Netherlands – Top Universities to Choose</h3>
+                  <p class="text-gray-500 text-sm mt-1">Mar 18, 2025</p>
+
+              </div>
+          </div>
+
+          <!-- Other Blogs -->
+          <div class="grid grid-cols-1 gap-6">
+              <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+                  <img src="./assets/images/pic15.svg" alt="Blog 1" class="w-1/3 object-cover">
+                  <div class="p-4">
+                      <p class="text-sm text-blue-600 font-bold">STUDENT TESTIMONIAL</p>
+                      <h3 class="text-lg font-semibold">From Nagpur to Queensland: How KC Made My Study Abroad
+                          Dream Come True</h3>
+                      <p class="text-gray-500 text-sm mt-1">Dec 06, 2024</p>
+                  </div>
+              </div>
+
+              <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+                  <img src="./assets/images/pic16.svg" alt="Blog 2" class="w-1/3 object-cover">
+                  <div class="p-4">
+                      <p class="text-sm text-blue-600 font-bold">COACHING</p>
+                      <h3 class="text-lg font-semibold">GMAT Online Coaching: Benefits, Test Prep, Best Provider &
+                          More</h3>
+                      <p class="text-gray-500 text-sm mt-1">Feb 05, 2025</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="text-center mt-6">
+          <a href="#" class="text-red-500 font-medium">All Blogs →</a>
+      </div>
+  </div>
+</div>
+<!--contact-->
+<div class="bg-white flex items-center justify-center  p-4">
+
+  <div class="relative w-full max-w-5xl bg-[#6A3FE2] rounded-xl px-10 py-8 overflow-hidden shadow-[0px_4px_60px_rgba(0,0,0,0.35)]">
+    <!-- Background letters (KC) -->
+    <div class="absolute inset-0 flex justify-end items-center pr-16 pointer-events-none">
+      <span class="text-[12rem] font-extrabold text-white/10 leading-none select-none">NK</span>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <h2 class="text-white text-2xl md:text-3xl font-semibold mb-1">
+          Start your Study Abroad Journey with NK Global
+        </h2>
+        <p class="text-white/80 text-sm md:text-base">
+          Book a free in person or virtual counselling session with our experts now!
+        </p>
+      </div>
+      <button class="bg-gradient-to-r from-orange-400 to-pink-500 text-white font-semibold px-6 py-2 rounded-md shadow-md hover:opacity-90 transition-all">
+        Contact Us
+      </button>
+    </div>
+  </div>
+
+</div>
+<!--footer-->
+<footer class="flex justify-center bg-[#0B1320] text-white pt-16 pb-8">
+
+
+
+  <div class=" w-full 2xl:w-[1600px] px-6 lg:px-20 flex flex-col items-center">
+      <h2 class="text-center text-lg font-semibold mb-6">Stay updated with KC Overseas</h2>
+
+      <!-- Subscription Form -->
+      <form action="" method="POST"
+      class="flex flex-col md:flex-row items-center justify-center gap-4">
+          <input type="email" name="email" placeholder="Email ID"
+              class="px-4 py-2 w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+          <select
+              class="px-4 py-2  w-64 rounded-lg bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:outline-none">
+              <option selected >I'm Interested in</option>
+              <option>Student</option>
+              <option>Institute</option>
+              <option>Partners</option>
+              <opttion>Franchisee</opttion>
+          </select>
+          <button
+              type="submit"
+              class="bg-orange-500 hover:bg-orange-600 transition px-6 py-2 rounded-lg font-semibold text-white shadow-md">
+              Subscribe Now
+          </button>
+        </form>
+
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 justify-center gap-8 text-sm">
+          <!-- About -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">KC Overseas</h3>
+              <p class="mt-2 text-gray-400">We are the fastest-growing EdTech brand facilitating international
+                  student recruitment...</p>
+          </div>
+
+          <!-- Study Destinations -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Study Destinations</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li><a href="./destinationusa.html" /> United States</li>
+                  <li>Canada</li>
+                  <li>United Kingdom</li>
+                  <li>Australia</li>
+                  <li>Europe</li>
+              </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Services for Students</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li>Test Preparation</li>
+                  <li>Visa Processing</li>
+                  <li>Education Loan</li>
+                  <li>Internships</li>
+              </ul>
+          </div>
+
+          <!-- Company -->
+          <div>
+              <h3 class="text-lg font-semibold text-blue-400">Company</h3>
+              <ul class="mt-2 space-y-2 text-gray-400">
+                  <li>About Us</li>
+                  <li>Careers <span class=" text-xs bg-blue-600 px-2 py-1 text-white rounded">WE'RE
+                          HIRING!</span></li>
+                  <li>Blog</li>
+                  <li>Contact Us</li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Social Links & Copyright -->
+      <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400">
+
+          <div class="flex justify-center space-x-6 mt-6">
+              <a href="#" class="text-gray-400">Terms & Conditions</a>
+              <a href="#" class="text-gray-400">Privacy Policy</a>
+              <a href="#" class="text-gray-400">Payment Terms</a>
+          </div>
+
+          <p class="mt-4 one">&copy; KC Overseas Education 2004-2025</p>
+      </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="script.js" ></script>
     </body>
