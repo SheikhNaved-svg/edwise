@@ -352,4 +352,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /*scholarship accrodain
   
+  const buttons = document.querySelectorAll('[data-accordion-button]');
+
+buttons.forEach((btn) => {
+btn.addEventListener('click', () => {
+const content = btn.nextElementSibling;
+const icon = btn.querySelector('.accordion-icon');
+
+const isOpen = !content.classList.contains('hidden');
+
+// Close all
+document.querySelectorAll('[data-accordion-content]').forEach((el) => el.classList.add('hidden'));
+document.querySelectorAll('.accordion-icon').forEach((ic) => ic.classList.remove('rotate'));
+
+if (!isOpen) {
+content.classList.remove('hidden');
+icon.classList.add('rotate');
+}
+});
+});
+*/
